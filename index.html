@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A transparent Canada-first Pokémon TCG release and fair-price tracker proof of concept." />
+    <meta name="theme-color" content="#102a2e" />
+    <title>PokéStock Canada — Releases without the rush</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalog">Skip to releases</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="PokéStock Canada home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span><strong>PokéStock</strong><small>CANADA</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#catalog">Releases</a>
+        <a href="#method">Fair price</a>
+        <a href="proposal.html">Proposal</a>
+      </nav>
+      <button class="watchlist-button" id="watchlist-toggle" type="button">
+        Watchlist <span id="watch-count">0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Built for Canadian collectors</p>
+          <h1 id="hero-title">Release news.<br /><em>Without the rush.</em></h1>
+          <p class="hero-text">One calm, source-first view of upcoming Pokémon TCG products—so you can plan ahead, compare responsibly, and buy at a fair price.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#catalog">Browse releases <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="#method">How pricing works</a>
+          </div>
+          <p class="trust-line"><span aria-hidden="true">✓</span> Public sources only &nbsp;·&nbsp; No purchase bots &nbsp;·&nbsp; No queue bypassing</p>
+        </div>
+        <aside class="next-release" aria-label="Next release summary">
+          <div class="card-topline"><span>Next official release</span><span class="live-dot">TRACKED</span></div>
+          <p class="mini-label">Pokémon TCG</p>
+          <h2 id="next-release-name">Loading catalog…</h2>
+          <p id="next-release-series">Checking the curated release feed</p>
+          <div class="date-block">
+            <span class="calendar-icon" aria-hidden="true"></span>
+            <div><small>RELEASE DATE</small><strong id="next-release-date">—</strong></div>
+          </div>
+          <div class="next-release-footer">
+            <span id="next-release-countdown">—</span>
+            <a id="next-release-link" href="#catalog">View details →</a>
+          </div>
+          <div class="decorative-circles" aria-hidden="true"><i></i><i></i><i></i></div>
+        </aside>
+      </section>
+
+      <section class="status-strip" aria-label="Catalog status">
+        <div><span>◉</span><p><strong id="verified-count">— verified releases</strong><small>Each one links to its source</small></p></div>
+        <div><span>⌖</span><p><strong>Canada-first context</strong><small>CAD prices stay unknown until sourced</small></p></div>
+        <div><span>◷</span><p><strong id="catalog-updated">Catalog loading</strong><small>Transparent freshness timestamps</small></p></div>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Release radar</p>
+            <h2 id="catalog-title">Products worth planning for</h2>
+          </div>
+          <p>Dates come from official Pokémon announcements. Availability is never presented as live unless a Canada-specific check supports it.</p>
+        </div>
+
+        <form class="filters" id="filters" role="search">
+          <label class="search-field">
+            <span class="visually-hidden">Search releases</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Search a set or product…" autocomplete="off" />
+          </label>
+          <label>
+            <span>Release state</span>
+            <select id="state-filter">
+              <option value="all">All releases</option>
+              <option value="upcoming">Upcoming</option>
+              <option value="released">Recently released</option>
+              <option value="archived">Archived</option>
+            </select>
+          </label>
+          <label>
+            <span>Product type</span>
+            <select id="type-filter"><option value="all">All product types</option></select>
+          </label>
+          <button class="clear-button" id="clear-filters" type="button">Clear</button>
+        </form>
+
+        <div class="results-bar">
+          <p id="results-summary" aria-live="polite">Loading releases…</p>
+          <button class="text-button" id="show-watchlist" type="button">Show watched only</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">◇</span>
+          <h3>No releases match those filters</h3>
+          <p>Try a different search or clear your filters.</p>
+          <button class="button secondary" id="empty-clear" type="button">Clear filters</button>
+        </div>
+        <div class="error-state" id="error-state" hidden>
+          <h3>The catalog could not be loaded</h3>
+          <p>Serve this project through a local HTTP server, then refresh the page.</p>
+        </div>
+      </section>
+
+      <section class="method-section" id="method" aria-labelledby="method-title">
+        <div>
+          <p class="eyebrow light">Fair-price guide</p>
+          <h2 id="method-title">Evidence first.<br />Guesswork never.</h2>
+          <p>We compare a public Canadian offer only when an official Canadian reference price is available. Unknown stays unknown—US prices are never silently converted into Canadian MSRP.</p>
+          <a href="proposal.html#fair-price">Read the full methodology →</a>
+        </div>
+        <ol class="method-steps">
+          <li><span>01</span><div><strong>Find the official release</strong><p>Record the product, launch date, and first-party source.</p></div></li>
+          <li><span>02</span><div><strong>Verify Canadian context</strong><p>Look for the CAD storefront listing and timestamp the check.</p></div></li>
+          <li><span>03</span><div><strong>Compare transparently</strong><p>Label the difference and keep missing information visible.</p></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"><span></span></span><span><strong>PokéStock</strong><small>CANADA</small></span></div>
+      <p>Independent fan project. Not affiliated with, sponsored by, or endorsed by The Pokémon Company International.</p>
+      <p><a href="README.md">Project README</a> · <a href="CONTRIBUTING.md">Contribute</a> · <a href="proposal.html">Proposal</a></p>
+    </footer>
+
+    <template id="product-template">
+      <article class="product-card">
+        <div class="product-visual">
+          <span class="product-type-badge"></span>
+          <span class="state-badge"></span>
+          <div class="pack-art" aria-hidden="true"><span></span><i></i><b></b></div>
+        </div>
+        <div class="product-body">
+          <p class="product-series"></p>
+          <h3 class="product-name"></h3>
+          <p class="product-summary"></p>
+          <div class="product-meta">
+            <div><small>RELEASE</small><strong class="product-date"></strong><span class="product-countdown"></span></div>
+            <div><small>CAD REFERENCE</small><strong class="product-price"></strong><span class="price-status"></span></div>
+          </div>
+          <p class="canada-note"></p>
+          <div class="product-actions">
+            <a class="source-link" target="_blank" rel="noreferrer">Official source ↗</a>
+            <button class="watch-button" type="button"><span aria-hidden="true">＋</span> Watch</button>
+          </div>
+          <p class="verified-line"></p>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>

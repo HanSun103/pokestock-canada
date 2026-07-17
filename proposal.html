@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product proposal for PokéStock Canada." />
+    <title>Project proposal — PokéStock Canada</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .proposal-page { max-width: 900px; margin: 0 auto; padding: clamp(3rem, 8vw, 7rem) 1.25rem; }
+      .proposal-page h1 { font-size: clamp(2.8rem, 7vw, 5.5rem); }
+      .proposal-page h2 { margin: 3.5rem 0 1rem; font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: -.04em; }
+      .proposal-page h3 { margin-top: 2rem; }
+      .proposal-page p, .proposal-page li { color: var(--ink-soft); line-height: 1.75; }
+      .proposal-page blockquote { margin: 2rem 0; padding: 1.2rem 1.4rem; border-left: 5px solid var(--yellow); background: var(--cream); font: 600 1.15rem/1.6 Manrope, sans-serif; }
+      .proposal-page table { width: 100%; border-collapse: collapse; }
+      .proposal-page th, .proposal-page td { padding: .85rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+      .proposal-page th { background: var(--cream); }
+      .proposal-page .back-link { display: inline-block; margin-bottom: 2rem; font-weight: 700; }
+      @media (max-width: 620px) { .proposal-page table { font-size: .78rem; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PokéStock Canada home"><span class="brand-mark" aria-hidden="true"><span></span></span><span><strong>PokéStock</strong><small>CANADA</small></span></a>
+      <nav aria-label="Main navigation"><a href="index.html#catalog">Releases</a><a href="#fair-price">Fair price</a><a href="PROPOSAL.md">Markdown version</a></nav>
+    </header>
+    <main class="proposal-page">
+      <a class="back-link" href="index.html">← Back to the release radar</a>
+      <p class="eyebrow">Project proposal · POC v0.1</p>
+      <h1>Helping Canadian collectors plan—not race.</h1>
+      <blockquote>PokéStock Canada turns public, attributable Pokémon TCG information into a single Canada-first release calendar and fair-price guide.</blockquote>
+
+      <h2>The problem</h2>
+      <p>Release announcements, product pages, and Canadian storefront listings live in different places. Canadian collectors can miss a date, misunderstand regional availability, or lack a trustworthy CAD reference when evaluating a price. High demand cannot be eliminated, but better information can give ordinary buyers a fairer chance.</p>
+
+      <h2>The objective</h2>
+      <p>Create a trusted and accessible service that gathers official Pokémon TCG release information relevant to Canada, records where every claim came from, and eventually notifies users when followed products change. It will respect retailer infrastructure and consumer protections.</p>
+
+      <h2>POC scope</h2>
+      <table>
+        <thead><tr><th>Included now</th><th>Deferred to the pilot</th></tr></thead>
+        <tbody>
+          <tr><td>Responsive release dashboard</td><td>Live inventory monitoring</td></tr>
+          <tr><td>Official source and freshness metadata</td><td>Email, SMS, Discord, or push delivery</td></tr>
+          <tr><td>Search, filters, countdowns, and watchlist</td><td>User accounts and cloud storage</td></tr>
+          <tr><td>CAD comparison logic and unknown-price state</td><td>Retailer and resale marketplace feeds</td></tr>
+          <tr><td>Tests, catalog validation, and GitHub Pages</td><td>Automated checkout or queue tools—never planned</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Information strategy</h2>
+      <ol>
+        <li>Use Pokemon.com news and product pages for first-party names, contents, and release dates.</li>
+        <li>Use Pokémon Center Canada for Canadian availability and CAD reference prices when publicly listed.</li>
+        <li>Keep the source URL and verification timestamp attached to every record.</li>
+        <li>Leave missing Canadian values unknown; never present a converted US price as Canadian MSRP.</li>
+      </ol>
+
+      <h2 id="fair-price">Fair-price method</h2>
+      <p>When both an official Canadian reference and a public offer exist, the offer is labelled <strong>At reference</strong> at no more than 3% above the reference, <strong>Close to reference</strong> between 3% and 10% above it, and <strong>Above reference</strong> beyond 10%. When either number is missing, the result is <strong>Price not verified</strong>.</p>
+
+      <h2>Responsible monitoring principles</h2>
+      <p>Future retailer connections require a documented terms review, conservative request limits, caching, backoff, and a human escalation path. If a source disallows or blocks monitoring, PokéStock Canada should link to it without collecting it. The product remains information-only: no checkout automation, identity rotation, queue bypassing, or circumvention.</p>
+
+      <h2>Roadmap</h2>
+      <ol>
+        <li><strong>POC:</strong> static catalog, watchlist, pricing logic, tests, and public deployment.</li>
+        <li><strong>Curated pilot:</strong> contribution workflow, catalog history, and opt-in notifications.</li>
+        <li><strong>Responsible monitoring:</strong> approved connectors, freshness indicators, and operational alerts.</li>
+        <li><strong>Community launch:</strong> accounts, regional preferences, English/French UI, moderation, and retailer partnerships.</li>
+      </ol>
+
+      <p><a href="PROPOSAL.md">Read the complete technical proposal and success measures →</a></p>
+    </main>
+  </body>
+</html>

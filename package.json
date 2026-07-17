@@ -1,0 +1,15 @@
+{
+  "name": "pokestock-canada",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A transparent Canada-first Pokémon TCG release and fair-price tracker POC.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check:data": "node src/validate-data.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

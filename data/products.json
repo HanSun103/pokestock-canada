@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "name": "PokéStock Canada curated POC catalog",
+    "currency": "CAD",
+    "updatedAt": "2026-07-17T19:30:00Z",
+    "disclaimer": "Release details are sourced from official Pokémon pages. Canadian price and availability remain unknown until supported by a Canada-specific public source."
+  },
+  "products": [
+    {
+      "id": "30th-celebration-tech-sticker-collection",
+      "name": "30th Celebration Tech Sticker Collection",
+      "series": "30th Celebration",
+      "type": "collection",
+      "releaseDate": "2026-09-16",
+      "releaseDatePrecision": "day",
+      "summary": "A foil Alolan Exeggutor or Lucario promo, matching sticker sheet, and three 30th Celebration booster packs.",
+      "contents": ["1 foil promo card", "1 tech sticker sheet", "3 booster packs"],
+      "msrpCad": null,
+      "canadaStatus": "not-confirmed",
+      "canadaNote": "The global product release is official; a Canada-specific listing or CAD reference price has not been recorded in this POC.",
+      "offers": [],
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "Pokémon TCG: 30th Celebration Tech Sticker Collection",
+        "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection"
+      },
+      "verifiedAt": "2026-07-17T19:00:00Z"
+    },
+    {
+      "id": "mega-evolution-chaos-rising-etb",
+      "name": "Mega Evolution—Chaos Rising Elite Trainer Box",
+      "series": "Mega Evolution—Chaos Rising",
+      "type": "elite-trainer-box",
+      "releaseDate": "2026-05-22",
+      "releaseDatePrecision": "day",
+      "summary": "Nine Chaos Rising booster packs, a Fennekin promo, sleeves, Energy cards, dice, accessories, and a storage box.",
+      "contents": ["9 booster packs", "1 Fennekin promo card", "65 card sleeves", "Player accessories"],
+      "msrpCad": null,
+      "canadaStatus": "check-official-store",
+      "canadaNote": "The official showcase says products are available at Pokémon Center and other TCG retailers; verify the regional storefront before purchasing.",
+      "offers": [],
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "Mega Evolution—Chaos Rising Product Showcase",
+        "url": "https://www.pokemon.com/us/pokemon-news/pokemon-tcg-mega-evolution-chaos-rising-product-showcase"
+      },
+      "verifiedAt": "2026-07-17T19:00:00Z"
+    },
+    {
+      "id": "mega-moonlit-tin",
+      "name": "Mega Moonlit Tin",
+      "series": "Mega Evolution",
+      "type": "tin",
+      "releaseDate": "2026-06-05",
+      "releaseDatePrecision": "day",
+      "summary": "Choose a Mega Gengar ex or Mega Clefable ex foil promo and open four booster packs.",
+      "contents": ["1 foil promo card", "4 booster packs", "1 Pokémon TCG Live code card"],
+      "msrpCad": null,
+      "canadaStatus": "check-official-store",
+      "canadaNote": "The product is officially released; this POC does not claim current Canadian stock.",
+      "offers": [],
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "Pokémon TCG: Mega Moonlit Tin",
+        "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-moonlit-tin"
+      },
+      "verifiedAt": "2026-07-17T19:00:00Z"
+    },
+    {
+      "id": "ascended-heroes-booster-bundle",
+      "name": "Mega Evolution—Ascended Heroes Booster Bundle",
+      "series": "Mega Evolution—Ascended Heroes",
+      "type": "booster-bundle",
+      "releaseDate": "2026-04-24",
+      "releaseDatePrecision": "day",
+      "summary": "A compact bundle containing six booster packs from the Ascended Heroes expansion.",
+      "contents": ["6 booster packs"],
+      "msrpCad": null,
+      "canadaStatus": "check-official-store",
+      "canadaNote": "The official product page confirms broad release, but no live Canadian availability is asserted here.",
+      "offers": [],
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "Mega Evolution—Ascended Heroes Booster Bundle",
+        "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-evolution-ascended-heroes-booster-bundle"
+      },
+      "verifiedAt": "2026-07-17T19:00:00Z"
+    }
+  ]
+}
