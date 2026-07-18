@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "ca-30th-etb-live-2026-07-15",
+      "eventType": "preorder-open",
+      "publishedAt": "2026-07-15T15:35:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T15:35:00Z",
+      "title": "30th Celebration Pokémon Center ETB observed for preorder in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-pokemon-center-etb",
+        "name": "30th Celebration Pokémon Center Elite Trainer Box",
+        "series": "30th Celebration",
+        "type": "elite-trainer-box",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": true,
+        "priceCad": 80.99
+      },
+      "facts": ["The Canadian storefront exposed a purchasable preorder listing at CA$80.99."],
+      "expectedAction": "Send an immediate live-now alert."
+    },
+    {
+      "id": "ca-30th-etb-sold-out-2026-07-15",
+      "eventType": "sold-out",
+      "publishedAt": "2026-07-15T19:00:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T19:00:00Z",
+      "title": "30th Celebration Pokémon Center ETB observed sold out in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-pokemon-center-etb",
+        "name": "30th Celebration Pokémon Center Elite Trainer Box",
+        "series": "30th Celebration",
+        "type": "elite-trainer-box",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": true,
+        "priceCad": 80.99
+      },
+      "facts": ["The Canadian listing was observed sold out after the preorder opportunity opened."],
+      "expectedAction": "Record the closed opportunity and begin restock watch."
+    }
+  ]
+}

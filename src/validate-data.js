@@ -5,6 +5,7 @@ const catalog = JSON.parse(await readFile(catalogUrl, "utf8"));
 const errors = [];
 const ids = new Set();
 const allowedTypes = new Set(["collection", "elite-trainer-box", "tin", "booster-bundle", "booster-box", "other"]);
+const allowedStatuses = new Set(["in-stock", "preorder", "sold-out", "unknown"]);
 
 if (!catalog.meta?.updatedAt || Number.isNaN(Date.parse(catalog.meta.updatedAt))) {
   errors.push("meta.updatedAt must be a valid timestamp");
@@ -16,14 +17,14 @@ if (!Array.isArray(catalog.products) || catalog.products.length === 0) {
 
 for (const [index, product] of (catalog.products ?? []).entries()) {
   const path = `products[${index}]`;
-  for (const field of ["id", "name", "series", "type", "releaseDate", "summary", "canadaStatus", "canadaNote", "verifiedAt"]) {
+  for (const field of ["id", "name", "series", "type", "summary", "canadaNote", "verifiedAt"]) {
     if (!product[field]) errors.push(`${path}.${field} is required`);
   }
   if (ids.has(product.id)) errors.push(`${path}.id must be unique`);
   ids.add(product.id);
   if (!allowedTypes.has(product.type)) errors.push(`${path}.type is not supported`);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(product.releaseDate ?? "") || Number.isNaN(Date.parse(`${product.releaseDate}T00:00:00Z`))) {
-    errors.push(`${path}.releaseDate must be YYYY-MM-DD`);
+  if (product.releaseDate !== null && (!/^\d{4}-\d{2}-\d{2}$/.test(product.releaseDate ?? "") || Number.isNaN(Date.parse(`${product.releaseDate}T00:00:00Z`)))) {
+    errors.push(`${path}.releaseDate must be null or YYYY-MM-DD`);
   }
   if (!product.source?.title || !product.source?.publisher) errors.push(`${path}.source title and publisher are required`);
   try {
@@ -32,13 +33,12 @@ for (const [index, product] of (catalog.products ?? []).entries()) {
   } catch {
     errors.push(`${path}.source.url must be a valid URL`);
   }
-  if (Number.isNaN(Date.parse(product.verifiedAt ?? ""))) errors.push(`${path}.verifiedAt must be a valid timestamp`);
-  if (product.msrpCad !== null && (!Number.isFinite(product.msrpCad) || product.msrpCad <= 0)) {
-    errors.push(`${path}.msrpCad must be null or a positive number`);
-  }
-  if (!Array.isArray(product.contents) || !Array.isArray(product.offers)) {
-    errors.push(`${path}.contents and offers must be arrays`);
-  }
+  if (Number.isNaN(Date.parse(product.verifiedAt ?? ""))) errors.push(`${path}.verifiedAt must be a valid date`);
+  if (!product.storefront || !allowedStatuses.has(product.storefront.status)) errors.push(`${path}.storefront.status is not supported`);
+  if (product.storefront?.priceCad !== null && (!Number.isFinite(product.storefront?.priceCad) || product.storefront.priceCad <= 0)) errors.push(`${path}.storefront.priceCad must be null or a positive number`);
+  if (product.storefront?.firstSeenAt !== null && Number.isNaN(Date.parse(product.storefront?.firstSeenAt ?? ""))) errors.push(`${path}.storefront.firstSeenAt must be null or a valid date`);
+  if (product.storefront?.checkedAt !== null && Number.isNaN(Date.parse(product.storefront?.checkedAt ?? ""))) errors.push(`${path}.storefront.checkedAt must be null or a valid date`);
+  if (!Array.isArray(product.contents)) errors.push(`${path}.contents must be an array`);
 }
 
 if (errors.length) {

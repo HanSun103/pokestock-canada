@@ -1,0 +1,48 @@
+name: Collect release signals
+
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-radar
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Collect, normalize, and score signals
+        run: npm run pipeline
+        env:
+          POKESTOCK_FEED_URLS: ${{ secrets.POKESTOCK_FEED_URLS }}
+      - run: npm test
+      - run: npm run check:data
+      - name: Send change-only notifications
+        run: npm run notify
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+      - name: Publish generated website data when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- data/signals.json data/radar.json; then
+            echo "No signal changes."
+            exit 0
+          fi
+          git config user.name "pokestock-radar[bot]"
+          git config user.email "pokestock-radar[bot]@users.noreply.github.com"
+          git add data/signals.json data/radar.json
+          git commit -m "data: update release radar"
+          git push

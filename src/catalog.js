@@ -15,6 +15,7 @@ export function daysUntil(releaseDate, now = new Date()) {
 }
 
 export function getReleaseState(releaseDate, now = new Date(), archiveAfterDays = 180) {
+  if (!releaseDate) return "unknown";
   const days = daysUntil(releaseDate, now);
   if (days > 0) return "upcoming";
   if (days >= -archiveAfterDays) return "released";
@@ -22,6 +23,7 @@ export function getReleaseState(releaseDate, now = new Date(), archiveAfterDays 
 }
 
 export function getCountdownLabel(releaseDate, now = new Date()) {
+  if (!releaseDate) return "Release date not published";
   const days = daysUntil(releaseDate, now);
   if (days > 1) return `${days} days to go`;
   if (days === 1) return "Tomorrow";
@@ -45,15 +47,15 @@ export function filterProducts(products, filters, now = new Date()) {
   const term = filters.search.trim().toLocaleLowerCase("en-CA");
 
   return products.filter((product) => {
-    const stateMatches = filters.state === "all" || getReleaseState(product.releaseDate, now) === filters.state;
+    const availabilityMatches = filters.availability === "all" || product.storefront.status === filters.availability;
     const typeMatches = filters.type === "all" || product.type === filters.type;
     const searchable = `${product.name} ${product.series} ${product.summary}`.toLocaleLowerCase("en-CA");
-    return stateMatches && typeMatches && (!term || searchable.includes(term));
+    return availabilityMatches && typeMatches && (!term || searchable.includes(term));
   });
 }
 
 export function sortByReleaseDate(products) {
-  return [...products].sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
+  return [...products].sort((a, b) => (b.storefront.firstSeenAt ?? "0000-00-00").localeCompare(a.storefront.firstSeenAt ?? "0000-00-00") || (a.releaseDate ?? "9999-99-99").localeCompare(b.releaseDate ?? "9999-99-99"));
 }
 
 export function formatCad(value) {
@@ -62,5 +64,10 @@ export function formatCad(value) {
 }
 
 export function formatDate(value) {
+  if (!value) return "Not published";
   return new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "long", day: "numeric" }).format(parseLocalDate(value));
+}
+
+export function getAvailabilityLabel(status) {
+  return ({ "in-stock": "In stock", "preorder": "Preorder open", "sold-out": "Sold out", unknown: "Not checked" })[status] ?? "Unknown";
 }

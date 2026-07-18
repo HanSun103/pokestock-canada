@@ -29,10 +29,10 @@
       <a class="back-link" href="index.html">← Back to the release radar</a>
       <p class="eyebrow">Project proposal · POC v0.1</p>
       <h1>Helping Canadian collectors plan—not race.</h1>
-      <blockquote>PokéStock Canada turns public, attributable Pokémon TCG information into a single Canada-first release calendar and fair-price guide.</blockquote>
+      <blockquote>PokéStock Canada turns public, attributable Pokémon TCG information into a Canada-first storefront-drop tracker, release calendar, and fair-price guide.</blockquote>
 
       <h2>The problem</h2>
-      <p>Release announcements, product pages, and Canadian storefront listings live in different places. Canadian collectors can miss a date, misunderstand regional availability, or lack a trustworthy CAD reference when evaluating a price. High demand cannot be eliminated, but better information can give ordinary buyers a fairer chance.</p>
+      <p>Release announcements, product pages, and Canadian storefront listings live in different places. A Canadian buying window can open months before the announced product release date. Collectors can miss that storefront event, misunderstand regional availability, or lack a trustworthy CAD reference. High demand cannot be eliminated, but better information can give ordinary buyers a fairer chance.</p>
 
       <h2>The objective</h2>
       <p>Create a trusted and accessible service that gathers official Pokémon TCG release information relevant to Canada, records where every claim came from, and eventually notifies users when followed products change. It will respect retailer infrastructure and consumer protections.</p>
@@ -42,7 +42,7 @@
         <thead><tr><th>Included now</th><th>Deferred to the pilot</th></tr></thead>
         <tbody>
           <tr><td>Responsive release dashboard</td><td>Live inventory monitoring</td></tr>
-          <tr><td>Official source and freshness metadata</td><td>Email, SMS, Discord, or push delivery</td></tr>
+          <tr><td>Separate release, first-seen, availability, and check dates</td><td>Email, SMS, Discord, or push delivery</td></tr>
           <tr><td>Search, filters, countdowns, and watchlist</td><td>User accounts and cloud storage</td></tr>
           <tr><td>CAD comparison logic and unknown-price state</td><td>Retailer and resale marketplace feeds</td></tr>
           <tr><td>Tests, catalog validation, and GitHub Pages</td><td>Automated checkout or queue tools—never planned</td></tr>
@@ -52,13 +52,13 @@
       <h2>Information strategy</h2>
       <ol>
         <li>Use Pokemon.com news and product pages for first-party names, contents, and release dates.</li>
-        <li>Use Pokémon Center Canada for Canadian availability and CAD reference prices when publicly listed.</li>
+        <li>Use Pokémon Center Canada for Canadian first-seen dates, dated availability, and CAD prices when publicly listed.</li>
         <li>Keep the source URL and verification timestamp attached to every record.</li>
         <li>Leave missing Canadian values unknown; never present a converted US price as Canadian MSRP.</li>
       </ol>
 
       <h2 id="fair-price">Fair-price method</h2>
-      <p>When both an official Canadian reference and a public offer exist, the offer is labelled <strong>At reference</strong> at no more than 3% above the reference, <strong>Close to reference</strong> between 3% and 10% above it, and <strong>Above reference</strong> beyond 10%. When either number is missing, the result is <strong>Price not verified</strong>.</p>
+      <p>The official Canadian storefront price is recorded independently from the global launch date. Availability is always paired with the date it was checked. Future retailer offers can be compared with that Canadian reference, but missing or stale information remains visibly unknown.</p>
 
       <h2>Responsible monitoring principles</h2>
       <p>Future retailer connections require a documented terms review, conservative request limits, caching, backoff, and a human escalation path. If a source disallows or blocks monitoring, PokéStock Canada should link to it without collecting it. The product remains information-only: no checkout automation, identity rotation, queue bypassing, or circumvention.</p>

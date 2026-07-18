@@ -18,6 +18,7 @@
         <span><strong>PokéStock</strong><small>CANADA</small></span>
       </a>
       <nav aria-label="Main navigation">
+        <a href="#radar">Radar</a>
         <a href="#catalog">Releases</a>
         <a href="#method">Fair price</a>
         <a href="proposal.html">Proposal</a>
@@ -32,21 +33,21 @@
         <div class="hero-copy">
           <p class="eyebrow">Built for Canadian collectors</p>
           <h1 id="hero-title">Release news.<br /><em>Without the rush.</em></h1>
-          <p class="hero-text">One calm, source-first view of upcoming Pokémon TCG products—so you can plan ahead, compare responsibly, and buy at a fair price.</p>
+          <p class="hero-text">One calm, source-first view of Canadian Pokémon TCG drops—so you can see when buying opened, what it cost, and when availability was last checked.</p>
           <div class="hero-actions">
             <a class="button primary" href="#catalog">Browse releases <span aria-hidden="true">↓</span></a>
-            <a class="button secondary" href="#method">How pricing works</a>
+            <a class="button secondary" href="#method">How tracking works</a>
           </div>
           <p class="trust-line"><span aria-hidden="true">✓</span> Public sources only &nbsp;·&nbsp; No purchase bots &nbsp;·&nbsp; No queue bypassing</p>
         </div>
         <aside class="next-release" aria-label="Next release summary">
-          <div class="card-topline"><span>Next official release</span><span class="live-dot">TRACKED</span></div>
+          <div class="card-topline"><span>Latest Canada drop</span><span class="live-dot">OBSERVED</span></div>
           <p class="mini-label">Pokémon TCG</p>
           <h2 id="next-release-name">Loading catalog…</h2>
           <p id="next-release-series">Checking the curated release feed</p>
           <div class="date-block">
             <span class="calendar-icon" aria-hidden="true"></span>
-            <div><small>RELEASE DATE</small><strong id="next-release-date">—</strong></div>
+            <div><small>FIRST SEEN FOR SALE</small><strong id="next-release-date">—</strong></div>
           </div>
           <div class="next-release-footer">
             <span id="next-release-countdown">—</span>
@@ -57,9 +58,20 @@
       </section>
 
       <section class="status-strip" aria-label="Catalog status">
-        <div><span>◉</span><p><strong id="verified-count">— verified releases</strong><small>Each one links to its source</small></p></div>
-        <div><span>⌖</span><p><strong>Canada-first context</strong><small>CAD prices stay unknown until sourced</small></p></div>
-        <div><span>◷</span><p><strong id="catalog-updated">Catalog loading</strong><small>Transparent freshness timestamps</small></p></div>
+        <div><span>◉</span><p><strong id="verified-count">— storefront records</strong><small>Listings and release dates stay separate</small></p></div>
+        <div><span>⌖</span><p><strong id="sold-out-count">Canada status loading</strong><small>Availability is a dated observation</small></p></div>
+        <div><span>◷</span><p><strong id="catalog-updated">Snapshot loading</strong><small>Not a live stock guarantee</small></p></div>
+      </section>
+
+      <section class="radar-section" id="radar" aria-labelledby="radar-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Early-signal radar</p>
+            <h2 id="radar-title">What should collectors do now?</h2>
+          </div>
+          <p>Every warning is generated from dated evidence. Product existence, Canadian relevance, and timing are scored separately.</p>
+        </div>
+        <div class="radar-grid" id="radar-grid" aria-live="polite"></div>
       </section>
 
       <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
@@ -68,7 +80,7 @@
             <p class="eyebrow">Release radar</p>
             <h2 id="catalog-title">Products worth planning for</h2>
           </div>
-          <p>Dates come from official Pokémon announcements. Availability is never presented as live unless a Canada-specific check supports it.</p>
+          <p>Canadian listing dates, prices, and availability come first. Announced product release dates remain visible as separate planning information.</p>
         </div>
 
         <form class="filters" id="filters" role="search">
@@ -78,12 +90,13 @@
             <input id="search" type="search" placeholder="Search a set or product…" autocomplete="off" />
           </label>
           <label>
-            <span>Release state</span>
-            <select id="state-filter">
-              <option value="all">All releases</option>
-              <option value="upcoming">Upcoming</option>
-              <option value="released">Recently released</option>
-              <option value="archived">Archived</option>
+            <span>Canada availability</span>
+            <select id="availability-filter">
+              <option value="all">All statuses</option>
+              <option value="in-stock">In stock</option>
+              <option value="preorder">Preorder open</option>
+              <option value="sold-out">Sold out</option>
+              <option value="unknown">Not checked</option>
             </select>
           </label>
           <label>
@@ -114,13 +127,13 @@
         <div>
           <p class="eyebrow light">Fair-price guide</p>
           <h2 id="method-title">Evidence first.<br />Guesswork never.</h2>
-          <p>We compare a public Canadian offer only when an official Canadian reference price is available. Unknown stays unknown—US prices are never silently converted into Canadian MSRP.</p>
-          <a href="proposal.html#fair-price">Read the full methodology →</a>
+          <p>We record the official Canadian storefront price and its observed availability separately from a product's announced launch date. Unknown stays unknown, and every stock label carries a check date.</p>
+          <a href="proposal.html#fair-price">Read the availability methodology →</a>
         </div>
         <ol class="method-steps">
           <li><span>01</span><div><strong>Find the official release</strong><p>Record the product, launch date, and first-party source.</p></div></li>
-          <li><span>02</span><div><strong>Verify Canadian context</strong><p>Look for the CAD storefront listing and timestamp the check.</p></div></li>
-          <li><span>03</span><div><strong>Compare transparently</strong><p>Label the difference and keep missing information visible.</p></div></li>
+          <li><span>02</span><div><strong>Capture the buying event</strong><p>Record first-seen date, CAD price, status, and check date.</p></div></li>
+          <li><span>03</span><div><strong>Report freshness</strong><p>Never present a dated observation as guaranteed live stock.</p></div></li>
         </ol>
       </section>
     </main>
@@ -143,8 +156,8 @@
           <h3 class="product-name"></h3>
           <p class="product-summary"></p>
           <div class="product-meta">
-            <div><small>RELEASE</small><strong class="product-date"></strong><span class="product-countdown"></span></div>
-            <div><small>CAD REFERENCE</small><strong class="product-price"></strong><span class="price-status"></span></div>
+            <div><small>FIRST SEEN / RELEASE</small><strong class="product-date"></strong><span class="product-countdown"></span></div>
+            <div><small>OFFICIAL CA PRICE</small><strong class="product-price"></strong><span class="price-status"></span></div>
           </div>
           <p class="canada-note"></p>
           <div class="product-actions">
@@ -153,6 +166,27 @@
           </div>
           <p class="verified-line"></p>
         </div>
+      </article>
+    </template>
+
+    <template id="radar-template">
+      <article class="radar-card">
+        <div class="radar-topline">
+          <span class="watch-stage"></span>
+          <time class="radar-changed"></time>
+        </div>
+        <p class="radar-series"></p>
+        <h3 class="radar-name"></h3>
+        <p class="radar-reason"></p>
+        <div class="confidence-grid" aria-label="Confidence scores">
+          <div><span>Product</span><strong class="confidence-existence"></strong></div>
+          <div><span>Canada</span><strong class="confidence-canada"></strong></div>
+          <div><span>Timing</span><strong class="confidence-timing"></strong></div>
+        </div>
+        <details>
+          <summary>Evidence timeline</summary>
+          <ol class="evidence-list"></ol>
+        </details>
       </article>
     </template>
   </body>

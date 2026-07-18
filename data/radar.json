@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-18T14:30:09.322Z",
+    "signalCount": 4,
+    "productCount": 1,
+    "methodology": "Separate confidence is reported for product existence, Canadian relevance, and timing. No date is invented when a source does not publish one."
+  },
+  "products": [
+    {
+      "id": "30th-celebration-pokemon-center-etb",
+      "name": "30th Celebration Pokémon Center Elite Trainer Box",
+      "series": "30th Celebration",
+      "type": "elite-trainer-box",
+      "releaseDate": "2026-09-16",
+      "pokemonCenterExclusive": true,
+      "priceCad": 80.99,
+      "watchStage": "sold-out",
+      "stateChangedAt": "2026-07-15T19:00:00.000Z",
+      "confidence": {
+        "existence": 0.95,
+        "canada": 0.9,
+        "timing": 0.9
+      },
+      "evidence": [
+        {
+          "signalId": "official-30th-set-reveal-2026-06-01",
+          "eventType": "expansion-announced",
+          "title": "30th Celebration set officially revealed",
+          "url": "https://30.pokemon.com/en-us/",
+          "publishedAt": "2026-06-01T13:01:00.000Z",
+          "publicationTimePrecision": "date",
+          "discoveredAt": "2026-06-01T14:00:00.000Z",
+          "region": "global",
+          "expectedAction": "Create an early watch; exact products and preorder timing are not yet confirmed."
+        },
+        {
+          "signalId": "official-30th-lineup-2026-06-30",
+          "eventType": "product-confirmed",
+          "title": "30th Celebration product lineup confirms Pokémon Center ETB",
+          "url": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase",
+          "publishedAt": "2026-06-30T13:20:00.000Z",
+          "publicationTimePrecision": "date",
+          "discoveredAt": "2026-06-30T14:00:00.000Z",
+          "region": "global",
+          "expectedAction": "Raise a prepare alert and begin conservative weekday monitoring of permitted sources."
+        },
+        {
+          "signalId": "ca-30th-etb-live-2026-07-15",
+          "eventType": "preorder-open",
+          "title": "30th Celebration Pokémon Center ETB observed for preorder in Canada",
+          "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+          "publishedAt": "2026-07-15T15:35:00.000Z",
+          "publicationTimePrecision": "observed",
+          "discoveredAt": "2026-07-15T15:35:00.000Z",
+          "region": "ca",
+          "expectedAction": "Send an immediate live-now alert."
+        },
+        {
+          "signalId": "ca-30th-etb-sold-out-2026-07-15",
+          "eventType": "sold-out",
+          "title": "30th Celebration Pokémon Center ETB observed sold out in Canada",
+          "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+          "publishedAt": "2026-07-15T19:00:00.000Z",
+          "publicationTimePrecision": "observed",
+          "discoveredAt": "2026-07-15T19:00:00.000Z",
+          "region": "ca",
+          "expectedAction": "Record the closed opportunity and begin restock watch."
+        }
+      ],
+      "history": [
+        {
+          "stage": "early-watch",
+          "at": "2026-06-01T13:01:00.000Z",
+          "signalId": "official-30th-set-reveal-2026-06-01",
+          "reason": "The expansion is official, but the product and Canadian buying date are not yet fully confirmed."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-06-30T13:20:00.000Z",
+          "signalId": "official-30th-lineup-2026-06-30",
+          "reason": "A Pokémon Center-exclusive product is officially confirmed. The Canadian buying date is unannounced, so the preorder watch is active."
+        },
+        {
+          "stage": "live-now",
+          "at": "2026-07-15T15:35:00.000Z",
+          "signalId": "ca-30th-etb-live-2026-07-15",
+          "reason": "A permitted Canadian source confirms that preorder or purchase availability is open."
+        },
+        {
+          "stage": "sold-out",
+          "at": "2026-07-15T19:00:00.000Z",
+          "signalId": "ca-30th-etb-sold-out-2026-07-15",
+          "reason": "The initial Canadian opportunity was observed sold out; restock monitoring should continue."
+        }
+      ],
+      "reason": "The initial Canadian opportunity was observed sold out; restock monitoring should continue.",
+      "confidenceLabels": {
+        "existence": "high",
+        "canada": "high",
+        "timing": "high"
+      }
+    }
+  ]
+}

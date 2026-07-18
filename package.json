@@ -7,7 +7,10 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test",
-    "check:data": "node src/validate-data.js"
+    "check:data": "node src/validate-data.js && node src/validate-radar.js",
+    "pipeline": "node src/run-pipeline.js",
+    "pipeline:dry": "node src/run-pipeline.js --dry-run",
+    "notify": "node src/send-notifications.js"
   },
   "engines": {
     "node": ">=20"
