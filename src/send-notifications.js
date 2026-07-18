@@ -9,8 +9,8 @@ function stageLabel(stage) {
 }
 
 function message(event) {
-  const confidence = `Existence ${Math.round(event.confidence.existence * 100)}% · Canada ${Math.round(event.confidence.canada * 100)}% · Timing ${Math.round(event.confidence.timing * 100)}%`;
-  return `**${stageLabel(event.stage)}: ${event.productName}**\n${event.reason}\n${confidence}\nEvidence: ${event.evidence.url}`;
+  const evidence = `Product ${event.evidenceLabels.existence} · Canada ${event.evidenceLabels.canada} · Timing ${event.evidenceLabels.timing} evidence`;
+  return `**${stageLabel(event.stage)}: ${event.productName}**\n${event.reason}\n${evidence} (not probabilities)\nEvidence: ${event.evidence.url}`;
 }
 
 async function sendDiscord(event) {

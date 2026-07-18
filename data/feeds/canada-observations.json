@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "items": [
     {
       "id": "ca-30th-etb-live-2026-07-15",
@@ -10,15 +10,7 @@
       "title": "30th Celebration Pokémon Center ETB observed for preorder in Canada",
       "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
       "region": "ca",
-      "product": {
-        "id": "30th-celebration-pokemon-center-etb",
-        "name": "30th Celebration Pokémon Center Elite Trainer Box",
-        "series": "30th Celebration",
-        "type": "elite-trainer-box",
-        "releaseDate": "2026-09-16",
-        "pokemonCenterExclusive": true,
-        "priceCad": 80.99
-      },
+      "product": { "id": "30th-celebration-pokemon-center-etb", "name": "30th Celebration Pokémon Center Elite Trainer Box", "series": "30th Celebration", "type": "elite-trainer-box", "releaseDate": "2026-09-16", "pokemonCenterExclusive": true, "priceCad": 80.99 },
       "facts": ["The Canadian storefront exposed a purchasable preorder listing at CA$80.99."],
       "expectedAction": "Send an immediate live-now alert."
     },
@@ -31,17 +23,153 @@
       "title": "30th Celebration Pokémon Center ETB observed sold out in Canada",
       "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
       "region": "ca",
-      "product": {
-        "id": "30th-celebration-pokemon-center-etb",
-        "name": "30th Celebration Pokémon Center Elite Trainer Box",
-        "series": "30th Celebration",
-        "type": "elite-trainer-box",
-        "releaseDate": "2026-09-16",
-        "pokemonCenterExclusive": true,
-        "priceCad": 80.99
-      },
+      "product": { "id": "30th-celebration-pokemon-center-etb", "name": "30th Celebration Pokémon Center Elite Trainer Box", "series": "30th Celebration", "type": "elite-trainer-box", "releaseDate": "2026-09-16", "pokemonCenterExclusive": true, "priceCad": 80.99 },
       "facts": ["The Canadian listing was observed sold out after the preorder opportunity opened."],
-      "expectedAction": "Record the closed opportunity and begin restock watch."
+      "expectedAction": "Record the closed opportunity; do not raise a restock watch without an explicit restock message."
+    },
+    {
+      "id": "ca-30th-tech-sticker-alolan-live-2026-07-15",
+      "eventType": "preorder-open",
+      "publishedAt": "2026-07-15T15:35:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T15:35:00Z",
+      "title": "Alolan Exeggutor Tech Sticker Collection observed for preorder in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": { "id": "30th-celebration-tech-sticker-alolan-exeggutor", "name": "30th Celebration Tech Sticker Collection (Alolan Exeggutor)", "series": "30th Celebration", "type": "collection", "releaseDate": "2026-09-16", "pokemonCenterExclusive": false, "priceCad": 20.99 },
+      "facts": ["The Canadian storefront exposed a purchasable preorder listing at CA$20.99."],
+      "expectedAction": "Send an immediate live-now alert."
+    },
+    {
+      "id": "ca-30th-tech-sticker-alolan-sold-out-2026-07-15",
+      "eventType": "sold-out",
+      "publishedAt": "2026-07-15T19:00:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T19:00:00Z",
+      "title": "Alolan Exeggutor Tech Sticker Collection observed sold out in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": { "id": "30th-celebration-tech-sticker-alolan-exeggutor", "name": "30th Celebration Tech Sticker Collection (Alolan Exeggutor)", "series": "30th Celebration", "type": "collection", "releaseDate": "2026-09-16", "pokemonCenterExclusive": false, "priceCad": 20.99 },
+      "facts": ["The Canadian listing was observed sold out after the preorder opportunity opened."],
+      "expectedAction": "Record the closed opportunity; do not raise a restock watch without an explicit restock message."
+    },
+    {
+      "id": "ca-30th-tech-sticker-lucario-live-2026-07-15",
+      "eventType": "preorder-open",
+      "publishedAt": "2026-07-15T15:35:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T15:35:00Z",
+      "title": "Lucario Tech Sticker Collection observed for preorder in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": { "id": "30th-celebration-tech-sticker-lucario", "name": "30th Celebration Tech Sticker Collection (Lucario)", "series": "30th Celebration", "type": "collection", "releaseDate": "2026-09-16", "pokemonCenterExclusive": false, "priceCad": 20.99 },
+      "facts": ["The Canadian storefront exposed a purchasable preorder listing at CA$20.99."],
+      "expectedAction": "Send an immediate live-now alert."
+    },
+    {
+      "id": "ca-30th-tech-sticker-lucario-sold-out-2026-07-15",
+      "eventType": "sold-out",
+      "publishedAt": "2026-07-15T19:00:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T19:00:00Z",
+      "title": "Lucario Tech Sticker Collection observed sold out in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": { "id": "30th-celebration-tech-sticker-lucario", "name": "30th Celebration Tech Sticker Collection (Lucario)", "series": "30th Celebration", "type": "collection", "releaseDate": "2026-09-16", "pokemonCenterExclusive": false, "priceCad": 20.99 },
+      "facts": ["The Canadian listing was observed sold out after the preorder opportunity opened."],
+      "expectedAction": "Record the closed opportunity; do not raise a restock watch without an explicit restock message."
+    },
+    {
+      "id": "ca-30th-knock-out-live-2026-07-15",
+      "eventType": "preorder-open",
+      "publishedAt": "2026-07-15T15:35:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T15:35:00Z",
+      "title": "30th Celebration Knock Out Collection observed for sale in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": { "id": "30th-celebration-knock-out-collection", "name": "30th Celebration Knock Out Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false, "priceCad": 13.99 },
+      "facts": ["The Canadian storefront exposed a purchasable listing at CA$13.99."],
+      "expectedAction": "Send an immediate live-now alert."
+    },
+    {
+      "id": "ca-30th-knock-out-sold-out-2026-07-15",
+      "eventType": "sold-out",
+      "publishedAt": "2026-07-15T19:00:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-15T19:00:00Z",
+      "title": "30th Celebration Knock Out Collection observed sold out in Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/new-releases",
+      "region": "ca",
+      "product": { "id": "30th-celebration-knock-out-collection", "name": "30th Celebration Knock Out Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false, "priceCad": 13.99 },
+      "facts": ["The Canadian listing was observed sold out after the initial buying opportunity."],
+      "expectedAction": "Record the closed opportunity; do not raise a restock watch without an explicit restock message."
+    },
+    {
+      "id": "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+      "eventType": "canada-retailer-announced",
+      "publishedAt": "2026-07-18T16:00:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-18T16:00:00Z",
+      "title": "Canadian retailer preorder page observed for the 30th Celebration UPC Day version",
+      "url": "https://www.pokejeux.ca/products/pre-order-combo-of-two-pokemon-30th-celebration-day-night-ultra-premium-collection",
+      "region": "ca",
+      "product": { "id": "30th-celebration-ultra-premium-collection-day", "name": "30th Celebration Ultra-Premium Collection—Day", "series": "30th Celebration", "type": "ultra-premium-collection", "releaseDate": "2026-11-06", "pokemonCenterExclusive": false },
+      "facts": ["A Canadian retailer page advertises a Day and Night bundle as a preorder.", "This is not evidence of a Pokémon Center Canada listing or a fair-price offer."],
+      "expectedAction": "Prepare now and continue watching for a fair-price Pokémon Center Canada or major-retailer listing."
+    },
+    {
+      "id": "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+      "eventType": "canada-retailer-announced",
+      "publishedAt": "2026-07-18T16:00:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-18T16:00:00Z",
+      "title": "Canadian retailer preorder page observed for the 30th Celebration UPC Night version",
+      "url": "https://www.pokejeux.ca/products/pre-order-combo-of-two-pokemon-30th-celebration-day-night-ultra-premium-collection",
+      "region": "ca",
+      "product": { "id": "30th-celebration-ultra-premium-collection-night", "name": "30th Celebration Ultra-Premium Collection—Night", "series": "30th Celebration", "type": "ultra-premium-collection", "releaseDate": "2026-11-06", "pokemonCenterExclusive": false },
+      "facts": ["A Canadian retailer page advertises a Day and Night bundle as a preorder.", "This is not evidence of a Pokémon Center Canada listing or a fair-price offer."],
+      "expectedAction": "Prepare now and continue watching for a fair-price Pokémon Center Canada or major-retailer listing."
+    },
+    {
+      "id": "ca-pitch-black-walmart-live-2026-07-17",
+      "eventType": "in-stock",
+      "publishedAt": "2026-07-17T11:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T18:15:00Z",
+      "title": "Walmart Canada confirms Pitch Black retail availability from July 17",
+      "url": "https://www.walmart.ca/fr/help/article/pokemon-mega-evolution-pitch-black/7d6a011feec54bf286cfff15c2d66fcf",
+      "region": "ca",
+      "product": {
+        "id": "mega-evolution-pitch-black",
+        "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+        "series": "Mega Evolution—Pitch Black",
+        "type": "other",
+        "releaseDate": "2026-07-17",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["Walmart Canada says the Pitch Black Elite Trainer Box and three-pack blister are available in participating stores from opening on July 17.", "Quantities are limited and store-specific availability can change."],
+      "expectedAction": "Show live-now with the dated Canadian retailer evidence; do not forecast a future first-listing date."
+    },
+    {
+      "id": "ca-pitch-black-sold-out-2026-07-18",
+      "eventType": "sold-out",
+      "publishedAt": "2026-07-18T18:45:00Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-18T18:45:00Z",
+      "title": "Pitch Black launch inventory reported sold out in Canada",
+      "url": "https://www.walmart.ca/fr/help/article/pokemon-mega-evolution-pitch-black/7d6a011feec54bf286cfff15c2d66fcf",
+      "region": "ca",
+      "product": {
+        "id": "mega-evolution-pitch-black",
+        "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+        "series": "Mega Evolution—Pitch Black",
+        "type": "other",
+        "releaseDate": "2026-07-17",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["The limited launch inventory was reported sold out after the July 17 Canadian retail opportunity.", "No explicit restock announcement has been observed."],
+      "expectedAction": "Move the released product to the historical catalog and remove it from the active early-signal radar."
     }
   ]
 }

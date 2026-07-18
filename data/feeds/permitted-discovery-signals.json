@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "discovery-30th-standard-etb-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Elite Trainer Box revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-elite-trainer-box", "name": "30th Celebration Elite Trainer Box", "series": "30th Celebration", "type": "elite-trainer-box", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The product lineup names a standard Elite Trainer Box."],
+      "expectedAction": "Create a product-confirmed watch; release and Canadian preorder timing require stronger evidence."
+    },
+    {
+      "id": "discovery-30th-mew-figure-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Mew Figure Collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-mew-figure-collection", "name": "30th Celebration Mew Figure Collection", "series": "30th Celebration", "type": "figure-collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The lineup names a Mew figure collection with booster packs, an oversized card, and a figure."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-mewtwo-figure-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Mewtwo Figure Collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-mewtwo-figure-collection", "name": "30th Celebration Mewtwo Figure Collection", "series": "30th Celebration", "type": "figure-collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The lineup names a Mewtwo figure collection with booster packs, an oversized card, and a figure."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-greninja-ex-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Greninja ex collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-greninja-ex-collection", "name": "30th Celebration Greninja ex Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The lineup names a Greninja ex collection with an oversized card."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-sylveon-ex-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Sylveon ex collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-sylveon-ex-collection", "name": "30th Celebration Sylveon ex Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The lineup names a Sylveon ex collection with an oversized card."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-ditto-premium-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Ditto Premium Collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-ditto-premium-collection", "name": "30th Celebration Ditto Premium Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The lineup names a Ditto premium collection with a card and frame."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-poster-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Poster Collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-poster-collection", "name": "30th Celebration Poster Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The product lineup names a Poster Collection."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-binder-collection-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Binder Collection revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-binder-collection", "name": "30th Celebration Binder Collection", "series": "30th Celebration", "type": "collection", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The product lineup names a Binder Collection."],
+      "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown."
+    },
+    {
+      "id": "discovery-30th-mini-tins-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Mini Tins revealed",
+      "url": "https://pokejungle.net/2026/06/30/products-revealed-for-the-pokemon-tcg-30th-celebration-expansion/",
+      "region": "global",
+      "product": { "id": "30th-celebration-mini-tins", "name": "30th Celebration Mini Tins", "series": "30th Celebration", "type": "tin", "releaseDate": null, "pokemonCenterExclusive": false },
+      "facts": ["The lineup announces ten Mini Tin designs."],
+      "expectedAction": "Create a product-family watch; exact variants and Canadian timing remain unknown."
+    }
+  ]
+}

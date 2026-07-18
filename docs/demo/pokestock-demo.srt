@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:18,270
+For Canadian Pokémon TCG collectors, popular products can disappear soon after a listing appears. A normal stock alert may arrive too late. PokéStock Canada looks for earlier signals, while fair-price inventory is still worth preparing for.
+
+2
+00:00:18,270 --> 00:00:33,840
+The goal is simple: help collectors prepare before fair-price products sell out. PokéStock separates three dates that are often confused: the official release, the first Canadian buying opportunity, and the latest availability check.
+
+3
+00:00:33,840 --> 00:00:50,540
+Official news and permitted feeds enter one evidence pipeline. PokéStock connects related product names, validates the dates and region, and moves each product through clear watch states. The dashboard and alerts share that same evidence.
+
+4
+00:00:50,540 --> 00:01:03,960
+The Early-signal radar focuses on what collectors can do next. Products can be filtered by watch stage and sorted by the closest estimated action date, so the most useful opportunities appear first.
+
+5
+00:01:03,960 --> 00:01:20,960
+Connectors discover the source links; GPT does not browse for them. GPT-5.6 compares the supplied, dated evidence and estimates a Canadian buying window. The interface clearly separates that estimate from an official date.
+
+6
+00:01:20,960 --> 00:01:38,730
+Deterministic rules remain authoritative. A global availability post cannot trigger a Canadian Live now alert, and weaker evidence cannot overwrite a Canadian observation. Restock watch appears only when a dated source explicitly announces a restock.
+
+7
+00:01:38,730 --> 00:01:53,290
+After an opportunity closes, it moves into Release radar. This history preserves the first Canadian listing date, observed retail price, official release date, source link, and last availability check.
+
+8
+00:01:53,290 --> 00:02:09,330
+Pitch Black shows why freshness matters. Its July seventeenth launch notice confirmed limited Canadian inventory, but not that stock remained live the next day. Once sold out was observed, it became a historical release record.
+
+9
+00:02:09,330 --> 00:02:28,230
+PokéStock uses public sources and never automates purchases or bypasses queues. The hosted GitHub workflow receives no OpenAI API key, so scheduled updates cannot consume model credits. GPT analysis remains local and optional.
+
+10
+00:02:28,230 --> 00:02:42,900
+PokéStock Canada turns scattered release signals into an earlier, calmer decision point: prepare, watch, and verify before buying. It gives Canadian collectors a fairer chance to find products at retail price.

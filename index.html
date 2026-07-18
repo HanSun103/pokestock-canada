@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A transparent Canada-first Pokémon TCG release and fair-price tracker proof of concept." />
     <meta name="theme-color" content="#102a2e" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2" />
     <title>PokéStock Canada — Releases without the rush</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="src/app.js"></script>
@@ -33,7 +34,7 @@
         <div class="hero-copy">
           <p class="eyebrow">Built for Canadian collectors</p>
           <h1 id="hero-title">Release news.<br /><em>Without the rush.</em></h1>
-          <p class="hero-text">One calm, source-first view of Canadian Pokémon TCG drops—so you can see when buying opened, what it cost, and when availability was last checked.</p>
+          <p class="hero-text">Pokémon TCG products sell out fast. PokéStock turns trusted release signals into early Canadian buying alerts, giving collectors a better chance to find products at fair retail prices.</p>
           <div class="hero-actions">
             <a class="button primary" href="#catalog">Browse releases <span aria-hidden="true">↓</span></a>
             <a class="button secondary" href="#method">How tracking works</a>
@@ -41,13 +42,13 @@
           <p class="trust-line"><span aria-hidden="true">✓</span> Public sources only &nbsp;·&nbsp; No purchase bots &nbsp;·&nbsp; No queue bypassing</p>
         </div>
         <aside class="next-release" aria-label="Next release summary">
-          <div class="card-topline"><span>Latest Canada drop</span><span class="live-dot">OBSERVED</span></div>
+          <div class="card-topline"><span>Next product to watch</span><span class="live-dot" id="next-release-status">PREPARE</span></div>
           <p class="mini-label">Pokémon TCG</p>
           <h2 id="next-release-name">Loading catalog…</h2>
           <p id="next-release-series">Checking the curated release feed</p>
           <div class="date-block">
             <span class="calendar-icon" aria-hidden="true"></span>
-            <div><small>FIRST SEEN FOR SALE</small><strong id="next-release-date">—</strong></div>
+            <div><small id="next-release-date-label">OFFICIAL RELEASE</small><strong id="next-release-date">—</strong></div>
           </div>
           <div class="next-release-footer">
             <span id="next-release-countdown">—</span>
@@ -69,9 +70,16 @@
             <p class="eyebrow">Early-signal radar</p>
             <h2 id="radar-title">What should collectors do now?</h2>
           </div>
-          <p>Every warning is generated from dated evidence. Product existence, Canadian relevance, and timing are scored separately.</p>
+          <p>Feeds discover the links. GPT-5.6 reads their dated titles and summaries to identify products, then compares global, US, and Canadian timelines to estimate a Canadian buying window. Estimates are never presented as official dates.</p>
         </div>
+        <form class="radar-controls" id="radar-controls">
+          <label><span>Show</span><select id="radar-stage-filter"><option value="active">All active signals</option><option value="product-confirmed">Product confirmed</option><option value="prepare">Prepare</option><option value="live-now">Live now</option><option value="restock-watch">Restock watch</option></select></label>
+          <label><span>Sort</span><select id="radar-sort"><option value="action-date">Closest action date</option><option value="release-date">Official release date</option><option value="newest">Newest signal</option></select></label>
+          <p id="radar-results" aria-live="polite">Loading active signals…</p>
+        </form>
         <div class="radar-grid" id="radar-grid" aria-live="polite"></div>
+        <div class="radar-empty" id="radar-empty" hidden>No active signals match this filter.</div>
+        <p class="radar-reference"><sup>*</sup> “Product confirmed” means the product has been verified from a dated source, but its Canadian buying date has not been announced. GPT-5.6 windows are reasoned estimates, not official dates.</p>
       </section>
 
       <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
@@ -149,6 +157,7 @@
         <div class="product-visual">
           <span class="product-type-badge"></span>
           <span class="state-badge"></span>
+          <div class="official-product-image" role="img"><img alt="" /></div>
           <div class="pack-art" aria-hidden="true"><span></span><i></i><b></b></div>
         </div>
         <div class="product-body">
@@ -178,10 +187,13 @@
         <p class="radar-series"></p>
         <h3 class="radar-name"></h3>
         <p class="radar-reason"></p>
-        <div class="confidence-grid" aria-label="Confidence scores">
-          <div><span>Product</span><strong class="confidence-existence"></strong></div>
-          <div><span>Canada</span><strong class="confidence-canada"></strong></div>
-          <div><span>Timing</span><strong class="confidence-timing"></strong></div>
+        <p class="gpt-line" hidden></p>
+        <div class="outlook-heading"><strong>Canada availability outlook</strong><span>GPT-5.6 estimate</span></div>
+        <div class="outlook-panel">
+          <div><span>BEST ESTIMATE</span><strong class="outlook-window"></strong></div>
+          <div><span>WHAT TO DO</span><strong class="outlook-action"></strong></div>
+          <p class="outlook-rationale"></p>
+          <small class="outlook-sources"></small>
         </div>
         <details>
           <summary>Evidence timeline</summary>

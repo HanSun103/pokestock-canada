@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "items": [
     {
       "id": "official-30th-set-reveal-2026-06-01",
@@ -39,7 +39,107 @@
         "pokemonCenterExclusive": true
       },
       "facts": ["The product lineup includes a Pokémon Center-exclusive Elite Trainer Box.", "No preorder date was announced."],
-      "expectedAction": "Raise a prepare alert and begin conservative weekday monitoring of permitted sources."
+      "expectedAction": "Raise a prepare alert and begin conservative monitoring of permitted sources."
+    },
+    {
+      "id": "official-30th-tech-sticker-alolan-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T13:20:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-06-30T14:00:00Z",
+      "title": "30th Celebration Tech Sticker Collection confirms Alolan Exeggutor version",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-tech-sticker-alolan-exeggutor",
+        "name": "30th Celebration Tech Sticker Collection (Alolan Exeggutor)",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["The official product gallery confirms the collection and its Alolan Exeggutor version.", "No Canadian preorder date was announced."],
+      "expectedAction": "Create a product-confirmed watch while Canadian timing remains unknown."
+    },
+    {
+      "id": "official-30th-tech-sticker-lucario-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T13:20:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-06-30T14:00:00Z",
+      "title": "30th Celebration Tech Sticker Collection confirms Lucario version",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-tech-sticker-lucario",
+        "name": "30th Celebration Tech Sticker Collection (Lucario)",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["The official product gallery confirms the collection and its Lucario version.", "No Canadian preorder date was announced."],
+      "expectedAction": "Create a product-confirmed watch while Canadian timing remains unknown."
+    },
+    {
+      "id": "official-30th-upc-day-2026-07-01",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-07-01T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Ultra-Premium Collection—Day confirmed",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-ultra-premium-collection-day",
+        "name": "30th Celebration Ultra-Premium Collection—Day",
+        "series": "30th Celebration",
+        "type": "ultra-premium-collection",
+        "releaseDate": "2026-11-06",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["The official product gallery confirms the Day version and a November 6 launch.", "No Canadian preorder date is published."],
+      "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence."
+    },
+    {
+      "id": "official-30th-upc-night-2026-07-01",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-07-01T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T14:00:00Z",
+      "title": "30th Celebration Ultra-Premium Collection—Night confirmed",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-ultra-premium-collection-night",
+        "name": "30th Celebration Ultra-Premium Collection—Night",
+        "series": "30th Celebration",
+        "type": "ultra-premium-collection",
+        "releaseDate": "2026-11-06",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["The official product gallery confirms the Night version and a November 6 launch.", "No Canadian preorder date is published."],
+      "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence."
+    },
+    {
+      "id": "official-pitch-black-release-2026-04-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-04-30T12:00:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-18T18:15:00Z",
+      "title": "Mega Evolution—Pitch Black announced for July 17, 2026",
+      "url": "https://www.pokemon.com/us/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
+      "region": "global",
+      "product": {
+        "id": "mega-evolution-pitch-black",
+        "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+        "series": "Mega Evolution—Pitch Black",
+        "type": "other",
+        "releaseDate": "2026-07-17",
+        "pokemonCenterExclusive": false
+      },
+      "facts": ["The official Pokémon announcement gives July 17, 2026 as the expansion release date."],
+      "expectedAction": "Track Canadian retail availability around the official July 17 release."
     }
   ]
 }

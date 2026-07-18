@@ -13,6 +13,12 @@
       "name": "30th Celebration Pokémon Center Elite Trainer Box",
       "series": "30th Celebration",
       "type": "elite-trainer-box",
+      "image": {
+        "url": "assets/pokemon-center-canada-new-releases-2026-07-18.png",
+        "alt": "30th Celebration Pokémon Center Elite Trainer Box shown on Pokémon Center Canada",
+        "crop": "etb",
+        "sourceUrl": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
       "releaseDate": "2026-09-16",
       "summary": "The Pokémon Center edition of the 30th Celebration Elite Trainer Box.",
       "contents": [],
@@ -37,6 +43,12 @@
       "name": "30th Celebration Tech Sticker Collection (Alolan Exeggutor)",
       "series": "30th Celebration",
       "type": "collection",
+      "image": {
+        "url": "assets/pokemon-center-canada-new-releases-2026-07-18.png",
+        "alt": "30th Celebration Tech Sticker Collection with Alolan Exeggutor shown on Pokémon Center Canada",
+        "crop": "sticker-alolan",
+        "sourceUrl": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
       "releaseDate": "2026-09-16",
       "summary": "An Alolan Exeggutor foil promo, matching tech sticker sheet, and three 30th Celebration booster packs.",
       "contents": ["1 Alolan Exeggutor foil promo", "1 tech sticker sheet", "3 booster packs"],
@@ -61,6 +73,12 @@
       "name": "30th Celebration Tech Sticker Collection (Lucario)",
       "series": "30th Celebration",
       "type": "collection",
+      "image": {
+        "url": "assets/pokemon-center-canada-new-releases-2026-07-18.png",
+        "alt": "30th Celebration Tech Sticker Collection with Lucario shown on Pokémon Center Canada",
+        "crop": "sticker-lucario",
+        "sourceUrl": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
       "releaseDate": "2026-09-16",
       "summary": "A Lucario foil promo, matching tech sticker sheet, and three 30th Celebration booster packs.",
       "contents": ["1 Lucario foil promo", "1 tech sticker sheet", "3 booster packs"],
@@ -85,6 +103,12 @@
       "name": "30th Celebration Knock Out Collection",
       "series": "30th Celebration",
       "type": "collection",
+      "image": {
+        "url": "assets/pokemon-center-canada-new-releases-2026-07-18.png",
+        "alt": "30th Celebration Knock Out Collection shown on Pokémon Center Canada",
+        "crop": "knock-out",
+        "sourceUrl": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
       "releaseDate": null,
       "summary": "A compact 30th Celebration collection featuring Eevee.",
       "contents": [],
@@ -105,43 +129,28 @@
       "verifiedAt": "2026-07-18"
     },
     {
-      "id": "mega-evolution-chaos-rising-etb",
-      "name": "Mega Evolution—Chaos Rising Elite Trainer Box",
-      "series": "Mega Evolution—Chaos Rising",
-      "type": "elite-trainer-box",
-      "releaseDate": "2026-05-22",
-      "summary": "Nine Chaos Rising booster packs, a Fennekin promo, sleeves, Energy cards, dice, accessories, and a storage box.",
-      "contents": ["9 booster packs", "1 Fennekin promo card", "65 card sleeves", "Player accessories"],
-      "storefront": { "status": "unknown", "priceCad": null, "firstSeenAt": null, "checkedAt": null, "retailer": "Pokémon Center Canada", "url": "https://www.pokemoncenter.com/en-ca/category/new-releases" },
-      "canadaNote": "No current Canadian storefront observation is recorded in this snapshot.",
-      "source": { "publisher": "The Pokémon Company International", "title": "Mega Evolution—Chaos Rising Product Showcase", "url": "https://www.pokemon.com/us/pokemon-news/pokemon-tcg-mega-evolution-chaos-rising-product-showcase" },
-      "verifiedAt": "2026-07-17"
-    },
-    {
-      "id": "mega-moonlit-tin",
-      "name": "Mega Moonlit Tin",
-      "series": "Mega Evolution",
-      "type": "tin",
-      "releaseDate": "2026-06-05",
-      "summary": "Choose a Mega Gengar ex or Mega Clefable ex foil promo and open four booster packs.",
-      "contents": ["1 foil promo card", "4 booster packs", "1 Pokémon TCG Live code card"],
-      "storefront": { "status": "unknown", "priceCad": null, "firstSeenAt": null, "checkedAt": null, "retailer": "Pokémon Center Canada", "url": "https://www.pokemoncenter.com/en-ca/category/new-releases" },
-      "canadaNote": "No current Canadian storefront observation is recorded in this snapshot.",
-      "source": { "publisher": "The Pokémon Company International", "title": "Pokémon TCG: Mega Moonlit Tin", "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-moonlit-tin" },
-      "verifiedAt": "2026-07-17"
-    },
-    {
-      "id": "ascended-heroes-booster-bundle",
-      "name": "Mega Evolution—Ascended Heroes Booster Bundle",
-      "series": "Mega Evolution—Ascended Heroes",
-      "type": "booster-bundle",
-      "releaseDate": "2026-04-24",
-      "summary": "A compact bundle containing six booster packs from the Ascended Heroes expansion.",
-      "contents": ["6 booster packs"],
-      "storefront": { "status": "unknown", "priceCad": null, "firstSeenAt": null, "checkedAt": null, "retailer": "Pokémon Center Canada", "url": "https://www.pokemoncenter.com/en-ca/category/new-releases" },
-      "canadaNote": "No current Canadian storefront observation is recorded in this snapshot.",
-      "source": { "publisher": "The Pokémon Company International", "title": "Mega Evolution—Ascended Heroes Booster Bundle", "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-evolution-ascended-heroes-booster-bundle" },
-      "verifiedAt": "2026-07-17"
+      "id": "mega-evolution-pitch-black",
+      "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+      "series": "Mega Evolution—Pitch Black",
+      "type": "other",
+      "releaseDate": "2026-07-17",
+      "summary": "The Mega Evolution expansion featuring Mega Darkrai ex, Mega Zeraora ex, Mega Chandelure ex, and Mega Excadrill ex.",
+      "contents": [],
+      "storefront": {
+        "status": "sold-out",
+        "priceCad": null,
+        "firstSeenAt": "2026-07-17",
+        "checkedAt": "2026-07-18",
+        "retailer": "Canadian retail launch",
+        "url": "https://www.walmart.ca/fr/help/article/pokemon-mega-evolution-pitch-black/7d6a011feec54bf286cfff15c2d66fcf"
+      },
+      "canadaNote": "The limited July 17 Canadian launch opportunity was reported sold out. No restock announcement is currently recorded.",
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "The Pokémon TCG: Mega Evolution—Pitch Black Expansion Arrives July 17, 2026",
+        "url": "https://www.pokemon.com/us/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026"
+      },
+      "verifiedAt": "2026-07-18"
     }
   ]
 }

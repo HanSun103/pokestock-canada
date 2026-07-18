@@ -51,16 +51,20 @@ Curated official records + explicitly permitted feeds
                          ↓
                 normalized signals
                          ↓
-       existence / Canada / timing confidence
+       product / Canada / timing evidence strength
                          ↓
        auditable product watch-state history
                     ↙             ↘
              data/radar.json    Discord/email
 ```
 
-Run it with `npm run pipeline`. Source policy lives in `config/sources.json`. The environment variable `POKESTOCK_FEED_URLS` is intentionally empty by default; it must contain only feeds whose publishers allow automated retrieval.
+Run it with `npm run pipeline`. Source policy lives in `config/sources.json`. The built-in discovery layer uses public RSS/Atom endpoints and filters for TCG release language before any GPT call. `POKESTOCK_FEED_URLS` is optional and may add only feeds whose publishers allow automated retrieval.
 
-The pipeline preserves previous signals, deduplicates them by stable signal ID, and sends notifications only when a product changes into an actionable state. It never treats a feed mention as a confirmed Canadian buying date.
+The pipeline preserves previous signals, deduplicates them by stable signal ID, and sends notifications only when a product changes into an actionable state. A global or US `available now` signal remains `Product confirmed`; only explicit Canadian evidence can become `Live now` or `Sold out`.
+
+`Sold out` remains part of the audit data but is hidden from the early-signal radar. `Restock watch` requires an explicit Canadian `restock-announced` signal; a sold-out observation alone cannot create it. Active products receive a cached GPT-5.6 Canada outlook, while deterministic validation keeps estimated windows separate from official dates.
+
+The public GitHub Actions workflow intentionally runs without `OPENAI_API_KEY`. It can process curated and permitted structured evidence, reuse checked-in cached interpretations, and fail closed on new unstructured items without creating OpenAI API cost. New model calls are local and opt-in only.
 
 ## Notification roadmap
 
