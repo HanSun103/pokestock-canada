@@ -14,9 +14,9 @@ The goal is simple: help collectors prepare before fair-price products sell out.
 
 Official news and permitted feeds enter one evidence pipeline. PokéStock connects related product names, validates the dates and region, and moves each product through clear watch states. The dashboard and alerts share that same evidence.
 
-## 4. Early-signal radar — 0:45–1:00
+## 4. Release radar — 0:45–1:00
 
-The Early-signal radar focuses on what collectors can do next. Products can be filtered by watch stage and sorted by the closest estimated action date, so the most useful opportunities appear first.
+The Release radar begins with official product confirmation and focuses on what collectors can do next. Products can be filtered by watch stage and sorted by the closest estimated action date, so the most useful opportunities appear first.
 
 ## 5. GPT-5.6 reasoning — 1:00–1:15
 
@@ -28,11 +28,11 @@ Deterministic rules remain authoritative. A global availability post cannot trig
 
 ## 7. Release radar — 1:30–1:45
 
-After an opportunity closes, it moves into Release radar. This history preserves the first Canadian listing date, observed retail price, official release date, source link, and last availability check.
+Release radar starts when official news confirms a product. Across seven recent releases, Pokémon Center availability followed the reveal by a median of thirteen days, with a range from the same day to forty-one days. That is the window collectors should monitor.
 
 ## 8. Learning from Pitch Black — 1:45–2:00
 
-Pitch Black shows why freshness matters. Its July seventeenth launch notice confirmed limited Canadian inventory, but not that stock remained live the next day. Once sold out was observed, it became a historical release record.
+Pitch Black shows why freshness matters. Its July seventeenth launch notice confirmed limited Canadian inventory, but not that stock remained live the next day. Once sold out was observed, it moved from the active radar into the Canadian availability record.
 
 ## 9. Responsible by design — 2:00–2:15
 

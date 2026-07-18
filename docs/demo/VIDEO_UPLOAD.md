@@ -8,7 +8,7 @@ PokéStock Canada — Evidence-Based Pokémon TCG Release Intelligence
 
 PokéStock Canada helps Canadian collectors prepare for fair-price Pokémon TCG buying opportunities before high-demand products sell out.
 
-The proof of concept collects official news, permitted feeds, and dated Canadian retail observations; normalizes the evidence; applies deterministic watch-state rules; and uses optional GPT-5.6 reasoning to produce clearly labeled Canadian buying outlooks. Completed opportunities remain in an auditable Release radar with their first-seen date, observed price, source, and last availability check.
+The proof of concept starts its Release radar when official news confirms a product, then combines permitted feeds and dated Canadian retail observations with deterministic watch-state rules and optional GPT-5.6 reasoning. A separate availability record preserves first-seen dates, observed prices, sources, and last-check timestamps.
 
 PokéStock is information-only. It does not automate purchases, bypass queues, or guarantee inventory. Its public GitHub workflow runs without an OpenAI API key.
 
