@@ -20,11 +20,11 @@ PokéStock Canada started from a different question: can public release signals 
 
 ## What it does
 
-PokéStock collects official Pokémon news, permitted public feeds, and dated Canadian retail observations. It connects signals that refer to the same product and moves each product through a clear lifecycle: Product confirmed, Prepare, Live now, Sold out, and Restock watch.
+PokéStock collects official Pokémon news, permitted public feeds, and dated Canadian retail observations. Official product confirmation starts the Release radar, which moves each active product through Product confirmed, Prepare, Live now, and explicit Restock watch states.
 
 For upcoming products, the application presents a Canada availability outlook based on the official launch date, Canadian retailer activity, and comparable products from the same release wave. Forecasts are clearly separated from confirmed dates and every conclusion links back to its evidence.
 
-The Release radar preserves completed buying events with the Canadian first-seen date, observed price, availability state, and last-check date. PokéStock does not buy products, bypass queues, or guarantee inventory.
+A separate Canadian availability record preserves completed buying events with the first-seen date, observed price, availability state, and last-check date. PokéStock does not buy products, bypass queues, or guarantee inventory.
 
 ## How we built it
 
@@ -73,6 +73,10 @@ We also learned that LLMs work best here as a constrained reasoning component—
 
 OpenAI API, GPT-5.6, JavaScript, Node.js, HTML5, CSS3, GitHub Actions, GitHub Pages, JSON, RSS, Atom, Discord webhooks, Resend
 
+## Demo video
+
+Watch the narrated 2K walkthrough: https://youtu.be/ODu6yhmswbs
+
 ## Suggested tags
 
 pokemon-tcg, canada, release-tracker, availability-alerts, fair-price, openai, gpt-5-6, javascript, nodejs, github-actions, github-pages, rss, collectors
@@ -80,11 +84,11 @@ pokemon-tcg, canada, release-tracker, availability-alerts, fair-price, openai, g
 ## Image gallery
 
 1. `docs/images/pokestock-banner.png` — hero banner and next product to watch.
-2. `docs/images/early-signal-radar.png` — filters, product stages, GPT outlooks, and evidence-linked recommendations.
-3. `docs/images/release-radar.png` — completed Canadian buying events, prices, sold-out states, and product imagery.
+2. `docs/images/early-signal-radar.png` — Release radar filters, product stages, GPT outlooks, and evidence-linked recommendations.
+3. `docs/images/release-radar.png` — Canadian availability records, prices, dated stock states, and product imagery.
 4. `docs/images/full-dashboard.png` — optional full-page application overview.
 
-Recommended gallery order: banner, Early-signal radar, Release radar. Use the banner as the project cover image.
+Recommended gallery order: banner, Release radar, Canadian availability record. Use the banner as the project cover image.
 
 ## Security and cost note
 
