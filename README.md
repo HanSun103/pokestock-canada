@@ -33,7 +33,9 @@ A full-page capture is available at [docs/images/full-dashboard.png](docs/images
 
 ## Demo video
 
-The 2:49 [frame-synchronized 2K walkthrough](docs/demo/pokestock-canada-demo-2k.mp4) is the recommended submission video. Its ten scenes are rendered natively at 2560×1440 and change 0.55 seconds after the final spoken word. The clean [visual deck](docs/demo/pokestock-demo.pptx), [narration script](docs/demo/DEMO_SCRIPT.md), [storyboard](docs/demo/DEMO_STORYBOARD.md), [subtitle file](docs/demo/pokestock-demo.srt), and [upload copy](docs/demo/VIDEO_UPLOAD.md) are also included.
+[Watch the narrated 2K project demo on YouTube](https://youtu.be/ODu6yhmswbs). The 2:49 walkthrough explains the collector problem, Release radar, GPT-5.6 reasoning, regional safeguards, and Canadian availability record.
+
+The [repository copy](docs/demo/pokestock-canada-demo-2k.mp4) is rendered natively at 2560×1440. The clean [visual deck](docs/demo/pokestock-demo.pptx), [narration script](docs/demo/DEMO_SCRIPT.md), [storyboard](docs/demo/DEMO_STORYBOARD.md), [subtitle file](docs/demo/pokestock-demo.srt), and [upload copy](docs/demo/VIDEO_UPLOAD.md) are also included.
 
 ## Optional GPT-5.6 release intelligence
 

@@ -1,8 +1,10 @@
 # Demo video upload copy
 
+Published video: https://youtu.be/ODu6yhmswbs
+
 ## Title
 
-PokéStock Canada — Evidence-Based Pokémon TCG Release Intelligence
+PokéStock Canada: AI-Powered Pokémon TCG Release Radar for Canadian Collectors
 
 ## Description
 
