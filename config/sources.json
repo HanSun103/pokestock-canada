@@ -19,14 +19,47 @@
       "region": "ca",
       "enabled": true,
       "permissionNote": "Human-verified observations only; this connector does not access or automate a protected storefront."
+    },
+    {
+      "id": "curated-permitted-discovery",
+      "name": "Permitted release-news discoveries",
+      "type": "json-file",
+      "path": "data/feeds/permitted-discovery-signals.json",
+      "publisherClass": "permitted-feed",
+      "region": "global",
+      "enabled": true,
+      "permissionNote": "Backfill records from public release-news feeds; each record links to the publication used as evidence."
     }
   ],
+  "discoveryFeeds": [
+    {
+      "id": "pokemon-blog-rss",
+      "name": "Nintendo & Pokémon Blog RSS",
+      "url": "https://pokemonblog.com/feed/",
+      "publisherClass": "permitted-feed",
+      "region": "global",
+      "enabled": true
+    },
+    {
+      "id": "pokemon-official-youtube",
+      "name": "Official Pokémon YouTube Atom feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFctpiB_Hnlk3ejWfHqSm6Q",
+      "publisherClass": "official",
+      "region": "global",
+      "enabled": true
+    }
+  ],
+  "discoveryFilter": {
+    "maxItemsPerSource": 25,
+    "requiredTopicTerms": ["pokémon tcg", "pokemon tcg", "trading card game"],
+    "requiredReleaseTerms": ["release", "launch", "reveal", "available", "preorder", "pre-order", "product", "collection", "elite trainer", "booster", "tin", "deck", "box"]
+  },
   "remoteFeedPolicy": {
     "environmentVariable": "POKESTOCK_FEED_URLS",
     "acceptedFormats": ["json-feed", "rss", "atom"],
     "requireHttps": true,
     "timeoutMs": 10000,
     "userAgent": "PokeStockCanada/0.2 (+https://github.com/HanSun103/pokestock-canada)",
-    "note": "Only add feeds whose publisher permits automated retrieval. Comma-separated URLs are optional and no protected storefront is configured by default."
+    "note": "Built-in public feeds provide a safe default. POKESTOCK_FEED_URLS may add comma-separated permitted feeds; no protected storefront is configured."
   }
 }

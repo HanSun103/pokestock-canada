@@ -37,12 +37,12 @@ jobs:
       - name: Publish generated website data when changed
         shell: bash
         run: |
-          if git diff --quiet -- data/signals.json data/radar.json; then
+          if git diff --quiet -- data/signals.json data/radar.json data/gpt-cache.json data/forecast-cache.json; then
             echo "No signal changes."
             exit 0
           fi
           git config user.name "pokestock-radar[bot]"
           git config user.email "pokestock-radar[bot]@users.noreply.github.com"
-          git add data/signals.json data/radar.json
+          git add data/signals.json data/radar.json data/gpt-cache.json data/forecast-cache.json
           git commit -m "data: update release radar"
           git push

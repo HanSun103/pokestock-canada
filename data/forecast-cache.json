@@ -1,0 +1,1025 @@
+{
+  "version": 1,
+  "entries": {
+    "3bbce2170eeb032ce0f143b8aa1c738101961786bf0ef15d16f75faac4ac20f8": {
+      "requestedModel": "gpt-5.6",
+      "resolvedModel": "gpt-5.6-sol",
+      "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b",
+      "generatedAt": "2026-07-18T17:44:26.032Z",
+      "forecasts": {
+        "30th-celebration-ultra-premium-collection-day": {
+          "productId": "30th-celebration-ultra-premium-collection-day",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable fair-price Canada date yet—watch now.",
+          "rationale": "November 6 is the official global launch date, not a Canadian preorder estimate. A Canadian bundle preorder page appeared July 18, but its ordinary-retail pricing was not established.",
+          "sourceSummary": "Official global product confirmation plus an unverified-for-fair-price Canadian retailer preorder page.",
+          "basisSignalIds": [
+            "official-30th-upc-day-2026-07-01",
+            "ca-30th-upc-day-retailer-preorder-observed-2026-07-18"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-ultra-premium-collection-night": {
+          "productId": "30th-celebration-ultra-premium-collection-night",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable fair-price Canada date yet—watch now.",
+          "rationale": "November 6 is the official global launch date, not a Canadian preorder estimate. A Canadian bundle preorder page appeared July 18, but its ordinary-retail pricing was not established.",
+          "sourceSummary": "Official global product confirmation plus an unverified-for-fair-price Canadian retailer preorder page.",
+          "basisSignalIds": [
+            "official-30th-upc-night-2026-07-01",
+            "ca-30th-upc-night-retailer-preorder-observed-2026-07-18"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "mega-evolution-pitch-black": {
+          "productId": "mega-evolution-pitch-black",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "wait-for-evidence",
+          "conclusion": "No reliable Canada date yet—await a Canadian listing.",
+          "rationale": "A July 17 global publication says the product is available, but it does not confirm Canadian availability or ordinary retail pricing.",
+          "sourceSummary": "Global availability claim only; no Canadian retailer signal supplied.",
+          "basisSignalIds": [
+            "yt:video:MLewz9UacMQ-gpt-1"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-binder-collection": {
+          "productId": "30th-celebration-binder-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, and other 30th Celebration items opened in Canada July 15. Neither that analogous rollout nor the September 16 expansion release establishes this product's listing date.",
+          "sourceSummary": "Global product reveal with same-series Canadian preorder activity as an analogue.",
+          "basisSignalIds": [
+            "discovery-30th-binder-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-ditto-premium-collection": {
+          "productId": "30th-celebration-ditto-premium-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-ditto-premium-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-greninja-ex-collection": {
+          "productId": "30th-celebration-greninja-ex-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-greninja-ex-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-mew-figure-collection": {
+          "productId": "30th-celebration-mew-figure-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-mew-figure-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-mewtwo-figure-collection": {
+          "productId": "30th-celebration-mewtwo-figure-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-mewtwo-figure-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-mini-tins": {
+          "productId": "30th-celebration-mini-tins",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The tins are globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-mini-tins-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-poster-collection": {
+          "productId": "30th-celebration-poster-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-poster-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-elite-trainer-box": {
+          "productId": "30th-celebration-elite-trainer-box",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The standard ETB is globally confirmed. The expansion's September 16 worldwide release is not a Canadian preorder date, and the July 15 Pokémon Center ETB preorder does not confirm timing for this standard version.",
+          "sourceSummary": "Global standard-ETB reveal, worldwide expansion date, and analogous Canadian Pokémon Center ETB preorder.",
+          "basisSignalIds": [
+            "discovery-30th-standard-etb-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        },
+        "30th-celebration-sylveon-ex-collection": {
+          "productId": "30th-celebration-sylveon-ex-collection",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "watch-now",
+          "conclusion": "No reliable Canada date yet—watch the active rollout.",
+          "rationale": "The product is globally confirmed, but no Canadian listing or product-specific release date was supplied. July 15 Canadian activity for other lineup items is only analogous.",
+          "sourceSummary": "Global product reveal and same-series Canadian preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-sylveon-ex-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:45:02.514Z",
+          "responseId": "resp_04db4d9771989dc4016a5bbb7aa5948196b4fc61e7f234d90b"
+        }
+      }
+    },
+    "7f8e91346b1f5cfdae38bd00a74180e3f6f9f0c98215e038b5c24a520bb25beb": {
+      "requestedModel": "gpt-5.6",
+      "resolvedModel": "gpt-5.6-sol",
+      "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041",
+      "generatedAt": "2026-07-18T17:46:15.224Z",
+      "forecasts": {
+        "30th-celebration-ultra-premium-collection-day": {
+          "productId": "30th-celebration-ultra-premium-collection-day",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-10-23",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a fair-price Canadian preorder before the November 6 release.",
+          "rationale": "Model estimate only. The November 6 launch is official, while a Canadian specialty preorder exists but is not supported as fair-price availability. Comparable 30th Celebration products reached Pokémon Center Canada on July 15.",
+          "sourceSummary": "Official global product page gives November 6; Canadian specialty bundle observed July 18; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-day-2026-07-01",
+            "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-ultra-premium-collection-night": {
+          "productId": "30th-celebration-ultra-premium-collection-night",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-10-23",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a fair-price Canadian preorder before the November 6 release.",
+          "rationale": "Model estimate only. The November 6 launch is official, while a Canadian specialty preorder exists but is not supported as fair-price availability. Comparable 30th Celebration products reached Pokémon Center Canada on July 15.",
+          "sourceSummary": "Official global product page gives November 6; Canadian specialty bundle observed July 18; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-night-2026-07-01",
+            "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "mega-evolution-pitch-black": {
+          "productId": "mega-evolution-pitch-black",
+          "windowStart": null,
+          "windowEnd": null,
+          "recommendation": "wait-for-evidence",
+          "conclusion": "Wait for a dated Canadian retailer or Pokémon Center signal.",
+          "rationale": "A global publication says the product is available, but it provides neither Canadian confirmation nor a release date suitable for a Canada forecast.",
+          "sourceSummary": "Only a July 17 global availability claim was supplied.",
+          "basisSignalIds": [
+            "yt:video:MLewz9UacMQ-gpt-1"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-binder-collection": {
+          "productId": "30th-celebration-binder-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian fair-price channels through the expansion launch.",
+          "rationale": "Model estimate only. The product is confirmed globally, and comparable 30th Celebration products opened on Pokémon Center Canada July 15 ahead of the September 16 worldwide expansion release.",
+          "sourceSummary": "Global product reveal plus the official expansion date and dated Canadian same-series listings.",
+          "basisSignalIds": [
+            "discovery-30th-binder-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-ditto-premium-collection": {
+          "productId": "30th-celebration-ditto-premium-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch for a potentially later-wave Canadian fair-price preorder.",
+          "rationale": "Model estimate only. Same-series Canadian preorders have begun, but this premium collection has no individual release date; the range extends through the dated November premium-product wave.",
+          "sourceSummary": "Global product confirmation, July 15 Canadian same-series preorders, and the November 6 UPC wave inform the broad range.",
+          "basisSignalIds": [
+            "discovery-30th-ditto-premium-collection-2026-06-30",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-upc-day-2026-07-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-greninja-ex-collection": {
+          "productId": "30th-celebration-greninja-ex-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian fair-price channels through the expansion launch.",
+          "rationale": "Model estimate only. Comparable products from the series opened in Canada July 15, though this collection has no individual release date.",
+          "sourceSummary": "Global product reveal, September 16 expansion date, and Canadian same-series preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-greninja-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-mew-figure-collection": {
+          "productId": "30th-celebration-mew-figure-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch for a potentially later-wave Canadian fair-price preorder.",
+          "rationale": "Model estimate only. The figure collection lacks an individual release date, so the window spans the September expansion launch through the dated November premium-product wave.",
+          "sourceSummary": "Global product reveal and dated Canadian and global comparables from the same series.",
+          "basisSignalIds": [
+            "discovery-30th-mew-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-upc-day-2026-07-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-mewtwo-figure-collection": {
+          "productId": "30th-celebration-mewtwo-figure-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch for a potentially later-wave Canadian fair-price preorder.",
+          "rationale": "Model estimate only. The figure collection lacks an individual release date, so the window spans the September expansion launch through the dated November premium-product wave.",
+          "sourceSummary": "Global product reveal and dated Canadian and global comparables from the same series.",
+          "basisSignalIds": [
+            "discovery-30th-mewtwo-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-upc-night-2026-07-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-mini-tins": {
+          "productId": "30th-celebration-mini-tins",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian fair-price channels through the expansion launch.",
+          "rationale": "Model estimate only. The tins are confirmed without an individual date, while same-series products already opened for Canadian preorder ahead of September 16.",
+          "sourceSummary": "Global Mini Tin reveal, official expansion date, and July 15 Canadian same-series activity.",
+          "basisSignalIds": [
+            "discovery-30th-mini-tins-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-knock-out-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-poster-collection": {
+          "productId": "30th-celebration-poster-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian fair-price channels through the expansion launch.",
+          "rationale": "Model estimate only. Comparable 30th Celebration collections opened in Canada July 15, but no individual Poster Collection date is supplied.",
+          "sourceSummary": "Global product reveal, September 16 expansion date, and Canadian same-series preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-poster-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-alolan-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-elite-trainer-box": {
+          "productId": "30th-celebration-elite-trainer-box",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now for the standard ETB at fair Canadian retail.",
+          "rationale": "Model estimate only. Its Pokémon Center counterpart opened and sold out in Canada July 15, making the period through the September 16 expansion launch the strongest window.",
+          "sourceSummary": "Global standard ETB reveal, official expansion date, and dated Canadian Pokémon Center ETB activity.",
+          "basisSignalIds": [
+            "discovery-30th-standard-etb-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15",
+            "ca-30th-etb-sold-out-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        },
+        "30th-celebration-sylveon-ex-collection": {
+          "productId": "30th-celebration-sylveon-ex-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian fair-price channels through the expansion launch.",
+          "rationale": "Model estimate only. Comparable products from the series opened in Canada July 15, although this collection has no individual release date.",
+          "sourceSummary": "Global product reveal, September 16 expansion date, and Canadian same-series preorder activity.",
+          "basisSignalIds": [
+            "discovery-30th-sylveon-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T17:47:02.765Z",
+          "responseId": "resp_0280d8d5dd2fcfd8016a5bbbe7467c8196a785ab552c6e1041"
+        }
+      }
+    },
+    "54055fe91e8271d02c6049843f33195d9b46248af43c1e52c9ff06c42aeea0c8": {
+      "requestedModel": "gpt-5.6",
+      "resolvedModel": "gpt-5.6-sol",
+      "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17",
+      "generatedAt": "2026-07-18T18:20:00.000Z",
+      "forecasts": {
+        "30th-celebration-ultra-premium-collection-day": {
+          "productId": "30th-celebration-ultra-premium-collection-day",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Model estimate: watch for a fair-price major-retailer or Pokémon Center Canada offer by the official November 6 release.",
+          "rationale": "A Canadian specialty preorder exists but does not establish fair pricing. The broad window reflects the exact release date and earlier Canadian preorders for other 30th Celebration products.",
+          "sourceSummary": "Official global November 6 release; specialty Canadian bundle preorder observed July 18; comparable Canadian Pokémon Center preorders opened July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-day-2026-07-01",
+            "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-ultra-premium-collection-night": {
+          "productId": "30th-celebration-ultra-premium-collection-night",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Model estimate: watch for a fair-price major-retailer or Pokémon Center Canada offer by the official November 6 release.",
+          "rationale": "A Canadian specialty preorder exists but does not establish fair pricing. The broad window reflects the exact release date and earlier Canadian preorders for other 30th Celebration products.",
+          "sourceSummary": "Official global November 6 release; specialty Canadian bundle preorder observed July 18; comparable Canadian Pokémon Center preorders opened July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-night-2026-07-01",
+            "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "mega-evolution-pitch-black": {
+          "productId": "mega-evolution-pitch-black",
+          "windowStart": "2026-07-17",
+          "windowEnd": "2026-07-17",
+          "recommendation": "buy-if-fair-price",
+          "conclusion": "Canadian retail availability began July 17; buy only at ordinary retail pricing where stock remains.",
+          "rationale": "Walmart Canada directly announced participating-store availability on the official release date.",
+          "sourceSummary": "Official global release date and dated Walmart Canada availability both identify July 17.",
+          "basisSignalIds": [
+            "official-pitch-black-release-2026-04-30",
+            "ca-pitch-black-walmart-live-2026-07-17"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-binder-collection": {
+          "productId": "30th-celebration-binder-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: a fair-price Canadian listing or preorder may appear by the expansion’s September 16 release.",
+          "rationale": "No product-specific Canadian listing is supplied, but comparable 30th Celebration products reached Pokémon Center Canada on July 15.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion release is September 16; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-binder-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-ditto-premium-collection": {
+          "productId": "30th-celebration-ditto-premium-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: watch through September 16 for a fair-price Canadian listing or preorder.",
+          "rationale": "The product lacks its own release date, but the expansion date and July 15 Canadian activity for comparable products support this broad window.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion release is September 16; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-ditto-premium-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-greninja-ex-collection": {
+          "productId": "30th-celebration-greninja-ex-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: a fair-price Canadian listing or preorder may appear by September 16.",
+          "rationale": "Comparable 30th Celebration products already opened in Canada, while this collection has no product-specific Canadian date.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion release is September 16; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-greninja-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-mew-figure-collection": {
+          "productId": "30th-celebration-mew-figure-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: monitor through September 16 for the first fair-price Canadian offer.",
+          "rationale": "The figure collection has no individual release date, so the estimate uses the expansion launch and comparable Canadian preorder timing.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion release is September 16; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mew-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-mewtwo-figure-collection": {
+          "productId": "30th-celebration-mewtwo-figure-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: monitor through September 16 for the first fair-price Canadian offer.",
+          "rationale": "The figure collection has no individual release date, so the estimate uses the expansion launch and comparable Canadian preorder timing.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion release is September 16; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mewtwo-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-mini-tins": {
+          "productId": "30th-celebration-mini-tins",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: fair-price Canadian listings may begin by September 16.",
+          "rationale": "No Mini Tin-specific Canadian date is available, but the same series already produced Canadian Pokémon Center preorders.",
+          "sourceSummary": "Mini Tins revealed June 30; worldwide expansion release is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mini-tins-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-poster-collection": {
+          "productId": "30th-celebration-poster-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: a fair-price Canadian listing or preorder may appear by September 16.",
+          "rationale": "The estimate follows the expansion release and the July 15 Canadian debut of comparable 30th Celebration collections.",
+          "sourceSummary": "Poster Collection revealed June 30; worldwide expansion release is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-poster-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-alolan-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-elite-trainer-box": {
+          "productId": "30th-celebration-elite-trainer-box",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: watch through September 16 for the standard ETB’s first fair-price Canadian offer.",
+          "rationale": "The Pokémon Center ETB opened for Canadian preorder July 15, providing a close same-series analogue, but the standard ETB remains unconfirmed in Canada.",
+          "sourceSummary": "Standard ETB revealed June 30; worldwide expansion release is September 16; Pokémon Center ETB preorder opened in Canada July 15.",
+          "basisSignalIds": [
+            "discovery-30th-standard-etb-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        },
+        "30th-celebration-sylveon-ex-collection": {
+          "productId": "30th-celebration-sylveon-ex-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Model estimate: a fair-price Canadian listing or preorder may appear by September 16.",
+          "rationale": "Comparable 30th Celebration products already opened in Canada, while this collection has no product-specific Canadian date.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion release is September 16; same-series Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-sylveon-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:09:09.914Z",
+          "responseId": "resp_0988819cc6cf874b016a5bc1247e108190882221f350e7fa17"
+        }
+      }
+    },
+    "327f44092ea79bce6875c8af21d5c83149597e7c1c186259f5b78e38916ce51d": {
+      "requestedModel": "gpt-5.6",
+      "resolvedModel": "gpt-5.6-sol",
+      "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc",
+      "generatedAt": "2026-07-18T18:30:00.000Z",
+      "forecasts": {
+        "30th-celebration-ultra-premium-collection-day": {
+          "productId": "30th-celebration-ultra-premium-collection-day",
+          "windowStart": "2026-08-20",
+          "windowEnd": "2026-10-09",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a possible fair-price Canadian preorder in late August through early October.",
+          "rationale": "This is a model estimate, not an official preorder window. The November 6 launch is official globally, while the specialty-store bundle does not confirm fair pricing. Same-series Pokémon Center Canada preorders opened about two months before the September expansion launch.",
+          "sourceSummary": "Official November 6 launch; Canadian specialty preorder observed July 18; same-series Canadian Pokémon Center preorders observed July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-day-2026-07-01",
+            "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-set-reveal-2026-06-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-ultra-premium-collection-night": {
+          "productId": "30th-celebration-ultra-premium-collection-night",
+          "windowStart": "2026-08-20",
+          "windowEnd": "2026-10-09",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a possible fair-price Canadian preorder in late August through early October.",
+          "rationale": "This is a model estimate, not an official preorder window. The November 6 launch is official globally, while the specialty-store bundle does not confirm fair pricing. Same-series Pokémon Center Canada preorders opened about two months before the September expansion launch.",
+          "sourceSummary": "Official November 6 launch; Canadian specialty preorder observed July 18; same-series Canadian Pokémon Center preorders observed July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-night-2026-07-01",
+            "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-set-reveal-2026-06-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-binder-collection": {
+          "productId": "30th-celebration-binder-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian major retailers and Pokémon Center through the September 16 expansion launch.",
+          "rationale": "This model estimate uses the worldwide expansion date and July 15 Canadian preorders for comparable products in the same series. No product-specific release or Canadian listing is confirmed.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion launch is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-binder-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-ditto-premium-collection": {
+          "productId": "30th-celebration-ditto-premium-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now, but allow for a later-wave Canadian listing through early November.",
+          "rationale": "The product has no supplied release date. This broad model estimate reflects the September expansion launch, same-series Canadian preorder activity, and the possibility that a premium collection belongs to a later wave.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion launch is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-ditto-premium-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-greninja-ex-collection": {
+          "productId": "30th-celebration-greninja-ex-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now for a fair-price listing, with uncertainty extending into early November.",
+          "rationale": "No product-specific date or Canadian listing is supplied. The estimate is anchored to the September expansion launch and Canadian preorder activity for comparable same-series collections.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion launch is September 16; comparable Canadian collection preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-greninja-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-mew-figure-collection": {
+          "productId": "30th-celebration-mew-figure-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now, while allowing for a later-wave listing through early November.",
+          "rationale": "The figure collection lacks a supplied release date or Canadian listing. This broad model estimate uses the September expansion launch and same-series Canadian preorder activity but allows for later product waves.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion launch is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mew-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-mewtwo-figure-collection": {
+          "productId": "30th-celebration-mewtwo-figure-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now, while allowing for a later-wave listing through early November.",
+          "rationale": "The figure collection lacks a supplied release date or Canadian listing. This broad model estimate uses the September expansion launch and same-series Canadian preorder activity but allows for later product waves.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion launch is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mewtwo-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-mini-tins": {
+          "productId": "30th-celebration-mini-tins",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian retail channels through the September 16 expansion launch.",
+          "rationale": "This model estimate combines the worldwide expansion date with July 15 Canadian preorders for other products in the series. No Mini Tin-specific Canadian date is confirmed.",
+          "sourceSummary": "Mini Tins revealed June 30; worldwide expansion launch is September 16; comparable Canadian preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mini-tins-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-poster-collection": {
+          "productId": "30th-celebration-poster-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch Canadian major retailers and Pokémon Center through September 16.",
+          "rationale": "This is an estimated first-listing window based on the worldwide expansion date and same-series Canadian collection preorders. No product-specific Canadian listing is supplied.",
+          "sourceSummary": "Poster Collection revealed June 30; worldwide expansion launch is September 16; comparable Canadian collection preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-poster-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-alolan-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-elite-trainer-box": {
+          "productId": "30th-celebration-elite-trainer-box",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now for the standard ETB through the September 16 expansion launch.",
+          "rationale": "The standard ETB has no supplied Canadian listing, but the same-series Pokémon Center ETB preorder opened in Canada on July 15. The range remains an estimate rather than an official preorder date.",
+          "sourceSummary": "Standard ETB revealed June 30; worldwide expansion launch is September 16; Pokémon Center ETB Canadian preorder opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-standard-etb-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        },
+        "30th-celebration-sylveon-ex-collection": {
+          "productId": "30th-celebration-sylveon-ex-collection",
+          "windowStart": "2026-07-18",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch now for a fair-price listing, with uncertainty extending into early November.",
+          "rationale": "No product-specific date or Canadian listing is supplied. The estimate is anchored to the September expansion launch and Canadian preorder activity for comparable same-series collections.",
+          "sourceSummary": "Product revealed June 30; worldwide expansion launch is September 16; comparable Canadian collection preorders opened July 15.",
+          "basisSignalIds": [
+            "discovery-30th-sylveon-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:10:37.240Z",
+          "responseId": "resp_01cbf7d497df1ac0016a5bc178caac8195a495b674bdb87bdc"
+        }
+      }
+    },
+    "65341f1773739784120391f848b7ee02992083cb61c5a7119f8413071c25d223": {
+      "requestedModel": "gpt-5.6",
+      "resolvedModel": "gpt-5.6-sol",
+      "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416",
+      "generatedAt": "2026-07-18T18:50:00.000Z",
+      "forecasts": {
+        "30th-celebration-ultra-premium-collection-day": {
+          "productId": "30th-celebration-ultra-premium-collection-day",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch through the official November 6 launch; buy only if a fair-price Canadian listing appears.",
+          "rationale": "A specialty-store preorder was observed July 18, but not at a supported fair price. Same-series Pokémon Center Canada preorders opened July 15. The window is a model estimate, not an official preorder period.",
+          "sourceSummary": "Official global November 6 launch; Canadian specialty listing July 18; comparable Canadian Pokémon Center listings July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-day-2026-07-01",
+            "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-ultra-premium-collection-night": {
+          "productId": "30th-celebration-ultra-premium-collection-night",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "watch-now",
+          "conclusion": "Watch through the official November 6 launch; buy only if a fair-price Canadian listing appears.",
+          "rationale": "A specialty-store preorder was observed July 18, but not at a supported fair price. Same-series Pokémon Center Canada preorders opened July 15. The window is a model estimate, not an official preorder period.",
+          "sourceSummary": "Official global November 6 launch; Canadian specialty listing July 18; comparable Canadian Pokémon Center listings July 15.",
+          "basisSignalIds": [
+            "official-30th-upc-night-2026-07-01",
+            "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-binder-collection": {
+          "productId": "30th-celebration-binder-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Monitor Canadian major retailers and Pokémon Center through the expansion launch.",
+          "rationale": "The product is confirmed globally but has no individual release date. July 15 Canadian preorders for comparable launch-wave products support this model-estimated window; September 16 is the expansion date, not a confirmed Binder Collection date.",
+          "sourceSummary": "Global product reveal June 30; official worldwide expansion date September 16; same-series Canadian preorders July 15.",
+          "basisSignalIds": [
+            "discovery-30th-binder-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-alolan-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-ditto-premium-collection": {
+          "productId": "30th-celebration-ditto-premium-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a potentially later fall listing and wait for fair-price Canadian evidence.",
+          "rationale": "The premium collection has no individual release date. Same-series Canadian preorders establish Canadian activity, while the September 16 expansion launch and November 6 premium-product launch bound a broad model estimate.",
+          "sourceSummary": "Global product reveal June 30; Canadian same-series preorders July 15; no direct Canadian listing.",
+          "basisSignalIds": [
+            "discovery-30th-ditto-premium-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-upc-day-2026-07-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-greninja-ex-collection": {
+          "productId": "30th-celebration-greninja-ex-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Watch for a staged Canadian listing through early November.",
+          "rationale": "No individual release date or Canadian listing is supplied. Canadian preorders for comparable same-series collections opened July 15, but this product could belong to a later wave; the range is a model estimate.",
+          "sourceSummary": "Global product reveal June 30; same-series Canadian collection preorders July 15; official expansion launch September 16.",
+          "basisSignalIds": [
+            "discovery-30th-greninja-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-mew-figure-collection": {
+          "productId": "30th-celebration-mew-figure-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a possible later-wave listing; wait for fair-price Canadian evidence.",
+          "rationale": "The figure collection lacks an individual release date. Same-series Canadian preorders support a fall window, but its wave is unknown, requiring a broad model estimate through November 6.",
+          "sourceSummary": "Global product reveal June 30; official expansion date September 16; same-series Canadian preorders July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mew-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-upc-day-2026-07-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-mewtwo-figure-collection": {
+          "productId": "30th-celebration-mewtwo-figure-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Prepare for a possible later-wave listing; wait for fair-price Canadian evidence.",
+          "rationale": "The figure collection lacks an individual release date. Same-series Canadian preorders support a fall window, but its wave is unknown, requiring a broad model estimate through November 6.",
+          "sourceSummary": "Global product reveal June 30; official expansion date September 16; same-series Canadian preorders July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mewtwo-figure-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15",
+            "official-30th-upc-night-2026-07-01"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-mini-tins": {
+          "productId": "30th-celebration-mini-tins",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Monitor through the fall product waves and buy only at ordinary retail pricing.",
+          "rationale": "The tins are confirmed without an individual date. July 15 Canadian preorders for same-series products support a fall estimate, but no direct Canadian evidence identifies their wave.",
+          "sourceSummary": "Global reveal of ten Mini Tin designs; official expansion date September 16; same-series Canadian preorders July 15.",
+          "basisSignalIds": [
+            "discovery-30th-mini-tins-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-alolan-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-poster-collection": {
+          "productId": "30th-celebration-poster-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Monitor now through the expansion launch for a fair-price Canadian listing.",
+          "rationale": "The product has no individual date, but comparable same-series collections reached Pokémon Center Canada preorder on July 15. September 16 is the expansion date, not a confirmed Poster Collection release date.",
+          "sourceSummary": "Global product reveal June 30; official worldwide expansion date September 16; Canadian comparable preorders July 15.",
+          "basisSignalIds": [
+            "discovery-30th-poster-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-lucario-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-elite-trainer-box": {
+          "productId": "30th-celebration-elite-trainer-box",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-09-16",
+          "recommendation": "watch-now",
+          "conclusion": "Watch immediately through September 16 for the standard ETB listing.",
+          "rationale": "The standard ETB is confirmed but undated. The Pokémon Center-exclusive ETB opened for Canadian preorder July 15, making a listing by the expansion launch the most defensible model estimate.",
+          "sourceSummary": "Standard ETB revealed June 30; official expansion date September 16; comparable Pokémon Center ETB preorder observed in Canada July 15.",
+          "basisSignalIds": [
+            "discovery-30th-standard-etb-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-etb-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        },
+        "30th-celebration-sylveon-ex-collection": {
+          "productId": "30th-celebration-sylveon-ex-collection",
+          "windowStart": "2026-07-19",
+          "windowEnd": "2026-11-06",
+          "recommendation": "prepare-account",
+          "conclusion": "Watch for a staged Canadian listing through early November.",
+          "rationale": "No individual release date or Canadian listing is supplied. Comparable same-series collections opened for Canadian preorder July 15, but this collection may be in a later wave; the range is a model estimate.",
+          "sourceSummary": "Global product reveal June 30; official expansion launch September 16; same-series Canadian collection preorders July 15.",
+          "basisSignalIds": [
+            "discovery-30th-sylveon-ex-collection-2026-06-30",
+            "official-30th-set-reveal-2026-06-01",
+            "ca-30th-tech-sticker-alolan-live-2026-07-15"
+          ],
+          "generatedBy": "gpt-5.6-sol",
+          "generatedAt": "2026-07-18T18:20:23.138Z",
+          "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+        }
+      }
+    }
+  }
+}

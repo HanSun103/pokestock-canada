@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "A transparent Canada-first Pokémon TCG release and fair-price tracker POC.",
+  "description": "A Canada-first Pokémon TCG release radar with source-linked buying forecasts and fair-retail availability alerts.",
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test",
     "check:data": "node src/validate-data.js && node src/validate-radar.js",
     "pipeline": "node src/run-pipeline.js",
     "pipeline:dry": "node src/run-pipeline.js --dry-run",
+    "demo:gpt": "node src/analyze-publication.js",
     "notify": "node src/send-notifications.js"
   },
   "engines": {

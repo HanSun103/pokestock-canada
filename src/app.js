@@ -9,10 +9,14 @@ import {
 
 const TYPE_LABELS = {
   collection: "Collection",
+  "ultra-premium-collection": "Ultra-Premium Collection",
+  "figure-collection": "Figure Collection",
   "elite-trainer-box": "Elite Trainer Box",
+  "battle-deck": "Battle Deck",
   tin: "Tin",
   "booster-bundle": "Booster Bundle",
   "booster-box": "Booster Box",
+  blister: "Blister",
   other: "Other",
 };
 
@@ -21,6 +25,7 @@ const WATCH_STAGE_LABELS = {
   "product-confirmed": "Product confirmed",
   prepare: "Prepare",
   "live-now": "Live now",
+  "restock-watch": "Restock watch",
   "sold-out": "Sold out · Restock watch",
 };
 
@@ -29,6 +34,8 @@ const state = {
   radar: [],
   meta: null,
   filters: { search: "", availability: "all", type: "all" },
+  radarFilter: "active",
+  radarSort: "action-date",
   watchedOnly: false,
   watchlist: loadWatchlist(),
 };
@@ -49,6 +56,10 @@ const elements = {
   showWatchlist: document.querySelector("#show-watchlist"),
   radarGrid: document.querySelector("#radar-grid"),
   radarTemplate: document.querySelector("#radar-template"),
+  radarStageFilter: document.querySelector("#radar-stage-filter"),
+  radarSort: document.querySelector("#radar-sort"),
+  radarResults: document.querySelector("#radar-results"),
+  radarEmpty: document.querySelector("#radar-empty"),
 };
 
 function loadWatchlist() {
@@ -82,25 +93,74 @@ function setupTypes() {
   }
 }
 
-function percent(value) {
-  return Number.isFinite(value) ? `${Math.round(value * 100)}%` : "—";
+const RECOMMENDATION_LABELS = {
+  "watch-now": "Watch now",
+  "prepare-account": "Prepare accounts and alerts",
+  "wait-for-evidence": "Wait for stronger evidence",
+  "buy-if-fair-price": "Buy only at fair retail price",
+  "restock-watch": "Watch the announced restock",
+};
+
+function formatOutlookWindow(outlook) {
+  if (!outlook?.windowStart && !outlook?.windowEnd) return "No reliable date yet";
+  if (outlook.windowStart === outlook.windowEnd || !outlook.windowEnd) return formatDate(outlook.windowStart);
+  if (!outlook.windowStart) return `By ${formatDate(outlook.windowEnd)}`;
+  return `${formatDate(outlook.windowStart)} – ${formatDate(outlook.windowEnd)}`;
+}
+
+function dateDistance(value) {
+  if (!value) return Number.MAX_SAFE_INTEGER;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const date = new Date(`${value.slice(0, 10)}T00:00:00`);
+  const difference = date - today;
+  return difference >= 0 ? difference : Math.abs(difference) + 366 * 86400000;
+}
+
+function visibleRadarProducts() {
+  const active = state.radar.filter((product) => product.watchStage !== "sold-out");
+  const filtered = state.radarFilter === "active" ? active : active.filter((product) => product.watchStage === state.radarFilter);
+  return [...filtered].sort((a, b) => {
+    const restockPriority = Number(b.watchStage === "restock-watch") - Number(a.watchStage === "restock-watch");
+    if (restockPriority) return restockPriority;
+    if (state.radarSort === "newest") return b.stateChangedAt.localeCompare(a.stateChangedAt);
+    const aDate = state.radarSort === "release-date" ? a.releaseDate : (a.outlook?.windowStart ?? a.releaseDate ?? a.stateChangedAt);
+    const bDate = state.radarSort === "release-date" ? b.releaseDate : (b.outlook?.windowStart ?? b.releaseDate ?? b.stateChangedAt);
+    return dateDistance(aDate) - dateDistance(bDate) || a.name.localeCompare(b.name);
+  });
 }
 
 function renderRadar() {
   if (!elements.radarGrid || !elements.radarTemplate) return;
-  const cards = state.radar.map((product) => {
+  const products = visibleRadarProducts();
+  const cards = products.map((product) => {
     const fragment = elements.radarTemplate.content.cloneNode(true);
     const card = fragment.querySelector(".radar-card");
+    card.id = `radar-${product.id}`;
     const stage = card.querySelector(".watch-stage");
     stage.textContent = WATCH_STAGE_LABELS[product.watchStage] ?? product.watchStage;
     stage.classList.add(product.watchStage);
     setText(card, ".radar-changed", `Changed ${formatDate(product.stateChangedAt.slice(0, 10))}`);
     setText(card, ".radar-series", product.series);
     setText(card, ".radar-name", product.name);
-    setText(card, ".radar-reason", product.reason);
-    setText(card, ".confidence-existence", percent(product.confidence.existence));
-    setText(card, ".confidence-canada", percent(product.confidence.canada));
-    setText(card, ".confidence-timing", percent(product.confidence.timing));
+    const reason = card.querySelector(".radar-reason");
+    const repeatedConfirmation = product.reason === "The product is officially confirmed; its Canadian buying date remains unannounced.";
+    reason.hidden = repeatedConfirmation;
+    reason.textContent = repeatedConfirmation ? "" : escapeText(product.reason);
+    setText(card, ".outlook-window", formatOutlookWindow(product.outlook));
+    setText(card, ".outlook-action", RECOMMENDATION_LABELS[product.outlook?.recommendation] ?? "Watch for updates");
+    const rationale = (product.outlook?.rationale ?? product.reason).replace(/^Model estimate only\.\s*/i, "");
+    setText(card, ".outlook-rationale", rationale);
+    setText(card, ".outlook-sources", product.outlook?.sourceSummary ?? "Based on the dated evidence timeline below.");
+    const interpreted = product.evidence.filter((item) => item.interpretation?.provider === "OpenAI");
+    const forecastModel = product.outlook?.generatedBy?.startsWith("gpt-") ? product.outlook.generatedBy : null;
+    if (interpreted.length || forecastModel) {
+      const gptLine = card.querySelector(".gpt-line");
+      gptLine.hidden = false;
+      gptLine.textContent = forecastModel
+        ? `${forecastModel} reasoned over ${product.outlook.basisSignalIds?.length ?? product.evidence.length} dated signals. Connectors—not GPT—discovered the links.`
+        : `${interpreted.at(-1).interpretation.model} normalized feed metadata. Connectors—not GPT—discovered the link.`;
+    }
     const evidenceList = card.querySelector(".evidence-list");
     for (const event of product.history) {
       const item = document.createElement("li");
@@ -118,6 +178,9 @@ function renderRadar() {
     return fragment;
   });
   elements.radarGrid.replaceChildren(...cards);
+  elements.radarResults.textContent = `${products.length} active ${products.length === 1 ? "product" : "products"} shown`;
+  elements.radarEmpty.hidden = products.length > 0;
+  elements.radarGrid.hidden = products.length === 0;
 }
 
 function updateWatchControls() {
@@ -145,6 +208,17 @@ function createCard(product) {
   const stateBadge = card.querySelector(".state-badge");
   stateBadge.textContent = getAvailabilityLabel(availability);
   stateBadge.classList.add(availability);
+  const officialImage = card.querySelector(".official-product-image");
+  const image = officialImage.querySelector("img");
+  if (product.image?.url) {
+    image.src = product.image.url;
+    image.alt = product.image.alt ?? product.name;
+    officialImage.setAttribute("aria-label", image.alt);
+    officialImage.dataset.crop = product.image.crop ?? "default";
+    card.querySelector(".pack-art").hidden = true;
+  } else {
+    officialImage.hidden = true;
+  }
   setText(card, ".product-series", product.series);
   setText(card, ".product-name", product.name);
   setText(card, ".product-summary", product.summary);
@@ -191,15 +265,20 @@ function clearFilters() {
 }
 
 function setupHero() {
-  const observed = sortByReleaseDate(state.products.filter((product) => product.storefront.firstSeenAt));
-  const next = observed[0] ?? sortByReleaseDate(state.products)[0];
+  const active = state.radar.filter((product) => product.watchStage !== "sold-out");
+  const restock = active.find((product) => product.watchStage === "restock-watch");
+  const featuredUpc = active.find((product) => product.id === "30th-celebration-ultra-premium-collection-day");
+  const next = restock ?? featuredUpc ?? visibleRadarProducts()[0];
   if (!next) return;
 
-  document.querySelector("#next-release-name").textContent = next.name;
+  const combinedUpc = next.id === "30th-celebration-ultra-premium-collection-day";
+  document.querySelector("#next-release-name").textContent = combinedUpc ? "30th Celebration Ultra-Premium Collection—Day & Night" : next.name;
   document.querySelector("#next-release-series").textContent = next.series;
-  document.querySelector("#next-release-date").textContent = formatDate(next.storefront.firstSeenAt);
-  document.querySelector("#next-release-countdown").textContent = `${getAvailabilityLabel(next.storefront.status)} · ${formatCad(next.storefront.priceCad)}`;
-  document.querySelector("#next-release-link").href = `#product-${next.id}`;
+  document.querySelector("#next-release-status").textContent = WATCH_STAGE_LABELS[next.watchStage] ?? next.watchStage;
+  document.querySelector("#next-release-date-label").textContent = next.releaseDate ? "OFFICIAL RELEASE" : "BEST CANADA ESTIMATE";
+  document.querySelector("#next-release-date").textContent = next.releaseDate ? formatDate(next.releaseDate) : formatOutlookWindow(next.outlook);
+  document.querySelector("#next-release-countdown").textContent = `Canada estimate: ${formatOutlookWindow(next.outlook)}`;
+  document.querySelector("#next-release-link").href = `#radar-${next.id}`;
   const observedCount = state.products.filter((product) => product.storefront.checkedAt).length;
   const soldOutCount = state.products.filter((product) => product.storefront.status === "sold-out").length;
   document.querySelector("#verified-count").textContent = `${observedCount} Canadian storefront records`;
@@ -208,6 +287,15 @@ function setupHero() {
 }
 
 function setupEvents() {
+  document.querySelector("#radar-controls").addEventListener("submit", (event) => event.preventDefault());
+  elements.radarStageFilter.addEventListener("change", (event) => {
+    state.radarFilter = event.target.value;
+    renderRadar();
+  });
+  elements.radarSort.addEventListener("change", (event) => {
+    state.radarSort = event.target.value;
+    renderRadar();
+  });
   elements.search.addEventListener("input", (event) => {
     state.filters.search = event.target.value;
     render();
@@ -247,6 +335,9 @@ async function init() {
     setupHero();
     renderRadar();
     render();
+    if (window.location.hash) {
+      requestAnimationFrame(() => document.querySelector(window.location.hash)?.scrollIntoView());
+    }
   } catch (error) {
     console.error(error);
     elements.grid.hidden = true;

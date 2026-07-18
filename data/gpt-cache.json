@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "entries": {
+    "3f052fee8234a990cc7352438009ed69680d524a735b00b0239646851e17d9ff": {
+      "requestedModel": "gpt-5.6",
+      "resolvedModel": "gpt-5.6-sol",
+      "responseId": "resp_097e770742e02e79016a5ba264f2588193a05e2a9c883ecab9",
+      "interpretedAt": "2026-07-18T15:57:24.479Z",
+      "reviewNote": null,
+      "signals": [
+        {
+          "eventType": "in-stock",
+          "title": "Pokémon TCG: Mega Evolution—Pitch Black Available Now",
+          "region": "global",
+          "product": {
+            "id": "mega-evolution-pitch-black",
+            "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+            "series": "Mega Evolution—Pitch Black",
+            "type": "other",
+            "releaseDate": null,
+            "pokemonCenterExclusive": false,
+            "priceCad": null
+          },
+          "facts": [
+            "The publication title explicitly states that Pokémon TCG: Mega Evolution—Pitch Black is available now."
+          ],
+          "expectedAction": null,
+          "id": "yt:video:MLewz9UacMQ-gpt-1",
+          "publishedAt": "2026-07-17T16:00:36+00:00",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-18T15:57:24.479Z",
+          "url": "https://www.youtube.com/watch?v=MLewz9UacMQ",
+          "interpretation": {
+            "provider": "OpenAI",
+            "model": "gpt-5.6-sol",
+            "responseId": "resp_097e770742e02e79016a5ba264f2588193a05e2a9c883ecab9",
+            "sourceFingerprint": "3f052fee8234a990cc7352438009ed69680d524a735b00b0239646851e17d9ff"
+          }
+        }
+      ]
+    }
+  }
+}

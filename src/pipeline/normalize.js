@@ -8,6 +8,7 @@ export const EVENT_TYPES = new Set([
   "preorder-open",
   "in-stock",
   "sold-out",
+  "restock-announced",
   "restocked",
 ]);
 
@@ -66,6 +67,12 @@ export function normalizeSignal(item, source, collectedAt) {
     },
     facts: Array.isArray(item.facts) ? item.facts.map(String) : [],
     expectedAction: item.expectedAction ? String(item.expectedAction) : null,
+    interpretation: item.interpretation ? {
+      provider: String(item.interpretation.provider),
+      model: String(item.interpretation.model),
+      responseId: item.interpretation.responseId ? String(item.interpretation.responseId) : null,
+      sourceFingerprint: String(item.interpretation.sourceFingerprint),
+    } : null,
   };
 }
 

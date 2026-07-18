@@ -12,6 +12,7 @@ const TIMING_WEIGHT = {
   "preorder-open": 1,
   "in-stock": 1,
   "sold-out": 1,
+  "restock-announced": 0.9,
   restocked: 1,
 };
 
@@ -23,14 +24,17 @@ export function scoreSignal(signal) {
   const source = SOURCE_WEIGHT[signal.publisherClass] ?? 0.5;
   const confirmsProduct = signal.eventType !== "expansion-announced";
   const canadaEvidence = signal.region === "ca";
+  const timingSpecificity = signal.product.releaseDate && ["product-confirmed", "canada-retailer-announced", "product-page-discovered"].includes(signal.eventType)
+    ? Math.max(TIMING_WEIGHT[signal.eventType] ?? 0.1, 0.9)
+    : (TIMING_WEIGHT[signal.eventType] ?? 0.1);
   return {
     existence: round(confirmsProduct ? source : source * 0.58),
     canada: round(canadaEvidence ? source : signal.product.pokemonCenterExclusive ? 0.5 : 0.2),
-    timing: round((TIMING_WEIGHT[signal.eventType] ?? 0.1) * source),
+    timing: round(timingSpecificity * source),
   };
 }
 
-export function labelConfidence(value) {
+export function labelEvidenceStrength(value) {
   if (value >= 0.85) return "high";
   if (value >= 0.6) return "medium";
   return "low";
