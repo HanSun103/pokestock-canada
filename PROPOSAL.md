@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-Canadian Pokémon TCG fans often discover releases across several announcements and storefront pages, then encounter uncertain regional availability or inflated resale prices. PokéStock Canada will turn public, attributable information into a single Canada-first release calendar and fair-price guide.
+Canadian Pokémon TCG fans often discover releases across several announcements and storefront pages, then encounter uncertain regional availability or inflated resale prices. PokéStock Canada will turn public, attributable information into a Canada-first storefront-drop tracker, release calendar, and fair-price guide.
 
 The service is designed to improve awareness and preparation, not purchasing speed. It will never automate checkout, evade queues, rotate identities, or ignore retailer limits.
 
@@ -11,7 +11,7 @@ The service is designed to improve awareness and preparation, not purchasing spe
 Collectors currently face three avoidable information gaps:
 
 1. **Fragmentation:** announcements, product pages, and Canadian storefront listings are separate.
-2. **Timing:** release dates and preorder windows can be easy to miss.
+2. **Timing:** a Canadian buying window can open well before the announced product release date.
 3. **Price ambiguity:** buyers may not know whether a price is close to a Canadian official reference.
 
 High demand cannot be eliminated, but clearer and earlier information can give ordinary buyers a fairer chance.
@@ -36,7 +36,7 @@ The POC proves that a source-attributed catalog can be useful before investing i
 - Responsive release dashboard.
 - Upcoming, released, and archived states.
 - Product type and text filters.
-- Official source and last-verified metadata.
+- Separate official release, storefront first-seen, availability, and last-checked metadata.
 - Browser-local watchlist.
 - CAD reference-price comparison logic.
 - Curated JSON catalog with validation.

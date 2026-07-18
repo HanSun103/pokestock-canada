@@ -7,3 +7,4 @@ Thumbs.db
 coverage/
 dist/
 *.log
+data/notification-outbox.json

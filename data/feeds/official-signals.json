@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "official-30th-set-reveal-2026-06-01",
+      "eventType": "expansion-announced",
+      "publishedAt": "2026-06-01T13:01:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-06-01T14:00:00Z",
+      "title": "30th Celebration set officially revealed",
+      "url": "https://30.pokemon.com/en-us/",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-pokemon-center-etb",
+        "name": "30th Celebration Pokémon Center Elite Trainer Box",
+        "series": "30th Celebration",
+        "type": "elite-trainer-box",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": true
+      },
+      "facts": ["The expansion was announced for a worldwide September 16 release."],
+      "expectedAction": "Create an early watch; exact products and preorder timing are not yet confirmed."
+    },
+    {
+      "id": "official-30th-lineup-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T13:20:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-06-30T14:00:00Z",
+      "title": "30th Celebration product lineup confirms Pokémon Center ETB",
+      "url": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-pokemon-center-etb",
+        "name": "30th Celebration Pokémon Center Elite Trainer Box",
+        "series": "30th Celebration",
+        "type": "elite-trainer-box",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": true
+      },
+      "facts": ["The product lineup includes a Pokémon Center-exclusive Elite Trainer Box.", "No preorder date was announced."],
+      "expectedAction": "Raise a prepare alert and begin conservative weekday monitoring of permitted sources."
+    }
+  ]
+}

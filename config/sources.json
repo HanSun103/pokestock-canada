@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "curated-official-signals",
+      "name": "Curated official Pokémon publications",
+      "type": "json-file",
+      "path": "data/feeds/official-signals.json",
+      "publisherClass": "official",
+      "region": "global",
+      "enabled": true,
+      "permissionNote": "Metadata and links are manually recorded from public first-party publications; article bodies are not copied."
+    },
+    {
+      "id": "curated-canada-observations",
+      "name": "Dated Canadian storefront observations",
+      "type": "json-file",
+      "path": "data/feeds/canada-observations.json",
+      "publisherClass": "official-retailer",
+      "region": "ca",
+      "enabled": true,
+      "permissionNote": "Human-verified observations only; this connector does not access or automate a protected storefront."
+    }
+  ],
+  "remoteFeedPolicy": {
+    "environmentVariable": "POKESTOCK_FEED_URLS",
+    "acceptedFormats": ["json-feed", "rss", "atom"],
+    "requireHttps": true,
+    "timeoutMs": 10000,
+    "userAgent": "PokeStockCanada/0.2 (+https://github.com/HanSun103/pokestock-canada)",
+    "note": "Only add feeds whose publisher permits automated retrieval. Comma-separated URLs are optional and no protected storefront is configured by default."
+  }
+}

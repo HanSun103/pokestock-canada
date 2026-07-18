@@ -1,30 +1,108 @@
 {
   "meta": {
-    "name": "PokéStock Canada curated POC catalog",
+    "name": "PokéStock Canada storefront snapshot",
     "currency": "CAD",
-    "updatedAt": "2026-07-17T19:30:00Z",
-    "disclaimer": "Release details are sourced from official Pokémon pages. Canadian price and availability remain unknown until supported by a Canada-specific public source."
+    "updatedAt": "2026-07-18",
+    "freshnessMode": "manual-snapshot",
+    "storefrontCheckedAt": "2026-07-18",
+    "disclaimer": "Availability is a dated observation, not a live stock guarantee. Official release dates and Canadian storefront events are tracked separately."
   },
   "products": [
     {
-      "id": "30th-celebration-tech-sticker-collection",
-      "name": "30th Celebration Tech Sticker Collection",
+      "id": "30th-celebration-pokemon-center-etb",
+      "name": "30th Celebration Pokémon Center Elite Trainer Box",
+      "series": "30th Celebration",
+      "type": "elite-trainer-box",
+      "releaseDate": "2026-09-16",
+      "summary": "The Pokémon Center edition of the 30th Celebration Elite Trainer Box.",
+      "contents": [],
+      "storefront": {
+        "status": "sold-out",
+        "priceCad": 80.99,
+        "firstSeenAt": "2026-07-15",
+        "checkedAt": "2026-07-18",
+        "retailer": "Pokémon Center Canada",
+        "url": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
+      "canadaNote": "Listed in Pokémon Center Canada's New Releases at CA$80.99 and observed sold out.",
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "Pokémon TCG: 30th Celebration Pokémon Center Elite Trainer Box",
+        "url": "https://www.pokemon.com/uk/pokemon-tcg/product-gallery/30th-celebration-pokemon-center-elite-trainer-box"
+      },
+      "verifiedAt": "2026-07-18"
+    },
+    {
+      "id": "30th-celebration-tech-sticker-alolan-exeggutor",
+      "name": "30th Celebration Tech Sticker Collection (Alolan Exeggutor)",
       "series": "30th Celebration",
       "type": "collection",
       "releaseDate": "2026-09-16",
-      "releaseDatePrecision": "day",
-      "summary": "A foil Alolan Exeggutor or Lucario promo, matching sticker sheet, and three 30th Celebration booster packs.",
-      "contents": ["1 foil promo card", "1 tech sticker sheet", "3 booster packs"],
-      "msrpCad": null,
-      "canadaStatus": "not-confirmed",
-      "canadaNote": "The global product release is official; a Canada-specific listing or CAD reference price has not been recorded in this POC.",
-      "offers": [],
+      "summary": "An Alolan Exeggutor foil promo, matching tech sticker sheet, and three 30th Celebration booster packs.",
+      "contents": ["1 Alolan Exeggutor foil promo", "1 tech sticker sheet", "3 booster packs"],
+      "storefront": {
+        "status": "sold-out",
+        "priceCad": 20.99,
+        "firstSeenAt": "2026-07-15",
+        "checkedAt": "2026-07-18",
+        "retailer": "Pokémon Center Canada",
+        "url": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
+      "canadaNote": "The Canadian buying window opened before the announced September product release; it is currently observed sold out.",
       "source": {
         "publisher": "The Pokémon Company International",
         "title": "Pokémon TCG: 30th Celebration Tech Sticker Collection",
         "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection"
       },
-      "verifiedAt": "2026-07-17T19:00:00Z"
+      "verifiedAt": "2026-07-18"
+    },
+    {
+      "id": "30th-celebration-tech-sticker-lucario",
+      "name": "30th Celebration Tech Sticker Collection (Lucario)",
+      "series": "30th Celebration",
+      "type": "collection",
+      "releaseDate": "2026-09-16",
+      "summary": "A Lucario foil promo, matching tech sticker sheet, and three 30th Celebration booster packs.",
+      "contents": ["1 Lucario foil promo", "1 tech sticker sheet", "3 booster packs"],
+      "storefront": {
+        "status": "sold-out",
+        "priceCad": 20.99,
+        "firstSeenAt": "2026-07-15",
+        "checkedAt": "2026-07-18",
+        "retailer": "Pokémon Center Canada",
+        "url": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
+      "canadaNote": "The Canadian buying window opened before the announced September product release; it is currently observed sold out.",
+      "source": {
+        "publisher": "The Pokémon Company International",
+        "title": "Pokémon TCG: 30th Celebration Tech Sticker Collection",
+        "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection"
+      },
+      "verifiedAt": "2026-07-18"
+    },
+    {
+      "id": "30th-celebration-knock-out-collection",
+      "name": "30th Celebration Knock Out Collection",
+      "series": "30th Celebration",
+      "type": "collection",
+      "releaseDate": null,
+      "summary": "A compact 30th Celebration collection featuring Eevee.",
+      "contents": [],
+      "storefront": {
+        "status": "sold-out",
+        "priceCad": 13.99,
+        "firstSeenAt": "2026-07-15",
+        "checkedAt": "2026-07-18",
+        "retailer": "Pokémon Center Canada",
+        "url": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
+      "canadaNote": "Listed in Pokémon Center Canada's New Releases at CA$13.99 and observed sold out.",
+      "source": {
+        "publisher": "Pokémon Center Canada",
+        "title": "New Releases",
+        "url": "https://www.pokemoncenter.com/en-ca/category/new-releases"
+      },
+      "verifiedAt": "2026-07-18"
     },
     {
       "id": "mega-evolution-chaos-rising-etb",
@@ -32,19 +110,12 @@
       "series": "Mega Evolution—Chaos Rising",
       "type": "elite-trainer-box",
       "releaseDate": "2026-05-22",
-      "releaseDatePrecision": "day",
       "summary": "Nine Chaos Rising booster packs, a Fennekin promo, sleeves, Energy cards, dice, accessories, and a storage box.",
       "contents": ["9 booster packs", "1 Fennekin promo card", "65 card sleeves", "Player accessories"],
-      "msrpCad": null,
-      "canadaStatus": "check-official-store",
-      "canadaNote": "The official showcase says products are available at Pokémon Center and other TCG retailers; verify the regional storefront before purchasing.",
-      "offers": [],
-      "source": {
-        "publisher": "The Pokémon Company International",
-        "title": "Mega Evolution—Chaos Rising Product Showcase",
-        "url": "https://www.pokemon.com/us/pokemon-news/pokemon-tcg-mega-evolution-chaos-rising-product-showcase"
-      },
-      "verifiedAt": "2026-07-17T19:00:00Z"
+      "storefront": { "status": "unknown", "priceCad": null, "firstSeenAt": null, "checkedAt": null, "retailer": "Pokémon Center Canada", "url": "https://www.pokemoncenter.com/en-ca/category/new-releases" },
+      "canadaNote": "No current Canadian storefront observation is recorded in this snapshot.",
+      "source": { "publisher": "The Pokémon Company International", "title": "Mega Evolution—Chaos Rising Product Showcase", "url": "https://www.pokemon.com/us/pokemon-news/pokemon-tcg-mega-evolution-chaos-rising-product-showcase" },
+      "verifiedAt": "2026-07-17"
     },
     {
       "id": "mega-moonlit-tin",
@@ -52,19 +123,12 @@
       "series": "Mega Evolution",
       "type": "tin",
       "releaseDate": "2026-06-05",
-      "releaseDatePrecision": "day",
       "summary": "Choose a Mega Gengar ex or Mega Clefable ex foil promo and open four booster packs.",
       "contents": ["1 foil promo card", "4 booster packs", "1 Pokémon TCG Live code card"],
-      "msrpCad": null,
-      "canadaStatus": "check-official-store",
-      "canadaNote": "The product is officially released; this POC does not claim current Canadian stock.",
-      "offers": [],
-      "source": {
-        "publisher": "The Pokémon Company International",
-        "title": "Pokémon TCG: Mega Moonlit Tin",
-        "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-moonlit-tin"
-      },
-      "verifiedAt": "2026-07-17T19:00:00Z"
+      "storefront": { "status": "unknown", "priceCad": null, "firstSeenAt": null, "checkedAt": null, "retailer": "Pokémon Center Canada", "url": "https://www.pokemoncenter.com/en-ca/category/new-releases" },
+      "canadaNote": "No current Canadian storefront observation is recorded in this snapshot.",
+      "source": { "publisher": "The Pokémon Company International", "title": "Pokémon TCG: Mega Moonlit Tin", "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-moonlit-tin" },
+      "verifiedAt": "2026-07-17"
     },
     {
       "id": "ascended-heroes-booster-bundle",
@@ -72,19 +136,12 @@
       "series": "Mega Evolution—Ascended Heroes",
       "type": "booster-bundle",
       "releaseDate": "2026-04-24",
-      "releaseDatePrecision": "day",
       "summary": "A compact bundle containing six booster packs from the Ascended Heroes expansion.",
       "contents": ["6 booster packs"],
-      "msrpCad": null,
-      "canadaStatus": "check-official-store",
-      "canadaNote": "The official product page confirms broad release, but no live Canadian availability is asserted here.",
-      "offers": [],
-      "source": {
-        "publisher": "The Pokémon Company International",
-        "title": "Mega Evolution—Ascended Heroes Booster Bundle",
-        "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-evolution-ascended-heroes-booster-bundle"
-      },
-      "verifiedAt": "2026-07-17T19:00:00Z"
+      "storefront": { "status": "unknown", "priceCad": null, "firstSeenAt": null, "checkedAt": null, "retailer": "Pokémon Center Canada", "url": "https://www.pokemoncenter.com/en-ca/category/new-releases" },
+      "canadaNote": "No current Canadian storefront observation is recorded in this snapshot.",
+      "source": { "publisher": "The Pokémon Company International", "title": "Mega Evolution—Ascended Heroes Booster Bundle", "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/mega-evolution-ascended-heroes-booster-bundle" },
+      "verifiedAt": "2026-07-17"
     }
   ]
 }
