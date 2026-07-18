@@ -12,7 +12,7 @@ The project is intentionally **information-only**. It does not automate purchase
 
 - Runs a source-to-alert release radar: permitted inputs → optional GPT-5.6 normalization and reasoning → deterministic validation → watch-state changes.
 - Estimates a Canadian buying window from official/global dates, Canadian retail signals, and comparable same-series launches while keeping estimates separate from confirmed dates.
-- Shows an evidence timeline through Early watch, Product confirmed, Prepare, Live now, and Sold out/restock watch.
+- Starts the Release radar when official news confirms a product, then tracks Product confirmed, Prepare, Live now, and explicit Restock watch states.
 - Presents Canadian storefront drops and official product releases in one feed without treating them as the same event.
 - Links every release claim to its evidence source and labels first-party and permitted-discovery evidence separately.
 - Filters by release state, product type, and search term.
@@ -25,15 +25,15 @@ The cold-start catalog contains four 30th Celebration products observed on Poké
 
 ## Image gallery
 
-| Early-signal radar | Release radar |
+| Release radar | Canadian availability record |
 | --- | --- |
-| ![Early-signal radar with Canada availability outlooks](docs/images/early-signal-radar.png) | ![Historical release radar with Canadian prices and availability](docs/images/release-radar.png) |
+| ![Release radar with Canada availability outlooks](docs/images/early-signal-radar.png) | ![Canadian availability history with prices and dated stock observations](docs/images/release-radar.png) |
 
 A full-page capture is available at [docs/images/full-dashboard.png](docs/images/full-dashboard.png). These images are captured from the running application and can be uploaded directly to a GitHub README or Devpost image gallery.
 
 ## Demo video
 
-The 2:43 [natural-voice walkthrough](docs/demo/pokestock-canada-demo-natural-voice.mp4) is the recommended submission video. Its [editable narrated PowerPoint deck](docs/demo/pokestock-demo-natural-voice.pptx) keeps the scene-level audio embedded and synchronizes each slide to the spoken line. The clean [visual deck](docs/demo/pokestock-demo.pptx), [narration script](docs/demo/DEMO_SCRIPT.md), [storyboard](docs/demo/DEMO_STORYBOARD.md), [subtitle file](docs/demo/pokestock-demo.srt), and [upload copy](docs/demo/VIDEO_UPLOAD.md) are also included.
+The 2:49 [frame-synchronized 2K walkthrough](docs/demo/pokestock-canada-demo-2k.mp4) is the recommended submission video. Its ten scenes are rendered natively at 2560×1440 and change 0.55 seconds after the final spoken word. The clean [visual deck](docs/demo/pokestock-demo.pptx), [narration script](docs/demo/DEMO_SCRIPT.md), [storyboard](docs/demo/DEMO_STORYBOARD.md), [subtitle file](docs/demo/pokestock-demo.srt), and [upload copy](docs/demo/VIDEO_UPLOAD.md) are also included.
 
 ## Optional GPT-5.6 release intelligence
 

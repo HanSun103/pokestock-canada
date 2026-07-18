@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: release-radar
@@ -46,3 +47,6 @@ jobs:
           git add data/signals.json data/radar.json data/gpt-cache.json data/forecast-cache.json
           git commit -m "data: update release radar"
           git push
+          gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
