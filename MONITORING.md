@@ -58,13 +58,15 @@ Curated official records + explicitly permitted feeds
              data/radar.json    Discord/email
 ```
 
-Run it with `npm run pipeline`. Source policy lives in `config/sources.json`. The built-in discovery layer uses public RSS/Atom endpoints and filters for TCG release language before any GPT call. `POKESTOCK_FEED_URLS` is optional and may add only feeds whose publishers allow automated retrieval.
+Run it with `npm run pipeline`. Source policy lives in `config/sources.json`. The built-in discovery layer uses public RSS/Atom endpoints and filters for TCG release language before any GPT call. A Canadian community feed is handled as lead-only: deterministic matching can raise `Prepare` for a known product, but never `Live now`. `POKESTOCK_FEED_URLS` is optional and may add only feeds whose publishers allow automated retrieval.
 
 The pipeline preserves previous signals, deduplicates them by stable signal ID, and sends notifications only when a product changes into an actionable state. A global or US `available now` signal remains `Product confirmed`; only explicit Canadian evidence can become `Live now` or `Sold out`.
 
 `Sold out` remains part of the audit data but is hidden from the early-signal radar. `Restock watch` requires an explicit Canadian `restock-announced` signal; a sold-out observation alone cannot create it. Active products receive a cached GPT-5.6 Canada outlook, while deterministic validation keeps estimated windows separate from official dates.
 
-The public GitHub Actions workflow intentionally runs without `OPENAI_API_KEY`. It can process curated and permitted structured evidence, reuse checked-in cached interpretations, and fail closed on new unstructured items without creating OpenAI API cost. New model calls are local and opt-in only.
+The public GitHub Actions workflow intentionally runs without `OPENAI_API_KEY`. It can process curated and permitted structured evidence, extract conservative known-product leads, reuse checked-in cached interpretations, and fail closed on other unstructured items without creating OpenAI API cost. New model calls are local and opt-in only.
+
+Pokémon Center Canada currently returns an Incapsula access-control challenge to non-browser scheduled requests. PokéStock does not attempt to defeat that protection. Direct Pokémon Center stock states therefore come from dated human verification, while permitted public feeds provide earlier leads that remain clearly unverified until corroborated.
 
 ## Notification roadmap
 

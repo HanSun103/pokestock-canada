@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-18T18:50:00.000Z",
-    "count": 29
+    "generatedAt": "2026-07-20T20:57:00.000Z",
+    "count": 49
   },
   "signals": [
     {
@@ -313,6 +313,34 @@
       "interpretation": null
     },
     {
+      "id": "discovery-30th-booster-bundle-2026-06-30",
+      "sourceId": "curated-permitted-discovery",
+      "sourceName": "Permitted release-news discoveries",
+      "publisherClass": "permitted-feed",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T13:20:00.000Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Booster Bundle revealed",
+      "url": "https://www.pokebeach.com/2026/06/30th-celebration-full-english-product-lineup-revealed",
+      "region": "global",
+      "product": {
+        "id": "30th-celebration-booster-bundle",
+        "name": "30th Celebration Booster Bundle",
+        "series": "30th Celebration",
+        "type": "booster-bundle",
+        "releaseDate": "2026-10-02",
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "The published product lineup names a six-pack Booster Bundle with an October 2 release date."
+      ],
+      "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for an early buying opportunity.",
+      "interpretation": null
+    },
+    {
       "id": "official-30th-lineup-2026-06-30",
       "sourceId": "curated-official-signals",
       "sourceName": "Curated official Pokémon publications",
@@ -455,6 +483,470 @@
         "No Canadian preorder date is published."
       ],
       "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-3f65f629717c300a7183580f",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Poster Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-poster-collection",
+        "name": "30th Celebration Poster Collection",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-4a5d78378c9c7b8f12de7640",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Tech Sticker Collection (Lucario) mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-tech-sticker-lucario",
+        "name": "30th Celebration Tech Sticker Collection (Lucario)",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": false,
+        "priceCad": 20.99
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-5e2efe8a4b4a618c0506b9a6",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Booster Bundle mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-booster-bundle",
+        "name": "30th Celebration Booster Bundle",
+        "series": "30th Celebration",
+        "type": "booster-bundle",
+        "releaseDate": "2026-10-02",
+        "pokemonCenterExclusive": false,
+        "priceCad": 36.99
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-64a17235fa953dd69574c3b6",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Mew Figure Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-mew-figure-collection",
+        "name": "30th Celebration Mew Figure Collection",
+        "series": "30th Celebration",
+        "type": "other",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-6628ae316490123297a91deb",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Elite Trainer Box mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-elite-trainer-box",
+        "name": "30th Celebration Elite Trainer Box",
+        "series": "30th Celebration",
+        "type": "elite-trainer-box",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-66b3c6fcdadf10a0e98dfbbe",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Mewtwo Figure Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-mewtwo-figure-collection",
+        "name": "30th Celebration Mewtwo Figure Collection",
+        "series": "30th Celebration",
+        "type": "other",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-69379f99653922d80f63b26d",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Ditto Premium Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-ditto-premium-collection",
+        "name": "30th Celebration Ditto Premium Collection",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-6cd3d20fac7955738dcb4793",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Ultra-Premium Collection—Day mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-ultra-premium-collection-day",
+        "name": "30th Celebration Ultra-Premium Collection—Day",
+        "series": "30th Celebration",
+        "type": "other",
+        "releaseDate": "2026-11-06",
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-7ceb86221487955f70725fb7",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Mini Tins mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-mini-tins",
+        "name": "30th Celebration Mini Tins",
+        "series": "30th Celebration",
+        "type": "tin",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-8787ef553ffba1412c7e894f",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Greninja ex Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-greninja-ex-collection",
+        "name": "30th Celebration Greninja ex Collection",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-89d989e784141240820a6ccc",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Knock Out Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-knock-out-collection",
+        "name": "30th Celebration Knock Out Collection",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": 13.99
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-8f23627b14a9facfb7c2a28b",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Tech Sticker Collection (Alolan Exeggutor) mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-tech-sticker-alolan-exeggutor",
+        "name": "30th Celebration Tech Sticker Collection (Alolan Exeggutor)",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": false,
+        "priceCad": 20.99
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-94abef6836d666811460bcaa",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Sylveon ex Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-sylveon-ex-collection",
+        "name": "30th Celebration Sylveon ex Collection",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-a90e2f7dfcfc7754a4a5f218",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Binder Collection mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-binder-collection",
+        "name": "30th Celebration Binder Collection",
+        "series": "30th Celebration",
+        "type": "collection",
+        "releaseDate": null,
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-a918b3855f2108eb45fe4895",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Pokémon Center Elite Trainer Box mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-pokemon-center-etb",
+        "name": "30th Celebration Pokémon Center Elite Trainer Box",
+        "series": "30th Celebration",
+        "type": "elite-trainer-box",
+        "releaseDate": "2026-09-16",
+        "pokemonCenterExclusive": true,
+        "priceCad": 80.99
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-d75e41bd6e1ae509311973f8",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-10T04:05:46.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Ultra-Premium Collection—Night mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-ultra-premium-collection-night",
+        "name": "30th Celebration Ultra-Premium Collection—Night",
+        "series": "30th Celebration",
+        "type": "other",
+        "releaseDate": "2026-11-06",
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
       "interpretation": null
     },
     {
@@ -682,6 +1174,35 @@
       "interpretation": null
     },
     {
+      "id": "lead-375833b5d57e33ff1a5daa94",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-17T05:38:49.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "Pokémon TCG: Mega Evolution—Pitch Black mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uyqscp/pitch_black_etb_walmart_9498/",
+      "region": "ca",
+      "product": {
+        "id": "mega-evolution-pitch-black",
+        "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+        "series": "Mega Evolution—Pitch Black",
+        "type": "other",
+        "releaseDate": "2026-07-17",
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+      "interpretation": null
+    },
+    {
       "id": "ca-pitch-black-walmart-live-2026-07-17",
       "sourceId": "curated-canada-observations",
       "sourceName": "Dated Canadian storefront observations",
@@ -708,6 +1229,35 @@
         "Quantities are limited and store-specific availability can change."
       ],
       "expectedAction": "Show live-now with the dated Canadian retailer evidence; do not forecast a future first-listing date.",
+      "interpretation": null
+    },
+    {
+      "id": "lead-b64fd4cda1c127583a25dd5a",
+      "sourceId": "reddit-pokemon-tcg-deals-canada",
+      "sourceName": "Pokémon TCG Deals Canada public RSS",
+      "publisherClass": "community-feed",
+      "eventType": "product-page-discovered",
+      "publishedAt": "2026-07-17T14:20:42.000Z",
+      "publicationTimePrecision": "exact",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "Pokémon TCG: Mega Evolution—Pitch Black mentioned by Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uz15ae/zephyr_pitch_black/",
+      "region": "ca",
+      "product": {
+        "id": "mega-evolution-pitch-black",
+        "name": "Pokémon TCG: Mega Evolution—Pitch Black",
+        "series": "Mega Evolution—Pitch Black",
+        "type": "other",
+        "releaseDate": "2026-07-17",
+        "pokemonCenterExclusive": false,
+        "priceCad": null
+      },
+      "facts": [
+        "A public Canadian discovery feed mentioned this known product.",
+        "This is an unverified lead and does not confirm that Canadian stock is live."
+      ],
+      "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
       "interpretation": null
     },
     {
@@ -828,6 +1378,35 @@
         "No explicit restock announcement has been observed."
       ],
       "expectedAction": "Move the released product to the historical catalog and remove it from the active early-signal radar.",
+      "interpretation": null
+    },
+    {
+      "id": "ca-30th-booster-bundle-live-2026-07-20",
+      "sourceId": "curated-canada-observations",
+      "sourceName": "Dated Canadian storefront observations",
+      "publisherClass": "official-retailer",
+      "eventType": "preorder-open",
+      "publishedAt": "2026-07-20T20:57:00.000Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-20T20:57:00.000Z",
+      "collectedAt": "2026-07-20T20:57:00.000Z",
+      "title": "30th Celebration Booster Bundle observed live on Pokémon Center Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-booster-bundle",
+        "name": "30th Celebration Booster Bundle",
+        "series": "30th Celebration",
+        "type": "booster-bundle",
+        "releaseDate": "2026-10-02",
+        "pokemonCenterExclusive": false,
+        "priceCad": 36.99
+      },
+      "facts": [
+        "A dated human-verified Pokémon Center Canada observation showed the six-pack Booster Bundle in the in-stock TCG filter at CA$36.99.",
+        "The protected storefront cannot be polled responsibly by the scheduled GitHub runner, so this availability state remains a dated observation rather than a continuous stock guarantee."
+      ],
+      "expectedAction": "Send an immediate Live now alert and display the observation timestamp; reverify before purchase.",
       "interpretation": null
     }
   ]

@@ -77,15 +77,17 @@ async function fetchFeed(feed, config, collectedAt, fetchImpl) {
     });
     if (!response.ok) throw new Error(`remote feed returned ${response.status}: ${feed.url}`);
     const body = await response.text();
+    const discoveryFilter = { ...(config.discoveryFilter ?? {}), ...(feed.discoveryFilter ?? {}) };
     const publications = parseRemoteFeed(body, response.headers.get("content-type") ?? "", feed.url, collectedAt)
-      .filter((publication) => isReleaseCandidate(publication, config.discoveryFilter))
-      .slice(0, config.discoveryFilter?.maxItemsPerSource ?? 25);
+      .filter((publication) => isReleaseCandidate(publication, discoveryFilter))
+      .slice(0, discoveryFilter.maxItemsPerSource ?? 25);
     return {
       source: {
         id: feed.id,
         name: feed.name,
         publisherClass: feed.publisherClass ?? "permitted-feed",
         region: feed.region ?? "unknown",
+        leadOnly: Boolean(feed.leadOnly),
       },
       publications,
     };

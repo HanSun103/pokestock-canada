@@ -88,11 +88,11 @@ npm run check:data
 npm run notify
 ```
 
-The default connectors read curated, source-linked records in `data/feeds/` plus the public feeds declared in `config/sources.json`. Optional remote JSON Feed, RSS, or Atom URLs can be supplied through `POKESTOCK_FEED_URLS` only when the publisher permits automated retrieval. Feed failures are isolated, unchanged publications are served from the GPT fingerprint cache, and only Canada-specific stock evidence can trigger `Live now` or `Sold out`. The pipeline writes normalized evidence to `data/signals.json` and website-ready watch states to `data/radar.json`.
+The default connectors read curated, source-linked records in `data/feeds/` plus the public feeds declared in `config/sources.json`. A public Canadian community RSS feed is processed without GPT only as a known-product lead: it can raise `Prepare`, but it can never claim `Live now`. Optional remote JSON Feed, RSS, or Atom URLs can be supplied through `POKESTOCK_FEED_URLS` only when the publisher permits automated retrieval. Feed failures are isolated, unchanged publications are served from the GPT fingerprint cache, and only a dated Canadian retailer observation can trigger `Live now` or `Sold out`. The pipeline writes normalized evidence to `data/signals.json` and website-ready watch states to `data/radar.json`.
 
 Notifications are change-only. Configure `DISCORD_WEBHOOK_URL` for Discord, or `RESEND_API_KEY`, `ALERT_EMAIL_FROM`, and `ALERT_EMAIL_TO` for email. With no secrets, notification delivery safely skips.
 
-The scheduled `radar.yml` GitHub Action runs at minutes 17 and 47 each hour, processes curated and permitted structured evidence, validates the output, sends any new actionable alert, and commits website data only when the signal state changes. It does not receive `OPENAI_API_KEY`; unstructured items that lack a cached interpretation fail closed without an API call.
+The scheduled `radar.yml` GitHub Action requests runs at minutes 17 and 47 each hour, although GitHub may delay scheduled jobs. It processes curated evidence and permitted discovery feeds, validates the output, sends any new actionable alert, and commits website data only when the signal state changes. It does not receive `OPENAI_API_KEY`; unstructured items that lack a cached interpretation fail closed without an API call. Pokémon Center's Incapsula-protected storefront is not scraped or bypassed, so direct stock states require a dated human-verified observation or a future permitted retailer feed.
 
 ## Deploy to GitHub Pages
 

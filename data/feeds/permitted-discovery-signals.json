@@ -117,6 +117,19 @@
       "product": { "id": "30th-celebration-mini-tins", "name": "30th Celebration Mini Tins", "series": "30th Celebration", "type": "tin", "releaseDate": null, "pokemonCenterExclusive": false },
       "facts": ["The lineup announces ten Mini Tin designs."],
       "expectedAction": "Create a product-family watch; exact variants and Canadian timing remain unknown."
+    },
+    {
+      "id": "discovery-30th-booster-bundle-2026-06-30",
+      "eventType": "product-confirmed",
+      "publishedAt": "2026-06-30T13:20:00Z",
+      "publicationTimePrecision": "date",
+      "discoveredAt": "2026-07-20T20:57:00Z",
+      "title": "30th Celebration Booster Bundle revealed",
+      "url": "https://www.pokebeach.com/2026/06/30th-celebration-full-english-product-lineup-revealed",
+      "region": "global",
+      "product": { "id": "30th-celebration-booster-bundle", "name": "30th Celebration Booster Bundle", "series": "30th Celebration", "type": "booster-bundle", "releaseDate": "2026-10-02", "pokemonCenterExclusive": false },
+      "facts": ["The published product lineup names a six-pack Booster Bundle with an October 2 release date."],
+      "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for an early buying opportunity."
     }
   ]
 }

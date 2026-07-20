@@ -1,11 +1,109 @@
 {
   "meta": {
-    "generatedAt": "2026-07-18T18:50:00.000Z",
-    "signalCount": 29,
-    "productCount": 16,
+    "generatedAt": "2026-07-20T20:57:00.000Z",
+    "signalCount": 49,
+    "productCount": 17,
     "methodology": "Evidence strength is reported separately for product identity, Canadian relevance, and timing. These labels are not probabilities, and no date is invented when a source does not publish one."
   },
   "products": [
+    {
+      "id": "30th-celebration-booster-bundle",
+      "name": "30th Celebration Booster Bundle",
+      "series": "30th Celebration",
+      "type": "booster-bundle",
+      "releaseDate": "2026-10-02",
+      "pokemonCenterExclusive": false,
+      "priceCad": 36.99,
+      "watchStage": "live-now",
+      "stateChangedAt": "2026-07-20T20:57:00.000Z",
+      "evidenceStrength": {
+        "existence": 0.9,
+        "canada": 0.9,
+        "timing": 0.9
+      },
+      "evidence": [
+        {
+          "signalId": "discovery-30th-booster-bundle-2026-06-30",
+          "eventType": "product-confirmed",
+          "title": "30th Celebration Booster Bundle revealed",
+          "url": "https://www.pokebeach.com/2026/06/30th-celebration-full-english-product-lineup-revealed",
+          "publishedAt": "2026-06-30T13:20:00.000Z",
+          "publicationTimePrecision": "date",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "global",
+          "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for an early buying opportunity.",
+          "interpretation": null
+        },
+        {
+          "signalId": "lead-5e2efe8a4b4a618c0506b9a6",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Booster Bundle mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
+          "signalId": "ca-30th-booster-bundle-live-2026-07-20",
+          "eventType": "preorder-open",
+          "title": "30th Celebration Booster Bundle observed live on Pokémon Center Canada",
+          "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true",
+          "publishedAt": "2026-07-20T20:57:00.000Z",
+          "publicationTimePrecision": "observed",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Send an immediate Live now alert and display the observation timestamp; reverify before purchase.",
+          "interpretation": null
+        }
+      ],
+      "history": [
+        {
+          "stage": "product-confirmed",
+          "at": "2026-06-30T13:20:00.000Z",
+          "signalId": "discovery-30th-booster-bundle-2026-06-30",
+          "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-5e2efe8a4b4a618c0506b9a6",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
+        },
+        {
+          "stage": "live-now",
+          "at": "2026-07-20T20:57:00.000Z",
+          "signalId": "ca-30th-booster-bundle-live-2026-07-20",
+          "reason": "A permitted Canadian source confirms that preorder or purchase availability is open."
+        }
+      ],
+      "reason": "A permitted Canadian source confirms that preorder or purchase availability is open.",
+      "evidenceLabels": {
+        "existence": "high",
+        "canada": "high",
+        "timing": "high"
+      },
+      "evidenceExplanations": {
+        "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
+        "timing": "A buying or stock state was directly observed. This is historical evidence, not a future-date probability."
+      },
+      "outlook": {
+        "windowStart": "2026-07-20",
+        "windowEnd": "2026-07-20",
+        "recommendation": "buy-if-fair-price",
+        "conclusion": "Canadian retail availability confirmed",
+        "rationale": "A dated permitted Canadian source confirms that preorder or purchase availability is open. Check the linked retailer because stock can change by location and time.",
+        "sourceSummary": "Confirmed by: 30th Celebration Booster Bundle observed live on Pokémon Center Canada",
+        "basisSignalIds": [
+          "ca-30th-booster-bundle-live-2026-07-20"
+        ],
+        "generatedBy": "deterministic-confirmed",
+        "generatedAt": null
+      }
+    },
     {
       "id": "mega-evolution-pitch-black",
       "name": "Pokémon TCG: Mega Evolution—Pitch Black",
@@ -35,6 +133,18 @@
           "interpretation": null
         },
         {
+          "signalId": "lead-375833b5d57e33ff1a5daa94",
+          "eventType": "product-page-discovered",
+          "title": "Pokémon TCG: Mega Evolution—Pitch Black mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uyqscp/pitch_black_etb_walmart_9498/",
+          "publishedAt": "2026-07-17T05:38:49.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
           "signalId": "ca-pitch-black-walmart-live-2026-07-17",
           "eventType": "in-stock",
           "title": "Walmart Canada confirms Pitch Black retail availability from July 17",
@@ -44,6 +154,18 @@
           "discoveredAt": "2026-07-18T18:15:00.000Z",
           "region": "ca",
           "expectedAction": "Show live-now with the dated Canadian retailer evidence; do not forecast a future first-listing date.",
+          "interpretation": null
+        },
+        {
+          "signalId": "lead-b64fd4cda1c127583a25dd5a",
+          "eventType": "product-page-discovered",
+          "title": "Pokémon TCG: Mega Evolution—Pitch Black mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uz15ae/zephyr_pitch_black/",
+          "publishedAt": "2026-07-17T14:20:42.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
           "interpretation": null
         },
         {
@@ -84,6 +206,12 @@
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
         },
         {
+          "stage": "prepare",
+          "at": "2026-07-17T05:38:49.000Z",
+          "signalId": "lead-375833b5d57e33ff1a5daa94",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
+        },
+        {
           "stage": "live-now",
           "at": "2026-07-17T11:00:00.000Z",
           "signalId": "ca-pitch-black-walmart-live-2026-07-17",
@@ -119,174 +247,6 @@
         ],
         "generatedBy": "deterministic-confirmed",
         "generatedAt": null
-      }
-    },
-    {
-      "id": "30th-celebration-ultra-premium-collection-day",
-      "name": "30th Celebration Ultra-Premium Collection—Day",
-      "series": "30th Celebration",
-      "type": "other",
-      "releaseDate": "2026-11-06",
-      "pokemonCenterExclusive": false,
-      "priceCad": null,
-      "watchStage": "prepare",
-      "stateChangedAt": "2026-07-18T16:00:00.000Z",
-      "evidenceStrength": {
-        "existence": 0.95,
-        "canada": 0.9,
-        "timing": 0.86
-      },
-      "evidence": [
-        {
-          "signalId": "official-30th-upc-day-2026-07-01",
-          "eventType": "product-confirmed",
-          "title": "30th Celebration Ultra-Premium Collection—Day confirmed",
-          "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
-          "publishedAt": "2026-07-01T12:00:00.000Z",
-          "publicationTimePrecision": "date",
-          "discoveredAt": "2026-07-18T14:00:00.000Z",
-          "region": "global",
-          "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence.",
-          "interpretation": null
-        },
-        {
-          "signalId": "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
-          "eventType": "canada-retailer-announced",
-          "title": "Canadian retailer preorder page observed for the 30th Celebration UPC Day version",
-          "url": "https://www.pokejeux.ca/products/pre-order-combo-of-two-pokemon-30th-celebration-day-night-ultra-premium-collection",
-          "publishedAt": "2026-07-18T16:00:00.000Z",
-          "publicationTimePrecision": "observed",
-          "discoveredAt": "2026-07-18T16:00:00.000Z",
-          "region": "ca",
-          "expectedAction": "Prepare now and continue watching for a fair-price Pokémon Center Canada or major-retailer listing.",
-          "interpretation": null
-        }
-      ],
-      "history": [
-        {
-          "stage": "product-confirmed",
-          "at": "2026-07-01T12:00:00.000Z",
-          "signalId": "official-30th-upc-day-2026-07-01",
-          "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
-        },
-        {
-          "stage": "prepare",
-          "at": "2026-07-18T16:00:00.000Z",
-          "signalId": "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
-          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
-        }
-      ],
-      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
-      "evidenceLabels": {
-        "existence": "high",
-        "canada": "high",
-        "timing": "high"
-      },
-      "evidenceExplanations": {
-        "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "A dated Canadian source directly connects this product to Canada.",
-        "timing": "How specific the published timing evidence is. It does not predict an exact live date."
-      },
-      "outlook": {
-        "productId": "30th-celebration-ultra-premium-collection-day",
-        "windowStart": "2026-07-19",
-        "windowEnd": "2026-11-06",
-        "recommendation": "watch-now",
-        "conclusion": "Watch through the official November 6 launch; buy only if a fair-price Canadian listing appears.",
-        "rationale": "A specialty-store preorder was observed July 18, but not at a supported fair price. Same-series Pokémon Center Canada preorders opened July 15. The window is a model estimate, not an official preorder period.",
-        "sourceSummary": "Official global November 6 launch; Canadian specialty listing July 18; comparable Canadian Pokémon Center listings July 15.",
-        "basisSignalIds": [
-          "official-30th-upc-day-2026-07-01",
-          "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
-          "ca-30th-etb-live-2026-07-15"
-        ],
-        "generatedBy": "gpt-5.6-sol",
-        "generatedAt": "2026-07-18T18:20:23.138Z",
-        "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
-      }
-    },
-    {
-      "id": "30th-celebration-ultra-premium-collection-night",
-      "name": "30th Celebration Ultra-Premium Collection—Night",
-      "series": "30th Celebration",
-      "type": "other",
-      "releaseDate": "2026-11-06",
-      "pokemonCenterExclusive": false,
-      "priceCad": null,
-      "watchStage": "prepare",
-      "stateChangedAt": "2026-07-18T16:00:00.000Z",
-      "evidenceStrength": {
-        "existence": 0.95,
-        "canada": 0.9,
-        "timing": 0.86
-      },
-      "evidence": [
-        {
-          "signalId": "official-30th-upc-night-2026-07-01",
-          "eventType": "product-confirmed",
-          "title": "30th Celebration Ultra-Premium Collection—Night confirmed",
-          "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
-          "publishedAt": "2026-07-01T12:00:00.000Z",
-          "publicationTimePrecision": "date",
-          "discoveredAt": "2026-07-18T14:00:00.000Z",
-          "region": "global",
-          "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence.",
-          "interpretation": null
-        },
-        {
-          "signalId": "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
-          "eventType": "canada-retailer-announced",
-          "title": "Canadian retailer preorder page observed for the 30th Celebration UPC Night version",
-          "url": "https://www.pokejeux.ca/products/pre-order-combo-of-two-pokemon-30th-celebration-day-night-ultra-premium-collection",
-          "publishedAt": "2026-07-18T16:00:00.000Z",
-          "publicationTimePrecision": "observed",
-          "discoveredAt": "2026-07-18T16:00:00.000Z",
-          "region": "ca",
-          "expectedAction": "Prepare now and continue watching for a fair-price Pokémon Center Canada or major-retailer listing.",
-          "interpretation": null
-        }
-      ],
-      "history": [
-        {
-          "stage": "product-confirmed",
-          "at": "2026-07-01T12:00:00.000Z",
-          "signalId": "official-30th-upc-night-2026-07-01",
-          "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
-        },
-        {
-          "stage": "prepare",
-          "at": "2026-07-18T16:00:00.000Z",
-          "signalId": "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
-          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
-        }
-      ],
-      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
-      "evidenceLabels": {
-        "existence": "high",
-        "canada": "high",
-        "timing": "high"
-      },
-      "evidenceExplanations": {
-        "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "A dated Canadian source directly connects this product to Canada.",
-        "timing": "How specific the published timing evidence is. It does not predict an exact live date."
-      },
-      "outlook": {
-        "productId": "30th-celebration-ultra-premium-collection-night",
-        "windowStart": "2026-07-19",
-        "windowEnd": "2026-11-06",
-        "recommendation": "watch-now",
-        "conclusion": "Watch through the official November 6 launch; buy only if a fair-price Canadian listing appears.",
-        "rationale": "A specialty-store preorder was observed July 18, but not at a supported fair price. Same-series Pokémon Center Canada preorders opened July 15. The window is a model estimate, not an official preorder period.",
-        "sourceSummary": "Official global November 6 launch; Canadian specialty listing July 18; comparable Canadian Pokémon Center listings July 15.",
-        "basisSignalIds": [
-          "official-30th-upc-night-2026-07-01",
-          "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
-          "ca-30th-etb-live-2026-07-15"
-        ],
-        "generatedBy": "gpt-5.6-sol",
-        "generatedAt": "2026-07-18T18:20:23.138Z",
-        "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
       }
     },
     {
@@ -327,6 +287,18 @@
           "discoveredAt": "2026-06-30T14:00:00.000Z",
           "region": "global",
           "expectedAction": "Raise a prepare alert and begin conservative monitoring of permitted sources.",
+          "interpretation": null
+        },
+        {
+          "signalId": "lead-a918b3855f2108eb45fe4895",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Pokémon Center Elite Trainer Box mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
           "interpretation": null
         },
         {
@@ -437,6 +409,18 @@
           "interpretation": null
         },
         {
+          "signalId": "lead-8f23627b14a9facfb7c2a28b",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Tech Sticker Collection (Alolan Exeggutor) mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
           "signalId": "ca-30th-tech-sticker-alolan-live-2026-07-15",
           "eventType": "preorder-open",
           "title": "Alolan Exeggutor Tech Sticker Collection observed for preorder in Canada",
@@ -467,6 +451,12 @@
           "at": "2026-06-30T13:20:00.000Z",
           "signalId": "official-30th-tech-sticker-alolan-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-8f23627b14a9facfb7c2a28b",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         },
         {
           "stage": "live-now",
@@ -537,6 +527,18 @@
           "interpretation": null
         },
         {
+          "signalId": "lead-4a5d78378c9c7b8f12de7640",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Tech Sticker Collection (Lucario) mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
           "signalId": "ca-30th-tech-sticker-lucario-live-2026-07-15",
           "eventType": "preorder-open",
           "title": "Lucario Tech Sticker Collection observed for preorder in Canada",
@@ -567,6 +569,12 @@
           "at": "2026-06-30T13:20:00.000Z",
           "signalId": "official-30th-tech-sticker-lucario-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-4a5d78378c9c7b8f12de7640",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         },
         {
           "stage": "live-now",
@@ -625,6 +633,18 @@
       },
       "evidence": [
         {
+          "signalId": "lead-89d989e784141240820a6ccc",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Knock Out Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
           "signalId": "ca-30th-knock-out-live-2026-07-15",
           "eventType": "preorder-open",
           "title": "30th Celebration Knock Out Collection observed for sale in Canada",
@@ -650,6 +670,12 @@
         }
       ],
       "history": [
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-89d989e784141240820a6ccc",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
+        },
         {
           "stage": "live-now",
           "at": "2026-07-15T15:35:00.000Z",
@@ -697,12 +723,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -716,6 +742,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-a90e2f7dfcfc7754a4a5f218",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Binder Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -724,9 +762,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-binder-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-a90e2f7dfcfc7754a4a5f218",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -734,7 +778,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -763,12 +807,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -782,6 +826,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-69379f99653922d80f63b26d",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Ditto Premium Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -790,9 +846,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-ditto-premium-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-69379f99653922d80f63b26d",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -800,7 +862,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -830,12 +892,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -849,6 +911,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-8787ef553ffba1412c7e894f",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Greninja ex Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -857,9 +931,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-greninja-ex-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-8787ef553ffba1412c7e894f",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -867,7 +947,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -896,12 +976,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -915,6 +995,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-64a17235fa953dd69574c3b6",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Mew Figure Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -923,9 +1015,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-mew-figure-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-64a17235fa953dd69574c3b6",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -933,7 +1031,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -963,12 +1061,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -982,6 +1080,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-66b3c6fcdadf10a0e98dfbbe",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Mewtwo Figure Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -990,9 +1100,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-mewtwo-figure-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-66b3c6fcdadf10a0e98dfbbe",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -1000,7 +1116,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -1030,12 +1146,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -1049,6 +1165,18 @@
           "region": "global",
           "expectedAction": "Create a product-family watch; exact variants and Canadian timing remain unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-7ceb86221487955f70725fb7",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Mini Tins mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -1057,9 +1185,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-mini-tins-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-7ceb86221487955f70725fb7",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -1067,7 +1201,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -1096,12 +1230,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -1115,6 +1249,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-3f65f629717c300a7183580f",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Poster Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -1123,9 +1269,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-poster-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-3f65f629717c300a7183580f",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -1133,7 +1285,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -1162,12 +1314,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -1181,6 +1333,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; release and Canadian preorder timing require stronger evidence.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-6628ae316490123297a91deb",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Elite Trainer Box mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -1189,9 +1353,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-standard-etb-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-6628ae316490123297a91deb",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -1199,7 +1369,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -1228,12 +1398,12 @@
       "releaseDate": null,
       "pokemonCenterExclusive": false,
       "priceCad": null,
-      "watchStage": "product-confirmed",
-      "stateChangedAt": "2026-06-30T12:00:00.000Z",
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
       "evidenceStrength": {
         "existence": 0.65,
-        "canada": 0.2,
-        "timing": 0.23
+        "canada": 0.5,
+        "timing": 0.35
       },
       "evidence": [
         {
@@ -1247,6 +1417,18 @@
           "region": "global",
           "expectedAction": "Create a product-confirmed watch; exact Canadian timing remains unknown.",
           "interpretation": null
+        },
+        {
+          "signalId": "lead-94abef6836d666811460bcaa",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Sylveon ex Collection mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -1255,9 +1437,15 @@
           "at": "2026-06-30T12:00:00.000Z",
           "signalId": "discovery-30th-sylveon-ex-collection-2026-06-30",
           "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-94abef6836d666811460bcaa",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
         }
       ],
-      "reason": "The product is officially confirmed; its Canadian buying date remains unannounced.",
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
       "evidenceLabels": {
         "existence": "medium",
         "canada": "low",
@@ -1265,7 +1453,7 @@
       },
       "evidenceExplanations": {
         "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
-        "canada": "No direct Canadian source has confirmed this product yet.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
         "timing": "How specific the published timing evidence is. It does not predict an exact live date."
       },
       "outlook": {
@@ -1280,6 +1468,198 @@
           "discovery-30th-sylveon-ex-collection-2026-06-30",
           "official-30th-set-reveal-2026-06-01",
           "ca-30th-tech-sticker-alolan-live-2026-07-15"
+        ],
+        "generatedBy": "gpt-5.6-sol",
+        "generatedAt": "2026-07-18T18:20:23.138Z",
+        "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+      }
+    },
+    {
+      "id": "30th-celebration-ultra-premium-collection-day",
+      "name": "30th Celebration Ultra-Premium Collection—Day",
+      "series": "30th Celebration",
+      "type": "other",
+      "releaseDate": "2026-11-06",
+      "pokemonCenterExclusive": false,
+      "priceCad": null,
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
+      "evidenceStrength": {
+        "existence": 0.95,
+        "canada": 0.9,
+        "timing": 0.86
+      },
+      "evidence": [
+        {
+          "signalId": "official-30th-upc-day-2026-07-01",
+          "eventType": "product-confirmed",
+          "title": "30th Celebration Ultra-Premium Collection—Day confirmed",
+          "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
+          "publishedAt": "2026-07-01T12:00:00.000Z",
+          "publicationTimePrecision": "date",
+          "discoveredAt": "2026-07-18T14:00:00.000Z",
+          "region": "global",
+          "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence.",
+          "interpretation": null
+        },
+        {
+          "signalId": "lead-6cd3d20fac7955738dcb4793",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Ultra-Premium Collection—Day mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
+          "signalId": "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+          "eventType": "canada-retailer-announced",
+          "title": "Canadian retailer preorder page observed for the 30th Celebration UPC Day version",
+          "url": "https://www.pokejeux.ca/products/pre-order-combo-of-two-pokemon-30th-celebration-day-night-ultra-premium-collection",
+          "publishedAt": "2026-07-18T16:00:00.000Z",
+          "publicationTimePrecision": "observed",
+          "discoveredAt": "2026-07-18T16:00:00.000Z",
+          "region": "ca",
+          "expectedAction": "Prepare now and continue watching for a fair-price Pokémon Center Canada or major-retailer listing.",
+          "interpretation": null
+        }
+      ],
+      "history": [
+        {
+          "stage": "product-confirmed",
+          "at": "2026-07-01T12:00:00.000Z",
+          "signalId": "official-30th-upc-day-2026-07-01",
+          "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-6cd3d20fac7955738dcb4793",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
+        }
+      ],
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
+      "evidenceLabels": {
+        "existence": "high",
+        "canada": "high",
+        "timing": "high"
+      },
+      "evidenceExplanations": {
+        "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
+        "timing": "How specific the published timing evidence is. It does not predict an exact live date."
+      },
+      "outlook": {
+        "productId": "30th-celebration-ultra-premium-collection-day",
+        "windowStart": "2026-07-19",
+        "windowEnd": "2026-11-06",
+        "recommendation": "watch-now",
+        "conclusion": "Watch through the official November 6 launch; buy only if a fair-price Canadian listing appears.",
+        "rationale": "A specialty-store preorder was observed July 18, but not at a supported fair price. Same-series Pokémon Center Canada preorders opened July 15. The window is a model estimate, not an official preorder period.",
+        "sourceSummary": "Official global November 6 launch; Canadian specialty listing July 18; comparable Canadian Pokémon Center listings July 15.",
+        "basisSignalIds": [
+          "official-30th-upc-day-2026-07-01",
+          "ca-30th-upc-day-retailer-preorder-observed-2026-07-18",
+          "ca-30th-etb-live-2026-07-15"
+        ],
+        "generatedBy": "gpt-5.6-sol",
+        "generatedAt": "2026-07-18T18:20:23.138Z",
+        "responseId": "resp_053b89d6aa580db8016a5bc3b38e1c8195a52a310aad015416"
+      }
+    },
+    {
+      "id": "30th-celebration-ultra-premium-collection-night",
+      "name": "30th Celebration Ultra-Premium Collection—Night",
+      "series": "30th Celebration",
+      "type": "other",
+      "releaseDate": "2026-11-06",
+      "pokemonCenterExclusive": false,
+      "priceCad": null,
+      "watchStage": "prepare",
+      "stateChangedAt": "2026-07-10T04:05:46.000Z",
+      "evidenceStrength": {
+        "existence": 0.95,
+        "canada": 0.9,
+        "timing": 0.86
+      },
+      "evidence": [
+        {
+          "signalId": "official-30th-upc-night-2026-07-01",
+          "eventType": "product-confirmed",
+          "title": "30th Celebration Ultra-Premium Collection—Night confirmed",
+          "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
+          "publishedAt": "2026-07-01T12:00:00.000Z",
+          "publicationTimePrecision": "date",
+          "discoveredAt": "2026-07-18T14:00:00.000Z",
+          "region": "global",
+          "expectedAction": "Create a product-confirmed watch and monitor permitted Canadian sources for preorder evidence.",
+          "interpretation": null
+        },
+        {
+          "signalId": "lead-d75e41bd6e1ae509311973f8",
+          "eventType": "product-page-discovered",
+          "title": "30th Celebration Ultra-Premium Collection—Night mentioned by Pokémon TCG Deals Canada public RSS",
+          "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/comments/1uscv0q/not_yet_live_amazon_30th_placeholders/",
+          "publishedAt": "2026-07-10T04:05:46.000Z",
+          "publicationTimePrecision": "exact",
+          "discoveredAt": "2026-07-20T20:57:00.000Z",
+          "region": "ca",
+          "expectedAction": "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
+          "interpretation": null
+        },
+        {
+          "signalId": "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+          "eventType": "canada-retailer-announced",
+          "title": "Canadian retailer preorder page observed for the 30th Celebration UPC Night version",
+          "url": "https://www.pokejeux.ca/products/pre-order-combo-of-two-pokemon-30th-celebration-day-night-ultra-premium-collection",
+          "publishedAt": "2026-07-18T16:00:00.000Z",
+          "publicationTimePrecision": "observed",
+          "discoveredAt": "2026-07-18T16:00:00.000Z",
+          "region": "ca",
+          "expectedAction": "Prepare now and continue watching for a fair-price Pokémon Center Canada or major-retailer listing.",
+          "interpretation": null
+        }
+      ],
+      "history": [
+        {
+          "stage": "product-confirmed",
+          "at": "2026-07-01T12:00:00.000Z",
+          "signalId": "official-30th-upc-night-2026-07-01",
+          "reason": "The product is officially confirmed; its Canadian buying date remains unannounced."
+        },
+        {
+          "stage": "prepare",
+          "at": "2026-07-10T04:05:46.000Z",
+          "signalId": "lead-d75e41bd6e1ae509311973f8",
+          "reason": "Canadian or product-page evidence suggests the buying window may be approaching."
+        }
+      ],
+      "reason": "Canadian or product-page evidence suggests the buying window may be approaching.",
+      "evidenceLabels": {
+        "existence": "high",
+        "canada": "high",
+        "timing": "high"
+      },
+      "evidenceExplanations": {
+        "existence": "How strongly first-party evidence identifies this exact product—not the chance that it exists.",
+        "canada": "A dated Canadian source directly connects this product to Canada.",
+        "timing": "How specific the published timing evidence is. It does not predict an exact live date."
+      },
+      "outlook": {
+        "productId": "30th-celebration-ultra-premium-collection-night",
+        "windowStart": "2026-07-19",
+        "windowEnd": "2026-11-06",
+        "recommendation": "watch-now",
+        "conclusion": "Watch through the official November 6 launch; buy only if a fair-price Canadian listing appears.",
+        "rationale": "A specialty-store preorder was observed July 18, but not at a supported fair price. Same-series Pokémon Center Canada preorders opened July 15. The window is a model estimate, not an official preorder period.",
+        "sourceSummary": "Official global November 6 launch; Canadian specialty listing July 18; comparable Canadian Pokémon Center listings July 15.",
+        "basisSignalIds": [
+          "official-30th-upc-night-2026-07-01",
+          "ca-30th-upc-night-retailer-preorder-observed-2026-07-18",
+          "ca-30th-etb-live-2026-07-15"
         ],
         "generatedBy": "gpt-5.6-sol",
         "generatedAt": "2026-07-18T18:20:23.138Z",
