@@ -126,6 +126,7 @@ h1 em { font-style: normal; color: var(--red); }
 .official-product-image[data-crop="sticker-alolan"] { --official-image-x: -360px; }
 .official-product-image[data-crop="sticker-lucario"] { --official-image-x: -640px; }
 .official-product-image[data-crop="knock-out"] { --official-image-x: -920px; }
+.official-product-image[data-crop="booster-bundle"] img { width: 802px; top: -335px; left: -475px; }
 .product-body { padding: 1.35rem; display: flex; flex-direction: column; }
 .product-series { margin: 0 0 .4rem; color: var(--red); text-transform: uppercase; letter-spacing: .1em; font-size: .62rem; font-weight: 800; }
 .product-name { margin: 0; font-size: clamp(1.25rem, 2vw, 1.7rem); line-height: 1.12; letter-spacing: -.035em; }

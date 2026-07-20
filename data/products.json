@@ -2,12 +2,42 @@
   "meta": {
     "name": "PokéStock Canada storefront snapshot",
     "currency": "CAD",
-    "updatedAt": "2026-07-18",
+    "updatedAt": "2026-07-20",
     "freshnessMode": "manual-snapshot",
-    "storefrontCheckedAt": "2026-07-18",
+    "storefrontCheckedAt": "2026-07-20",
     "disclaimer": "Availability is a dated observation, not a live stock guarantee. Official release dates and Canadian storefront events are tracked separately."
   },
   "products": [
+    {
+      "id": "30th-celebration-booster-bundle",
+      "name": "30th Celebration Booster Bundle",
+      "series": "30th Celebration",
+      "type": "booster-bundle",
+      "image": {
+        "url": "assets/pokemon-center-canada-tcg-2026-07-20.png",
+        "alt": "30th Celebration Booster Bundle shown on Pokémon Center Canada",
+        "crop": "booster-bundle",
+        "sourceUrl": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true"
+      },
+      "releaseDate": "2026-10-02",
+      "summary": "A streamlined bundle containing six booster packs from the 30th Celebration expansion.",
+      "contents": ["6 booster packs"],
+      "storefront": {
+        "status": "preorder",
+        "priceCad": 36.99,
+        "firstSeenAt": "2026-07-20",
+        "checkedAt": "2026-07-20",
+        "retailer": "Pokémon Center Canada",
+        "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true"
+      },
+      "canadaNote": "Observed available to order on Pokémon Center Canada at CA$36.99 ahead of its October release. Availability remains a dated observation.",
+      "source": {
+        "publisher": "Pokémon Center Canada",
+        "title": "Pokémon TCG Cards",
+        "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true"
+      },
+      "verifiedAt": "2026-07-20"
+    },
     {
       "id": "30th-celebration-pokemon-center-etb",
       "name": "30th Celebration Pokémon Center Elite Trainer Box",

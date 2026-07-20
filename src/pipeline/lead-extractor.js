@@ -32,11 +32,10 @@ export function extractKnownProductLeads(publications, knownProducts, source) {
     const text = `${publication.title} ${publication.text}`;
     for (const product of knownProducts) {
       if (!matchesKnownProduct(publication, product)) continue;
-      const hasPositiveAvailability = AVAILABILITY_LANGUAGE.test(text) && !NEGATIVE_AVAILABILITY.test(text);
       const canadianLead = source.region === "ca";
       leads.push({
         id: `lead-${leadId(publication, product)}`,
-        eventType: canadianLead && hasPositiveAvailability ? "canada-retailer-announced" : "product-page-discovered",
+        eventType: "product-confirmed",
         publishedAt: publication.publishedAt,
         publicationTimePrecision: publication.publicationTimePrecision ?? "exact",
         discoveredAt: publication.discoveredAt,
@@ -46,7 +45,7 @@ export function extractKnownProductLeads(publications, knownProducts, source) {
         product,
         facts: [
           `A public ${canadianLead ? "Canadian " : ""}discovery feed mentioned this known product.`,
-          "This is an unverified lead and does not confirm that Canadian stock is live.",
+          `This is an unverified lead${AVAILABILITY_LANGUAGE.test(text) && !NEGATIVE_AVAILABILITY.test(text) ? " that mentions availability" : ""}; it does not change the product's watch stage or confirm that Canadian stock is live.`,
         ],
         expectedAction: "Verify the linked report against a dated Canadian retailer observation before sending a Live now alert.",
       });

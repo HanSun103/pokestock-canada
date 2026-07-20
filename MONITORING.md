@@ -58,7 +58,7 @@ Curated official records + explicitly permitted feeds
              data/radar.json    Discord/email
 ```
 
-Run it with `npm run pipeline`. Source policy lives in `config/sources.json`. The built-in discovery layer uses public RSS/Atom endpoints and filters for TCG release language before any GPT call. A Canadian community feed is handled as lead-only: deterministic matching can raise `Prepare` for a known product, but never `Live now`. `POKESTOCK_FEED_URLS` is optional and may add only feeds whose publishers allow automated retrieval.
+Run it with `npm run pipeline`. Source policy lives in `config/sources.json`. The built-in discovery layer uses public RSS/Atom endpoints and filters for TCG release language before any GPT call. A Canadian community feed is handled as lead-only supporting evidence: deterministic matching cannot change a product's watch stage or confirm `Live now`. `POKESTOCK_FEED_URLS` is optional and may add only feeds whose publishers allow automated retrieval.
 
 The pipeline preserves previous signals, deduplicates them by stable signal ID, and sends notifications only when a product changes into an actionable state. A global or US `available now` signal remains `Product confirmed`; only explicit Canadian evidence can become `Live now` or `Sold out`.
 
