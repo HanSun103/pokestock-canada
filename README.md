@@ -21,7 +21,7 @@ The project is intentionally **information-only**. It does not automate purchase
 - Classifies offers against a Canadian reference price when both values are available.
 - Clearly distinguishes verified information from unavailable or pending information.
 
-The cold-start catalog contains four 30th Celebration products observed on Pokémon Center Canada on July 15, 2026, plus the completed Mega Evolution—Pitch Black Canadian launch. It is a dated, manually verified storefront snapshot—not a live stock feed. Every availability label includes its check date. See [MONITORING.md](MONITORING.md) for the path toward responsible automation and [PROPOSAL.md](PROPOSAL.md) for the broader roadmap.
+The catalog contains five 30th Celebration products observed on Pokémon Center Canada, including the Booster Bundle listing recorded on July 20, 2026, plus the completed Mega Evolution—Pitch Black Canadian launch. It is a dated, manually verified storefront snapshot—not a live stock feed. Every availability label includes its check date. See [MONITORING.md](MONITORING.md) for the path toward responsible automation and [PROPOSAL.md](PROPOSAL.md) for the broader roadmap.
 
 ## Image gallery
 
@@ -88,7 +88,7 @@ npm run check:data
 npm run notify
 ```
 
-The default connectors read curated, source-linked records in `data/feeds/` plus the public feeds declared in `config/sources.json`. A public Canadian community RSS feed is processed without GPT only as a known-product lead: it can raise `Prepare`, but it can never claim `Live now`. Optional remote JSON Feed, RSS, or Atom URLs can be supplied through `POKESTOCK_FEED_URLS` only when the publisher permits automated retrieval. Feed failures are isolated, unchanged publications are served from the GPT fingerprint cache, and only a dated Canadian retailer observation can trigger `Live now` or `Sold out`. The pipeline writes normalized evidence to `data/signals.json` and website-ready watch states to `data/radar.json`.
+The default connectors read curated, source-linked records in `data/feeds/` plus the public feeds declared in `config/sources.json`. A public Canadian community RSS feed is processed without GPT only as supporting evidence for known products; it cannot change a watch stage or claim `Live now`. Optional remote JSON Feed, RSS, or Atom URLs can be supplied through `POKESTOCK_FEED_URLS` only when the publisher permits automated retrieval. Feed failures are isolated, unchanged publications are served from the GPT fingerprint cache, and only a dated Canadian retailer observation can trigger `Live now` or `Sold out`. The pipeline writes normalized evidence to `data/signals.json` and website-ready watch states to `data/radar.json`.
 
 Notifications are change-only. Configure `DISCORD_WEBHOOK_URL` for Discord, or `RESEND_API_KEY`, `ALERT_EMAIL_FROM`, and `ALERT_EMAIL_TO` for email. With no secrets, notification delivery safely skips.
 

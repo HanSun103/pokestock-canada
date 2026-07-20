@@ -116,7 +116,7 @@ test("discovery feeds prefilter unrelated posts before GPT normalization", async
   assert.deepEqual(result.rawBatches[0].publications.map((item) => item.id), ["tcg"]);
 });
 
-test("community feeds create verification leads but never live-now evidence", () => {
+test("community feeds add supporting evidence without changing the confirmed stage", () => {
   const publications = [{
     id: "community-post",
     title: "30th Celebration Booster Bundle is live",
@@ -136,12 +136,12 @@ test("community feeds create verification leads but never live-now evidence", ()
   const communitySource = { id: "community-ca", name: "Canadian community", publisherClass: "community-feed", region: "ca" };
   const leads = extractKnownProductLeads(publications, [knownProduct], communitySource);
   assert.equal(leads.length, 1);
-  assert.equal(leads[0].eventType, "canada-retailer-announced");
+  assert.equal(leads[0].eventType, "product-confirmed");
   const [signal] = normalizeSignals(leads, communitySource, "2026-07-20T12:01:00Z");
-  assert.equal(buildRadar([signal], "2026-07-20T12:01:00Z").products[0].watchStage, "prepare");
+  assert.equal(buildRadar([signal], "2026-07-20T12:01:00Z").products[0].watchStage, "product-confirmed");
 });
 
-test("negative availability language remains an unverified product-page lead", () => {
+test("negative availability language remains non-state-changing supporting evidence", () => {
   const publication = {
     id: "placeholder-post",
     title: "30th Celebration Booster Bundle not yet live",
@@ -152,5 +152,5 @@ test("negative availability language remains an unverified product-page lead", (
   };
   const knownProduct = { id: "bundle", name: "30th Celebration Booster Bundle", series: "30th Celebration", type: "booster-bundle", releaseDate: null, pokemonCenterExclusive: false };
   const [lead] = extractKnownProductLeads([publication], [knownProduct], { id: "community-ca", name: "Canadian community", region: "ca" });
-  assert.equal(lead.eventType, "product-page-discovered");
+  assert.equal(lead.eventType, "product-confirmed");
 });
