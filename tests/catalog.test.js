@@ -7,6 +7,7 @@ import {
   getAvailabilityLabel,
   getCountdownLabel,
   getReleaseState,
+  sortRadarProducts,
   sortByReleaseDate,
 } from "../src/catalog.js";
 
@@ -58,4 +59,18 @@ test("availability labels are explicit", () => {
   assert.equal(getAvailabilityLabel("sold-out"), "Sold out");
   assert.equal(getAvailabilityLabel("in-stock"), "In stock");
   assert.equal(getAvailabilityLabel("unknown"), "Not checked");
+});
+
+test("signal radar orders the most actionable stages first", () => {
+  const products = [
+    { name: "Confirmed", watchStage: "product-confirmed", stateChangedAt: "2026-07-20T10:00:00Z", releaseDate: "2026-07-21" },
+    { name: "Prepare", watchStage: "prepare", stateChangedAt: "2026-07-19T10:00:00Z", releaseDate: "2026-09-01" },
+    { name: "Live", watchStage: "live-now", stateChangedAt: "2026-07-18T10:00:00Z", releaseDate: "2026-10-01" },
+    { name: "Restock", watchStage: "restock-watch", stateChangedAt: "2026-07-17T10:00:00Z", releaseDate: "2026-11-01" },
+  ];
+
+  assert.deepEqual(
+    sortRadarProducts(products, "action-date", new Date(2026, 6, 20)).map((product) => product.name),
+    ["Restock", "Live", "Prepare", "Confirmed"],
+  );
 });

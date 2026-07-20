@@ -23,14 +23,14 @@
       "summary": "A streamlined bundle containing six booster packs from the 30th Celebration expansion.",
       "contents": ["6 booster packs"],
       "storefront": {
-        "status": "preorder",
+        "status": "sold-out",
         "priceCad": 36.99,
         "firstSeenAt": "2026-07-20",
         "checkedAt": "2026-07-20",
         "retailer": "Pokémon Center Canada",
         "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true"
       },
-      "canadaNote": "Observed available to order on Pokémon Center Canada at CA$36.99 ahead of its October release. Availability remains a dated observation.",
+      "canadaNote": "First observed available to order on Pokémon Center Canada at CA$36.99 on July 20, then observed sold out later that day. No restock announcement has been observed.",
       "source": {
         "publisher": "Pokémon Center Canada",
         "title": "Pokémon TCG Cards",

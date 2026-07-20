@@ -191,6 +191,27 @@
       },
       "facts": ["A dated human-verified Pokémon Center Canada observation showed the six-pack Booster Bundle in the in-stock TCG filter at CA$36.99.", "The protected storefront cannot be polled responsibly by the scheduled GitHub runner, so this availability state remains a dated observation rather than a continuous stock guarantee."],
       "expectedAction": "Send an immediate Live now alert and display the observation timestamp; reverify before purchase."
+    },
+    {
+      "id": "ca-30th-booster-bundle-sold-out-2026-07-20",
+      "eventType": "sold-out",
+      "publishedAt": "2026-07-20T23:28:25Z",
+      "publicationTimePrecision": "observed",
+      "discoveredAt": "2026-07-20T23:28:25Z",
+      "title": "30th Celebration Booster Bundle observed sold out on Pokémon Center Canada",
+      "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true",
+      "region": "ca",
+      "product": {
+        "id": "30th-celebration-booster-bundle",
+        "name": "30th Celebration Booster Bundle",
+        "series": "30th Celebration",
+        "type": "booster-bundle",
+        "releaseDate": "2026-10-02",
+        "pokemonCenterExclusive": false,
+        "priceCad": 36.99
+      },
+      "facts": ["A newer dated human observation found that the July 20 Pokémon Center Canada buying opportunity had sold out.", "No explicit restock announcement has been observed. The protected storefront cannot be continuously polled by the scheduled GitHub runner."],
+      "expectedAction": "Close the live opportunity, retain it in Release radar as sold out, and wait for explicit restock evidence before creating a restock watch."
     }
   ]
 }

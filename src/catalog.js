@@ -58,6 +58,33 @@ export function sortByReleaseDate(products) {
   return [...products].sort((a, b) => (b.storefront.firstSeenAt ?? "0000-00-00").localeCompare(a.storefront.firstSeenAt ?? "0000-00-00") || (a.releaseDate ?? "9999-99-99").localeCompare(b.releaseDate ?? "9999-99-99"));
 }
 
+export const RADAR_STAGE_PRIORITY = Object.freeze({
+  "restock-watch": 0,
+  "live-now": 1,
+  prepare: 2,
+  "product-confirmed": 3,
+  "early-watch": 4,
+});
+
+function dateDistance(value, now = new Date()) {
+  if (!value) return Number.MAX_SAFE_INTEGER;
+  const today = startOfDay(now);
+  const date = parseLocalDate(value.slice(0, 10));
+  const difference = date - today;
+  return difference >= 0 ? difference : Math.abs(difference) + 366 * 86_400_000;
+}
+
+export function sortRadarProducts(products, sortMode = "action-date", now = new Date()) {
+  return [...products].sort((a, b) => {
+    const stagePriority = (RADAR_STAGE_PRIORITY[a.watchStage] ?? 99) - (RADAR_STAGE_PRIORITY[b.watchStage] ?? 99);
+    if (stagePriority) return stagePriority;
+    if (sortMode === "newest") return b.stateChangedAt.localeCompare(a.stateChangedAt) || a.name.localeCompare(b.name);
+    const aDate = sortMode === "release-date" ? a.releaseDate : (a.outlook?.windowStart ?? a.releaseDate ?? a.stateChangedAt);
+    const bDate = sortMode === "release-date" ? b.releaseDate : (b.outlook?.windowStart ?? b.releaseDate ?? b.stateChangedAt);
+    return dateDistance(aDate, now) - dateDistance(bDate, now) || a.name.localeCompare(b.name);
+  });
+}
+
 export function formatCad(value) {
   if (!Number.isFinite(value)) return "Not published";
   return new Intl.NumberFormat("en-CA", { style: "currency", currency: "CAD" }).format(value);

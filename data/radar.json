@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-20T23:13:59.052Z",
-    "signalCount": 49,
+    "generatedAt": "2026-07-20T23:28:25.000Z",
+    "signalCount": 50,
     "productCount": 17,
     "methodology": "Evidence strength is reported separately for product identity, Canadian relevance, and timing. These labels are not probabilities, and no date is invented when a source does not publish one."
   },
@@ -14,8 +14,8 @@
       "releaseDate": "2026-10-02",
       "pokemonCenterExclusive": false,
       "priceCad": 36.99,
-      "watchStage": "live-now",
-      "stateChangedAt": "2026-07-20T20:57:00.000Z",
+      "watchStage": "sold-out",
+      "stateChangedAt": "2026-07-20T23:28:25.000Z",
       "evidenceStrength": {
         "existence": 0.9,
         "canada": 0.9,
@@ -57,6 +57,18 @@
           "region": "ca",
           "expectedAction": "Send an immediate Live now alert and display the observation timestamp; reverify before purchase.",
           "interpretation": null
+        },
+        {
+          "signalId": "ca-30th-booster-bundle-sold-out-2026-07-20",
+          "eventType": "sold-out",
+          "title": "30th Celebration Booster Bundle observed sold out on Pokémon Center Canada",
+          "url": "https://www.pokemoncenter.com/en-ca/category/tcg-cards?availability=true",
+          "publishedAt": "2026-07-20T23:28:25.000Z",
+          "publicationTimePrecision": "observed",
+          "discoveredAt": "2026-07-20T23:28:25.000Z",
+          "region": "ca",
+          "expectedAction": "Close the live opportunity, retain it in Release radar as sold out, and wait for explicit restock evidence before creating a restock watch.",
+          "interpretation": null
         }
       ],
       "history": [
@@ -71,9 +83,15 @@
           "at": "2026-07-20T20:57:00.000Z",
           "signalId": "ca-30th-booster-bundle-live-2026-07-20",
           "reason": "A permitted Canadian source confirms that preorder or purchase availability is open."
+        },
+        {
+          "stage": "sold-out",
+          "at": "2026-07-20T23:28:25.000Z",
+          "signalId": "ca-30th-booster-bundle-sold-out-2026-07-20",
+          "reason": "The initial Canadian opportunity was observed sold out; restock monitoring should continue."
         }
       ],
-      "reason": "A permitted Canadian source confirms that preorder or purchase availability is open.",
+      "reason": "The initial Canadian opportunity was observed sold out; restock monitoring should continue.",
       "evidenceLabels": {
         "existence": "high",
         "canada": "high",
