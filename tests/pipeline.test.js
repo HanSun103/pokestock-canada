@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { normalizeSignals } from "../src/pipeline/normalize.js";
 import { buildRadar, changedStates } from "../src/pipeline/state-engine.js";
 import { readConfiguredSources } from "../src/pipeline/connectors.js";
+import { extractKnownProductLeads } from "../src/pipeline/lead-extractor.js";
 
 const source = { id: "official", name: "Official", publisherClass: "official", region: "global" };
 const product = {
@@ -113,4 +114,43 @@ test("discovery feeds prefilter unrelated posts before GPT normalization", async
   const result = await readConfiguredSources(config, process.cwd(), "2026-07-18T12:01:00Z", fetchImpl);
   assert.equal(result.rawBatches.length, 1);
   assert.deepEqual(result.rawBatches[0].publications.map((item) => item.id), ["tcg"]);
+});
+
+test("community feeds create verification leads but never live-now evidence", () => {
+  const publications = [{
+    id: "community-post",
+    title: "30th Celebration Booster Bundle is live",
+    text: "A Canadian collector reports that the 30th Celebration Booster Bundle is in stock.",
+    url: "https://example.com/community-post",
+    publishedAt: "2026-07-20T12:00:00Z",
+    discoveredAt: "2026-07-20T12:01:00Z",
+  }];
+  const knownProduct = {
+    id: "30th-celebration-booster-bundle",
+    name: "30th Celebration Booster Bundle",
+    series: "30th Celebration",
+    type: "booster-bundle",
+    releaseDate: "2026-10-02",
+    pokemonCenterExclusive: false,
+  };
+  const communitySource = { id: "community-ca", name: "Canadian community", publisherClass: "community-feed", region: "ca" };
+  const leads = extractKnownProductLeads(publications, [knownProduct], communitySource);
+  assert.equal(leads.length, 1);
+  assert.equal(leads[0].eventType, "canada-retailer-announced");
+  const [signal] = normalizeSignals(leads, communitySource, "2026-07-20T12:01:00Z");
+  assert.equal(buildRadar([signal], "2026-07-20T12:01:00Z").products[0].watchStage, "prepare");
+});
+
+test("negative availability language remains an unverified product-page lead", () => {
+  const publication = {
+    id: "placeholder-post",
+    title: "30th Celebration Booster Bundle not yet live",
+    text: "A placeholder exists for the 30th Celebration Booster Bundle.",
+    url: "https://example.com/placeholder-post",
+    publishedAt: "2026-07-10T12:00:00Z",
+    discoveredAt: "2026-07-10T12:01:00Z",
+  };
+  const knownProduct = { id: "bundle", name: "30th Celebration Booster Bundle", series: "30th Celebration", type: "booster-bundle", releaseDate: null, pokemonCenterExclusive: false };
+  const [lead] = extractKnownProductLeads([publication], [knownProduct], { id: "community-ca", name: "Canadian community", region: "ca" });
+  assert.equal(lead.eventType, "product-page-discovered");
 });

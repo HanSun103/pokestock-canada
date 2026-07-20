@@ -6,6 +6,7 @@ import { analyzePublicationWithGpt, publicationFingerprint } from "./pipeline/gp
 import { normalizeSignals } from "./pipeline/normalize.js";
 import { buildRadar, changedStates } from "./pipeline/state-engine.js";
 import { fallbackOutlook, forecastCanadaAvailability, forecastFingerprint } from "./pipeline/forecast.js";
+import { extractKnownProductLeads } from "./pipeline/lead-extractor.js";
 
 const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const dryRun = process.argv.includes("--dry-run");
@@ -39,13 +40,18 @@ let forecastCacheChanged = false;
 
 const { batches, rawBatches } = await readConfiguredSources(config, root, collectedAt);
 const interpretedBatches = [];
+const leadBatches = rawBatches
+  .filter(({ source }) => source.leadOnly)
+  .map(({ source, publications }) => ({ source, items: extractKnownProductLeads(publications, knownProducts, source) }))
+  .filter(({ items }) => items.length);
+const gptBatches = rawBatches.filter(({ source }) => !source.leadOnly);
 
-if (rawBatches.length && !process.env.OPENAI_API_KEY) {
+if (gptBatches.length && !process.env.OPENAI_API_KEY) {
   console.warn("Skipping unstructured feed items because OPENAI_API_KEY is not configured.");
 }
 
 if (process.env.OPENAI_API_KEY) {
-  for (const { source, publications } of rawBatches) {
+  for (const { source, publications } of gptBatches) {
     const items = [];
     for (const publication of publications) {
       const fingerprint = publicationFingerprint(publication);
@@ -74,7 +80,7 @@ if (process.env.OPENAI_API_KEY) {
   }
 }
 
-const allBatches = [...batches, ...interpretedBatches];
+const allBatches = [...batches, ...leadBatches, ...interpretedBatches];
 const signals = allBatches.flatMap(({ source, items }) => normalizeSignals(items, source, collectedAt));
 const uniqueSignals = [...new Map(signals.map((signal) => [signal.id, signal])).values()]
   .sort((a, b) => a.publishedAt.localeCompare(b.publishedAt) || a.id.localeCompare(b.id));

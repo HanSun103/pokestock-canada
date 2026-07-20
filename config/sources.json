@@ -47,6 +47,20 @@
       "publisherClass": "official",
       "region": "global",
       "enabled": true
+    },
+    {
+      "id": "reddit-pokemon-tcg-deals-canada",
+      "name": "Pokémon TCG Deals Canada public RSS",
+      "url": "https://www.reddit.com/r/PokemonTCGDealsCanada/new/.rss?limit=50",
+      "publisherClass": "community-feed",
+      "region": "ca",
+      "leadOnly": true,
+      "enabled": true,
+      "discoveryFilter": {
+        "maxItemsPerSource": 50,
+        "requiredTopicTerms": [],
+        "requiredReleaseTerms": ["pokémon", "pokemon", "tcg", "booster", "elite trainer", "etb", "collection", "tin", "preorder", "pre-order", "restock"]
+      }
     }
   ],
   "discoveryFilter": {
