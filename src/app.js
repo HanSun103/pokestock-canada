@@ -5,6 +5,7 @@ import {
   getAvailabilityLabel,
   getCountdownLabel,
   sortByReleaseDate,
+  sortRadarProducts,
 } from "./catalog.js";
 
 const TYPE_LABELS = {
@@ -108,26 +109,10 @@ function formatOutlookWindow(outlook) {
   return `${formatDate(outlook.windowStart)} – ${formatDate(outlook.windowEnd)}`;
 }
 
-function dateDistance(value) {
-  if (!value) return Number.MAX_SAFE_INTEGER;
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const date = new Date(`${value.slice(0, 10)}T00:00:00`);
-  const difference = date - today;
-  return difference >= 0 ? difference : Math.abs(difference) + 366 * 86400000;
-}
-
 function visibleRadarProducts() {
   const active = state.radar.filter((product) => product.watchStage !== "sold-out");
   const filtered = state.radarFilter === "active" ? active : active.filter((product) => product.watchStage === state.radarFilter);
-  return [...filtered].sort((a, b) => {
-    const restockPriority = Number(b.watchStage === "restock-watch") - Number(a.watchStage === "restock-watch");
-    if (restockPriority) return restockPriority;
-    if (state.radarSort === "newest") return b.stateChangedAt.localeCompare(a.stateChangedAt);
-    const aDate = state.radarSort === "release-date" ? a.releaseDate : (a.outlook?.windowStart ?? a.releaseDate ?? a.stateChangedAt);
-    const bDate = state.radarSort === "release-date" ? b.releaseDate : (b.outlook?.windowStart ?? b.releaseDate ?? b.stateChangedAt);
-    return dateDistance(aDate) - dateDistance(bDate) || a.name.localeCompare(b.name);
-  });
+  return sortRadarProducts(filtered, state.radarSort);
 }
 
 function renderRadar() {
